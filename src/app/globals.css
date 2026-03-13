@@ -127,3 +127,21 @@
     @apply font-sans;
   }
 }
+
+/* Architectural grid overlay */
+.grid-overlay {
+  background-image: linear-gradient(
+      oklch(0.145 0 0 / 3%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, oklch(0.145 0 0 / 3%) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.dark .grid-overlay {
+  background-image: linear-gradient(
+      oklch(0.985 0 0 / 4%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, oklch(0.985 0 0 / 4%) 1px, transparent 1px);
+}

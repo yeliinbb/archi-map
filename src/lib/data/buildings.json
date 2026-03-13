@@ -1,0 +1,252 @@
+[
+  {
+    "id": "bld-ddp",
+    "slug": "dongdaemun-design-plaza",
+    "name": "Dongdaemun Design Plaza",
+    "nameKo": "동대문디자인플라자",
+    "architectId": "arch-zaha-hadid",
+    "cityId": "city-seoul",
+    "year": 2014,
+    "description": "A neo-futuristic landmark designed by Zaha Hadid, the DDP is one of the largest 3D amorphous structures in the world. Its sweeping aluminum facade and flowing interior spaces have become Seoul's cultural epicenter for design exhibitions and events.",
+    "address": "281 Eulji-ro, Jung-gu, Seoul",
+    "location": { "lat": 37.5671, "lng": 127.0095 },
+    "images": [
+      {
+        "src": "/images/buildings/ddp.jpg",
+        "alt": "Dongdaemun Design Plaza exterior at dusk"
+      }
+    ],
+    "tags": [
+      { "label": "Deconstructivism", "slug": "deconstructivism" },
+      { "label": "Cultural", "slug": "cultural" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Cultural Complex"
+  },
+  {
+    "id": "bld-sagrada-familia",
+    "slug": "sagrada-familia",
+    "name": "Sagrada Família",
+    "nameKo": "사그라다 파밀리아",
+    "architectId": "arch-antoni-gaudi",
+    "cityId": "city-barcelona",
+    "year": 1882,
+    "description": "Gaudí's unfinished masterpiece, the Sagrada Família is a basilica that defies architectural convention with its organic forms, hyperboloid structures, and intricate facades inspired by nature. Construction continues over 140 years after its inception.",
+    "address": "Carrer de Mallorca, 401, Barcelona",
+    "location": { "lat": 41.4036, "lng": 2.1744 },
+    "images": [
+      {
+        "src": "/images/buildings/sagrada-familia.jpg",
+        "alt": "Sagrada Família basilica towering above Barcelona"
+      }
+    ],
+    "tags": [
+      { "label": "Art Nouveau", "slug": "art-nouveau" },
+      { "label": "Religious", "slug": "religious" },
+      { "label": "UNESCO", "slug": "unesco" }
+    ],
+    "status": "published",
+    "typology": "Religious"
+  },
+  {
+    "id": "bld-casa-batllo",
+    "slug": "casa-batllo",
+    "name": "Casa Batlló",
+    "nameKo": "카사 바트요",
+    "architectId": "arch-antoni-gaudi",
+    "cityId": "city-barcelona",
+    "year": 1906,
+    "description": "A masterpiece of Catalan Modernisme, Casa Batlló's skeletal balconies, iridescent tile facade, and dragon-spine roofline exemplify Gaudí's genius for transforming natural forms into inhabitable art.",
+    "address": "Passeig de Gràcia, 43, Barcelona",
+    "location": { "lat": 41.3916, "lng": 2.165 },
+    "images": [
+      {
+        "src": "/images/buildings/casa-batllo.jpg",
+        "alt": "Casa Batlló facade on Passeig de Gràcia"
+      }
+    ],
+    "tags": [
+      { "label": "Art Nouveau", "slug": "art-nouveau" },
+      { "label": "Residential", "slug": "residential" },
+      { "label": "UNESCO", "slug": "unesco" }
+    ],
+    "status": "published",
+    "typology": "Residential"
+  },
+  {
+    "id": "bld-church-of-light",
+    "slug": "church-of-the-light",
+    "name": "Church of the Light",
+    "nameKo": "빛의 교회",
+    "architectId": "arch-tadao-ando",
+    "cityId": "city-tokyo",
+    "year": 1989,
+    "description": "A minimalist chapel in Ibaraki, Osaka, where a cruciform slit in the concrete wall floods the austere interior with light. Ando's masterwork demonstrates how emptiness and light can create profound spiritual space.",
+    "address": "4-3-50 Kitakasugaoka, Ibaraki, Osaka",
+    "location": { "lat": 34.8147, "lng": 135.5681 },
+    "images": [
+      {
+        "src": "/images/buildings/church-of-light.jpg",
+        "alt": "Interior of Church of the Light with cruciform light"
+      }
+    ],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Religious", "slug": "religious" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Religious"
+  },
+  {
+    "id": "bld-therme-vals",
+    "slug": "therme-vals",
+    "name": "Therme Vals",
+    "nameKo": "테르메 발스",
+    "architectId": "arch-peter-zumthor",
+    "cityId": "city-zurich",
+    "year": 1996,
+    "description": "Built over the only thermal springs in the Graubünden canton, Therme Vals is carved from 60,000 slabs of locally quarried Valser quartzite. Zumthor's design creates a cave-like sequence of spaces where water, stone, and light merge.",
+    "address": "7132 Vals, Switzerland",
+    "location": { "lat": 46.6167, "lng": 9.1833 },
+    "images": [
+      {
+        "src": "/images/buildings/therme-vals.jpg",
+        "alt": "Interior pool of Therme Vals with quartzite walls"
+      }
+    ],
+    "tags": [
+      { "label": "Phenomenology", "slug": "phenomenology" },
+      { "label": "Spa", "slug": "spa" },
+      { "label": "Stone", "slug": "stone" }
+    ],
+    "status": "published",
+    "typology": "Leisure"
+  },
+  {
+    "id": "bld-nezu-museum",
+    "slug": "nezu-museum",
+    "name": "Nezu Museum",
+    "nameKo": "네즈 미술관",
+    "architectId": "arch-kengo-kuma",
+    "cityId": "city-tokyo",
+    "year": 2009,
+    "description": "Situated in the upscale Aoyama district, the Nezu Museum is concealed behind a dramatic bamboo-lined approach and a sweeping roof of natural materials. Kuma's design creates a serene transition from Tokyo's urban intensity to contemplative garden spaces.",
+    "address": "6-5-1 Minamiaoyama, Minato, Tokyo",
+    "location": { "lat": 35.6614, "lng": 139.7147 },
+    "images": [
+      {
+        "src": "/images/buildings/nezu-museum.jpg",
+        "alt": "Nezu Museum entrance with bamboo-lined walkway"
+      }
+    ],
+    "tags": [
+      { "label": "Materiality", "slug": "materiality" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Wood", "slug": "wood" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-space-group",
+    "slug": "space-group-building",
+    "name": "Space Group Building",
+    "nameKo": "공간사옥",
+    "architectId": "arch-kim-swoo-geun",
+    "cityId": "city-seoul",
+    "year": 1977,
+    "description": "A brick labyrinth nestled in Seoul's Wonseo-dong, the Space Group Building is Kim Swoo-geun's architectural manifesto — a complex of interconnected volumes that reinterprets traditional Korean spatial sequences through a brutalist lens.",
+    "address": "83 Yulgok-ro, Jongno-gu, Seoul",
+    "location": { "lat": 37.5802, "lng": 126.9868 },
+    "images": [
+      {
+        "src": "/images/buildings/space-group.jpg",
+        "alt": "Space Group Building brick facade in Wonseo-dong"
+      }
+    ],
+    "tags": [
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Korean Modern", "slug": "korean-modern" },
+      { "label": "Office", "slug": "office" }
+    ],
+    "status": "published",
+    "typology": "Office"
+  },
+  {
+    "id": "bld-japan-national-stadium",
+    "slug": "japan-national-stadium",
+    "name": "Japan National Stadium",
+    "nameKo": "일본 국립경기장",
+    "architectId": "arch-kengo-kuma",
+    "cityId": "city-tokyo",
+    "year": 2019,
+    "description": "Designed for the 2020 Tokyo Olympics, the stadium features a latticed timber canopy that wraps around the structure like a forest canopy. Kuma's design integrates 47 varieties of trees from Japan's 47 prefectures.",
+    "address": "10-1 Kasumigaokamachi, Shinjuku, Tokyo",
+    "location": { "lat": 35.6776, "lng": 139.7137 },
+    "images": [
+      {
+        "src": "/images/buildings/japan-national-stadium.jpg",
+        "alt": "Japan National Stadium with timber lattice exterior"
+      }
+    ],
+    "tags": [
+      { "label": "Wood", "slug": "wood" },
+      { "label": "Sports", "slug": "sports" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Sports"
+  },
+  {
+    "id": "bld-kolumba",
+    "slug": "kolumba-museum",
+    "name": "Kolumba Museum",
+    "nameKo": "콜룸바 미술관",
+    "architectId": "arch-peter-zumthor",
+    "cityId": "city-zurich",
+    "year": 2007,
+    "description": "Built atop the ruins of a Gothic church destroyed in WWII, Kolumba is a masterclass in architectural layering. Zumthor's signature grey brick walls, perforated with a custom 'filter brick,' allow light to seep through like memory itself.",
+    "address": "Kolumbastraße 4, 50667 Köln, Germany",
+    "location": { "lat": 50.9381, "lng": 6.9557 },
+    "images": [
+      {
+        "src": "/images/buildings/kolumba.jpg",
+        "alt": "Kolumba Museum perforated brick facade"
+      }
+    ],
+    "tags": [
+      { "label": "Phenomenology", "slug": "phenomenology" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Brick", "slug": "brick" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-leeum",
+    "slug": "leeum-museum",
+    "name": "Leeum Museum of Art",
+    "nameKo": "리움미술관",
+    "architectId": "arch-tadao-ando",
+    "cityId": "city-seoul",
+    "year": 2004,
+    "description": "A tri-partite museum complex where three Pritzker laureates — Mario Botta, Jean Nouvel, and Rem Koolhaas — each designed a building, with Tadao Ando contributing Museum 2's signature concrete volumes for contemporary art.",
+    "address": "60-16 Itaewon-ro 55-gil, Yongsan-gu, Seoul",
+    "location": { "lat": 37.5343, "lng": 126.9981 },
+    "images": [
+      {
+        "src": "/images/buildings/leeum.jpg",
+        "alt": "Leeum Museum of Art exterior"
+      }
+    ],
+    "tags": [
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  }
+]

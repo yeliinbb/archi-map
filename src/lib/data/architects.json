@@ -1,0 +1,124 @@
+[
+  {
+    "id": "arch-zaha-hadid",
+    "slug": "zaha-hadid",
+    "name": "Zaha Hadid",
+    "nameKo": "자하 하디드",
+    "nationality": "Iraqi-British",
+    "birthYear": 1950,
+    "deathYear": 2016,
+    "bio": "Zaha Hadid was a visionary architect known for her radical deconstructivist designs characterized by fluid forms and dynamic geometries. She was the first woman to receive the Pritzker Architecture Prize in 2004.",
+    "portrait": {
+      "src": "/images/architects/zaha-hadid.jpg",
+      "alt": "Portrait of Zaha Hadid"
+    },
+    "tags": [
+      { "label": "Deconstructivism", "slug": "deconstructivism" },
+      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+    ],
+    "status": "published",
+    "website": "https://www.zaha-hadid.com",
+    "notableWorks": ["Dongdaemun Design Plaza", "MAXXI", "Heydar Aliyev Center"]
+  },
+  {
+    "id": "arch-tadao-ando",
+    "slug": "tadao-ando",
+    "name": "Tadao Ando",
+    "nameKo": "안도 다다오",
+    "nationality": "Japanese",
+    "birthYear": 1941,
+    "bio": "Tadao Ando is a self-taught architect renowned for his masterful use of concrete, light, and nature. His meditative spaces blend modernist geometry with traditional Japanese spatial sensibilities.",
+    "portrait": {
+      "src": "/images/architects/tadao-ando.jpg",
+      "alt": "Portrait of Tadao Ando"
+    },
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+    ],
+    "status": "published",
+    "website": "https://www.tadao-ando.com",
+    "notableWorks": ["Church of the Light", "Chichu Art Museum", "Ando Museum"]
+  },
+  {
+    "id": "arch-antoni-gaudi",
+    "slug": "antoni-gaudi",
+    "name": "Antoni Gaudí",
+    "nameKo": "안토니 가우디",
+    "nationality": "Spanish",
+    "birthYear": 1852,
+    "deathYear": 1926,
+    "bio": "Antoni Gaudí was a Catalan architect whose organic, nature-inspired forms became the defining expression of Modernisme. His unfinished masterpiece, the Sagrada Família, remains Barcelona's most iconic landmark.",
+    "portrait": {
+      "src": "/images/architects/antoni-gaudi.jpg",
+      "alt": "Portrait of Antoni Gaudí"
+    },
+    "tags": [
+      { "label": "Art Nouveau", "slug": "art-nouveau" },
+      { "label": "Modernisme", "slug": "modernisme" }
+    ],
+    "status": "published",
+    "notableWorks": ["Sagrada Família", "Casa Batlló", "Park Güell"]
+  },
+  {
+    "id": "arch-peter-zumthor",
+    "slug": "peter-zumthor",
+    "name": "Peter Zumthor",
+    "nameKo": "페터 춤토르",
+    "nationality": "Swiss",
+    "birthYear": 1943,
+    "bio": "Peter Zumthor is a Swiss architect celebrated for his phenomenological approach to architecture, where atmosphere, materiality, and sensory experience take precedence. His buildings are crafted with an almost obsessive attention to detail.",
+    "portrait": {
+      "src": "/images/architects/peter-zumthor.jpg",
+      "alt": "Portrait of Peter Zumthor"
+    },
+    "tags": [
+      { "label": "Phenomenology", "slug": "phenomenology" },
+      { "label": "Swiss Architecture", "slug": "swiss-architecture" },
+      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+    ],
+    "status": "published",
+    "notableWorks": ["Therme Vals", "Bruder Klaus Field Chapel", "Kolumba Museum"]
+  },
+  {
+    "id": "arch-kengo-kuma",
+    "slug": "kengo-kuma",
+    "name": "Kengo Kuma",
+    "nameKo": "구마 겐고",
+    "nationality": "Japanese",
+    "birthYear": 1954,
+    "bio": "Kengo Kuma seeks to dissolve architecture into the environment through the innovative use of natural materials like wood, bamboo, and stone. His designs emphasize porosity, lightness, and connection to nature.",
+    "portrait": {
+      "src": "/images/architects/kengo-kuma.jpg",
+      "alt": "Portrait of Kengo Kuma"
+    },
+    "tags": [
+      { "label": "Materiality", "slug": "materiality" },
+      { "label": "Wood", "slug": "wood" }
+    ],
+    "status": "published",
+    "website": "https://kkaa.co.jp",
+    "notableWorks": ["Japan National Stadium", "Nezu Museum", "V&A Dundee"]
+  },
+  {
+    "id": "arch-kim-swoo-geun",
+    "slug": "kim-swoo-geun",
+    "name": "Kim Swoo-geun",
+    "nameKo": "김수근",
+    "nationality": "Korean",
+    "birthYear": 1931,
+    "deathYear": 1986,
+    "bio": "Kim Swoo-geun was a pioneering Korean architect who synthesized modernist principles with Korean spatial traditions. His work laid the foundation for contemporary Korean architecture and influenced generations of architects.",
+    "portrait": {
+      "src": "/images/architects/kim-swoo-geun.jpg",
+      "alt": "Portrait of Kim Swoo-geun"
+    },
+    "tags": [
+      { "label": "Korean Modern", "slug": "korean-modern" },
+      { "label": "Brutalism", "slug": "brutalism" }
+    ],
+    "status": "published",
+    "notableWorks": ["Space Group Building", "Olympic Main Stadium", "Masan Cathedral"]
+  }
+]

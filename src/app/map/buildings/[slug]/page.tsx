@@ -63,6 +63,18 @@ export default async function BuildingDetailPage({ params }: Props) {
       )}
       <div className="mb-8 h-px w-16 bg-foreground/20" />
 
+      {building.images[0]?.src && !building.images[0].src.startsWith("/images/") && (
+        <div className="mb-8 overflow-hidden border border-border">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={building.images[0].src}
+            alt={building.images[0].alt}
+            className="w-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      )}
+
       <p className="mb-8 font-mono text-sm leading-relaxed text-muted-foreground">
         {building.description}
       </p>
@@ -103,15 +115,6 @@ export default async function BuildingDetailPage({ params }: Props) {
             Address
           </span>
           <p className="font-mono text-sm">{building.address}</p>
-        </div>
-        <div>
-          <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase">
-            Coordinates
-          </span>
-          <p className="font-mono text-sm">
-            {building.location.lat.toFixed(4)},{" "}
-            {building.location.lng.toFixed(4)}
-          </p>
         </div>
       </div>
 

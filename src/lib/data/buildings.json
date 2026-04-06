@@ -13,8 +13,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=-23.5614,-46.6558",
     "images": [
       {
-        "src": "/images/buildings/masp.jpg",
-        "alt": "MASP suspended above Avenida Paulista with red beams"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Novo_MASP.jpg/800px-Novo_MASP.jpg",
+        "alt": "MASP suspended above Avenida Paulista with red beams",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -39,8 +40,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=-23.5327,-46.6843",
     "images": [
       {
-        "src": "/images/buildings/sesc-pompeia.jpg",
-        "alt": "SESC Pompeia concrete towers with irregular window openings"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sesc_pompeia.JPG/800px-Sesc_pompeia.JPG",
+        "alt": "SESC Pompeia concrete towers with irregular window openings",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -65,8 +67,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=-23.5989,-46.7134",
     "images": [
       {
-        "src": "/images/buildings/casa-de-vidro.jpg",
-        "alt": "Casa de Vidro glass house surrounded by tropical forest"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Casa_de_Vidro%2C_sede_do_Instituto_Lina_Bo_e_P._M._Bardi.jpg/800px-Casa_de_Vidro%2C_sede_do_Instituto_Lina_Bo_e_P._M._Bardi.jpg",
+        "alt": "Casa de Vidro glass house surrounded by tropical forest",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -91,8 +94,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=-23.5567,-46.6397",
     "images": [
       {
-        "src": "/images/buildings/teatro-oficina.jpg",
-        "alt": "Teatro Oficina interior with scaffolding and exposed earth"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/O_riso%2C_o_choro_e_a_vida_-_Teatro_Oficina.jpg/800px-O_riso%2C_o_choro_e_a_vida_-_Teatro_Oficina.jpg",
+        "alt": "Teatro Oficina interior with scaffolding and exposed earth",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -117,8 +121,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=-12.9786,-38.5136",
     "images": [
       {
-        "src": "/images/buildings/solar-do-unhao.jpg",
-        "alt": "Solar do Unhão colonial building overlooking the Bay of All Saints"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Solar_do_Unh%C3%A3o_Salvador_Bahia.jpg/800px-Solar_do_Unh%C3%A3o_Salvador_Bahia.jpg",
+        "alt": "Solar do Unhão colonial building overlooking the Bay of All Saints",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -143,8 +148,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=36.5607,136.6585",
     "images": [
       {
-        "src": "/images/buildings/21st-century-museum.jpg",
-        "alt": "21st Century Museum of Contemporary Art circular glass facade"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/21st_Century_Museum_of_Contemporary_Art%2C_Kanazawa011.jpg/800px-21st_Century_Museum_of_Contemporary_Art%2C_Kanazawa011.jpg",
+        "alt": "21st Century Museum of Contemporary Art circular glass facade",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -169,8 +175,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=46.5185,6.5685",
     "images": [
       {
-        "src": "/images/buildings/rolex-learning-center.jpg",
-        "alt": "Rolex Learning Center undulating concrete form on EPFL campus"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Rolex_Learning_center.jpg/800px-Rolex_Learning_center.jpg",
+        "alt": "Rolex Learning Center undulating concrete form on EPFL campus",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -195,8 +202,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=40.7224,-73.9930",
     "images": [
       {
-        "src": "/images/buildings/new-museum.jpg",
-        "alt": "New Museum stacked boxes on the Bowery"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/New_Museum_in_New_York_City_2015.JPG/800px-New_Museum_in_New_York_City_2015.JPG",
+        "alt": "New Museum stacked boxes on the Bowery",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -221,8 +229,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=50.4318,2.8044",
     "images": [
       {
-        "src": "/images/buildings/louvre-lens.jpg",
-        "alt": "Louvre-Lens reflective aluminum facade in parkland"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/PHOTO_LOUVRE_LENS_Lens_2012_SANAA_ARCHITECTURE_DESIGN_1.jpg/800px-PHOTO_LOUVRE_LENS_Lens_2012_SANAA_ARCHITECTURE_DESIGN_1.jpg",
+        "alt": "Louvre-Lens reflective aluminum facade in parkland",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -247,8 +256,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=41.1325,-73.4948",
     "images": [
       {
-        "src": "/images/buildings/grace-farms.jpg",
-        "alt": "Grace Farms 'River' building winding through meadow landscape"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Grace_Farms_River_building.jpg/800px-Grace_Farms_River_building.jpg",
+        "alt": "Grace Farms 'River' building winding through meadow landscape",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -273,8 +283,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=41.2047,-8.7193",
     "images": [
       {
-        "src": "/images/buildings/piscinas-de-mares.jpg",
-        "alt": "Piscinas de Marés concrete pools merging with Atlantic rocks"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Swimmingpool_on_the_Beach_at_Le%C3%A7a_da_Palmeira_by_Christian_G%C3%A4nshirt.JPG/800px-Swimmingpool_on_the_Beach_at_Le%C3%A7a_da_Palmeira_by_Christian_G%C3%A4nshirt.JPG",
+        "alt": "Piscinas de Marés concrete pools merging with Atlantic rocks",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -299,8 +310,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=41.1594,-8.6594",
     "images": [
       {
-        "src": "/images/buildings/serralves-museum.jpg",
-        "alt": "Serralves Museum white facade amid park gardens"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Museo_Serralves._%286086057211%29.jpg/800px-Museo_Serralves._%286086057211%29.jpg",
+        "alt": "Serralves Museum white facade amid park gardens",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -325,8 +337,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=41.1408,-8.6156",
     "images": [
       {
-        "src": "/images/buildings/faculty-of-architecture-porto.jpg",
-        "alt": "Faculty of Architecture Porto pavilions overlooking Douro River"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/FAUP.jpg/800px-FAUP.jpg",
+        "alt": "Faculty of Architecture Porto pavilions overlooking Douro River",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -351,8 +364,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=38.7633,-9.0935",
     "images": [
       {
-        "src": "/images/buildings/portuguese-pavilion-expo98.jpg",
-        "alt": "Portuguese Pavilion Expo 98 catenary concrete canopy"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pavilh%C3%A3o_de_Portugal_4.JPG/800px-Pavilh%C3%A3o_de_Portugal_4.JPG",
+        "alt": "Portuguese Pavilion Expo 98 catenary concrete canopy",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -377,8 +391,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=-30.0577,-51.2471",
     "images": [
       {
-        "src": "/images/buildings/ibere-camargo-foundation.jpg",
-        "alt": "Iberê Camargo Foundation white concrete with looping ramps"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Funda%C3%A7%C3%A3o_Iber%C3%AA_Camargo.jpg/800px-Funda%C3%A7%C3%A3o_Iber%C3%AA_Camargo.jpg",
+        "alt": "Iberê Camargo Foundation white concrete with looping ramps",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -403,8 +418,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=49.9833,12.9833",
     "images": [
       {
-        "src": "/images/buildings/novy-dvur-monastery.jpg",
-        "alt": "Nový Dvůr Monastery minimalist white interior"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kl%C3%A1%C5%A1ter_Nov%C3%BD_Dv%C5%AFr%2C_2025_%2856%29.jpg/800px-Kl%C3%A1%C5%A1ter_Nov%C3%BD_Dv%C5%AFr%2C_2025_%2856%29.jpg",
+        "alt": "Nový Dvůr Monastery minimalist white interior",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
@@ -429,8 +445,9 @@
     "googleMapsUrl": "https://maps.google.com/?q=51.4995,-0.1716",
     "images": [
       {
-        "src": "/images/buildings/design-museum-london.jpg",
-        "alt": "Design Museum London oak-lined atrium under parabolic roof"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Design_Museum_%282%29_%28geograph_5246509%29.jpg/800px-Design_Museum_%282%29_%28geograph_5246509%29.jpg",
+        "alt": "Design Museum London oak-lined atrium under parabolic roof",
+        "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [

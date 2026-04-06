@@ -9,19 +9,31 @@
     "year": 1968,
     "description": "Suspended 8 meters above Avenida Paulista by two massive red concrete beams, MASP creates a free public plaza beneath — a radical gesture of civic generosity. The glass-walled gallery above displays paintings on Lina's iconic crystal easels, liberating art from the wall.",
     "address": "Av. Paulista, 1578, São Paulo",
-    "location": { "lat": -23.5614, "lng": -46.6558 },
+    "location": {
+      "lat": -23.5614,
+      "lng": -46.6558
+    },
     "googleMapsUrl": "https://maps.google.com/?q=-23.5614,-46.6558",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Novo_MASP.jpg/800px-Novo_MASP.jpg",
+        "src": "/images/buildings/masp.jpg",
         "alt": "MASP suspended above Avenida Paulista with red beams",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Brutalism", "slug": "brutalism" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Public", "slug": "public" }
+      {
+        "label": "Brutalism",
+        "slug": "brutalism"
+      },
+      {
+        "label": "Museum",
+        "slug": "museum"
+      },
+      {
+        "label": "Public",
+        "slug": "public"
+      }
     ],
     "status": "published",
     "typology": "Museum"
@@ -36,19 +48,31 @@
     "year": 1986,
     "description": "A former drum factory transformed into a cultural and leisure center for São Paulo's working class. Two raw concrete towers connected by aerial walkways with irregular window openings rise above workshops, theaters, and a river-like swimming pool — every surface pulses with color and human activity.",
     "address": "Rua Clélia, 93, São Paulo",
-    "location": { "lat": -23.5327, "lng": -46.6843 },
+    "location": {
+      "lat": -23.5327,
+      "lng": -46.6843
+    },
     "googleMapsUrl": "https://maps.google.com/?q=-23.5327,-46.6843",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sesc_pompeia.JPG/800px-Sesc_pompeia.JPG",
+        "src": "/images/buildings/sesc-pompeia.jpg",
         "alt": "SESC Pompeia concrete towers with irregular window openings",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Brutalism", "slug": "brutalism" },
-      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" },
-      { "label": "Public", "slug": "public" }
+      {
+        "label": "Brutalism",
+        "slug": "brutalism"
+      },
+      {
+        "label": "Adaptive Reuse",
+        "slug": "adaptive-reuse"
+      },
+      {
+        "label": "Public",
+        "slug": "public"
+      }
     ],
     "status": "published",
     "typology": "Cultural Complex"
@@ -63,19 +87,31 @@
     "year": 1951,
     "description": "Lina Bo Bardi's first built work in Brazil and her own home — a glass box perched on slender pilotis above the Atlantic Forest canopy of Morumbi. The tropical vegetation gradually reclaimed the structure, blurring the boundary between architecture and nature in exactly the way she intended.",
     "address": "Rua General Almério de Moura, 200, São Paulo",
-    "location": { "lat": -23.5989, "lng": -46.7134 },
+    "location": {
+      "lat": -23.5989,
+      "lng": -46.7134
+    },
     "googleMapsUrl": "https://maps.google.com/?q=-23.5989,-46.7134",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Casa_de_Vidro%2C_sede_do_Instituto_Lina_Bo_e_P._M._Bardi.jpg/800px-Casa_de_Vidro%2C_sede_do_Instituto_Lina_Bo_e_P._M._Bardi.jpg",
+        "src": "/images/buildings/casa-de-vidro.jpg",
         "alt": "Casa de Vidro glass house surrounded by tropical forest",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Modernism", "slug": "modernism" },
-      { "label": "Residential", "slug": "residential" },
-      { "label": "Glass", "slug": "glass" }
+      {
+        "label": "Modernism",
+        "slug": "modernism"
+      },
+      {
+        "label": "Residential",
+        "slug": "residential"
+      },
+      {
+        "label": "Glass",
+        "slug": "glass"
+      }
     ],
     "status": "published",
     "typology": "Residential"
@@ -90,19 +126,31 @@
     "year": 1984,
     "description": "A narrow, street-like theater space with exposed earth, scaffolding seating, and a retractable glass roof that rejects the traditional stage-audience divide. The audience becomes part of the performance in this raw, confrontational, and alive space that The Guardian called 'the world's best theatre.'",
     "address": "Rua Jaceguai, 520, São Paulo",
-    "location": { "lat": -23.5567, "lng": -46.6397 },
+    "location": {
+      "lat": -23.5567,
+      "lng": -46.6397
+    },
     "googleMapsUrl": "https://maps.google.com/?q=-23.5567,-46.6397",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/O_riso%2C_o_choro_e_a_vida_-_Teatro_Oficina.jpg/800px-O_riso%2C_o_choro_e_a_vida_-_Teatro_Oficina.jpg",
+        "src": "/images/buildings/teatro-oficina.jpg",
         "alt": "Teatro Oficina interior with scaffolding and exposed earth",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Brutalism", "slug": "brutalism" },
-      { "label": "Theater", "slug": "theater" },
-      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" }
+      {
+        "label": "Brutalism",
+        "slug": "brutalism"
+      },
+      {
+        "label": "Theater",
+        "slug": "theater"
+      },
+      {
+        "label": "Adaptive Reuse",
+        "slug": "adaptive-reuse"
+      }
     ],
     "status": "published",
     "typology": "Theater"
@@ -117,19 +165,31 @@
     "year": 1963,
     "description": "A 16th-century sugar mill and slave quarters on the Bay of All Saints, transformed by Lina into the Museum of Modern Art of Bahia. The restoration preserved the colonial scars while inserting a striking wooden staircase inspired by local ox-cart wheel construction — popular craft elevated to architecture.",
     "address": "Av. do Contorno, Salvador",
-    "location": { "lat": -12.9786, "lng": -38.5136 },
+    "location": {
+      "lat": -12.9786,
+      "lng": -38.5136
+    },
     "googleMapsUrl": "https://maps.google.com/?q=-12.9786,-38.5136",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Solar_do_Unh%C3%A3o_Salvador_Bahia.jpg/800px-Solar_do_Unh%C3%A3o_Salvador_Bahia.jpg",
+        "src": "/images/buildings/solar-do-unhao.jpg",
         "alt": "Solar do Unhão colonial building overlooking the Bay of All Saints",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Colonial", "slug": "colonial" }
+      {
+        "label": "Adaptive Reuse",
+        "slug": "adaptive-reuse"
+      },
+      {
+        "label": "Museum",
+        "slug": "museum"
+      },
+      {
+        "label": "Colonial",
+        "slug": "colonial"
+      }
     ],
     "status": "published",
     "typology": "Museum"
@@ -144,19 +204,31 @@
     "year": 2004,
     "description": "A perfectly circular glass building with no front or back, inviting entry from every direction. SANAA's masterwork dissolves the boundary between museum and city through transparent walls and a constellation of white gallery boxes floating within an open, park-like plan.",
     "address": "1-2-1 Hirosaka, Kanazawa, Ishikawa",
-    "location": { "lat": 36.5607, "lng": 136.6585 },
+    "location": {
+      "lat": 36.5607,
+      "lng": 136.6585
+    },
     "googleMapsUrl": "https://maps.google.com/?q=36.5607,136.6585",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/21st_Century_Museum_of_Contemporary_Art%2C_Kanazawa011.jpg/800px-21st_Century_Museum_of_Contemporary_Art%2C_Kanazawa011.jpg",
+        "src": "/images/buildings/21st-century-museum.jpg",
         "alt": "21st Century Museum of Contemporary Art circular glass facade",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Transparency", "slug": "transparency" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Glass", "slug": "glass" }
+      {
+        "label": "Transparency",
+        "slug": "transparency"
+      },
+      {
+        "label": "Museum",
+        "slug": "museum"
+      },
+      {
+        "label": "Glass",
+        "slug": "glass"
+      }
     ],
     "status": "published",
     "typology": "Museum"
@@ -171,19 +243,31 @@
     "year": 2010,
     "description": "A single undulating concrete slab that rises and dips like a landscape, creating hills, valleys, and patios within one continuous open floor. The building has no internal walls or doors — space is defined purely by topography, making movement through it feel like traversing a gentle terrain.",
     "address": "EPFL, Route Cantonale, 1015 Lausanne",
-    "location": { "lat": 46.5185, "lng": 6.5685 },
+    "location": {
+      "lat": 46.5185,
+      "lng": 6.5685
+    },
     "googleMapsUrl": "https://maps.google.com/?q=46.5185,6.5685",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Rolex_Learning_center.jpg/800px-Rolex_Learning_center.jpg",
+        "src": "/images/buildings/rolex-learning-center.jpg",
         "alt": "Rolex Learning Center undulating concrete form on EPFL campus",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Minimalism", "slug": "minimalism" },
-      { "label": "Education", "slug": "education" },
-      { "label": "Concrete", "slug": "concrete" }
+      {
+        "label": "Minimalism",
+        "slug": "minimalism"
+      },
+      {
+        "label": "Education",
+        "slug": "education"
+      },
+      {
+        "label": "Concrete",
+        "slug": "concrete"
+      }
     ],
     "status": "published",
     "typology": "Education"
@@ -198,19 +282,31 @@
     "year": 2007,
     "description": "Seven stacked rectangular boxes, each slightly shifted off-axis, wrapped in an ethereal aluminum mesh skin. Rising from the gritty Bowery, the New Museum glows like a luminous lantern at night — SANAA's first building in North America and a quiet provocation against the surrounding urban density.",
     "address": "235 Bowery, New York, NY 10002",
-    "location": { "lat": 40.7224, "lng": -73.9930 },
+    "location": {
+      "lat": 40.7224,
+      "lng": -73.993
+    },
     "googleMapsUrl": "https://maps.google.com/?q=40.7224,-73.9930",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/New_Museum_in_New_York_City_2015.JPG/800px-New_Museum_in_New_York_City_2015.JPG",
+        "src": "/images/buildings/new-museum.jpg",
         "alt": "New Museum stacked boxes on the Bowery",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Minimalism", "slug": "minimalism" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Contemporary", "slug": "contemporary" }
+      {
+        "label": "Minimalism",
+        "slug": "minimalism"
+      },
+      {
+        "label": "Museum",
+        "slug": "museum"
+      },
+      {
+        "label": "Contemporary",
+        "slug": "contemporary"
+      }
     ],
     "status": "published",
     "typology": "Museum"
@@ -225,19 +321,31 @@
     "year": 2012,
     "description": "A low, shimmering aluminum-clad pavilion set on the grounds of a former coal mine in northern France. The building's reflective surfaces mirror sky, trees, and visitors, making it almost disappear into its park — a democratic gesture that brings the Louvre's collection to a post-industrial community.",
     "address": "99 Rue Paul Bert, 62300 Lens, France",
-    "location": { "lat": 50.4318, "lng": 2.8044 },
+    "location": {
+      "lat": 50.4318,
+      "lng": 2.8044
+    },
     "googleMapsUrl": "https://maps.google.com/?q=50.4318,2.8044",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/PHOTO_LOUVRE_LENS_Lens_2012_SANAA_ARCHITECTURE_DESIGN_1.jpg/800px-PHOTO_LOUVRE_LENS_Lens_2012_SANAA_ARCHITECTURE_DESIGN_1.jpg",
+        "src": "/images/buildings/louvre-lens.jpg",
         "alt": "Louvre-Lens reflective aluminum facade in parkland",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Transparency", "slug": "transparency" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Public", "slug": "public" }
+      {
+        "label": "Transparency",
+        "slug": "transparency"
+      },
+      {
+        "label": "Museum",
+        "slug": "museum"
+      },
+      {
+        "label": "Public",
+        "slug": "public"
+      }
     ],
     "status": "published",
     "typology": "Museum"
@@ -252,19 +360,31 @@
     "year": 2015,
     "description": "Known simply as 'The River,' this sinuous glass-and-steel structure winds down a hillside like a stream through a meadow. Five interconnected pavilions for sanctuary, community, culture, nature, and justice flow seamlessly into New England's rolling landscape — architecture as topography.",
     "address": "365 Lukes Wood Road, New Canaan, CT 06840",
-    "location": { "lat": 41.1325, "lng": -73.4948 },
+    "location": {
+      "lat": 41.1325,
+      "lng": -73.4948
+    },
     "googleMapsUrl": "https://maps.google.com/?q=41.1325,-73.4948",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Grace_Farms_River_building.jpg/800px-Grace_Farms_River_building.jpg",
+        "src": "/images/buildings/grace-farms.jpg",
         "alt": "Grace Farms 'River' building winding through meadow landscape",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Transparency", "slug": "transparency" },
-      { "label": "Glass", "slug": "glass" },
-      { "label": "Landscape", "slug": "landscape" }
+      {
+        "label": "Transparency",
+        "slug": "transparency"
+      },
+      {
+        "label": "Glass",
+        "slug": "glass"
+      },
+      {
+        "label": "Landscape",
+        "slug": "landscape"
+      }
     ],
     "status": "published",
     "typology": "Community Center"
@@ -279,19 +399,31 @@
     "year": 1966,
     "description": "Concrete walls gently guide the Atlantic Ocean into a series of tidal pools carved between the rocks of Leça da Palmeira. Siza's earliest masterwork is a lesson in restraint — the architecture barely announces itself, yet profoundly reshapes the experience of sea, sky, and stone.",
     "address": "Praia de Leça da Palmeira, Matosinhos, Portugal",
-    "location": { "lat": 41.2047, "lng": -8.7193 },
+    "location": {
+      "lat": 41.2047,
+      "lng": -8.7193
+    },
     "googleMapsUrl": "https://maps.google.com/?q=41.2047,-8.7193",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Swimmingpool_on_the_Beach_at_Le%C3%A7a_da_Palmeira_by_Christian_G%C3%A4nshirt.JPG/800px-Swimmingpool_on_the_Beach_at_Le%C3%A7a_da_Palmeira_by_Christian_G%C3%A4nshirt.JPG",
+        "src": "/images/buildings/piscinas-de-mares.jpg",
         "alt": "Piscinas de Marés concrete pools merging with Atlantic rocks",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
-      { "label": "Concrete", "slug": "concrete" },
-      { "label": "Landscape", "slug": "landscape" }
+      {
+        "label": "Poetic Modernism",
+        "slug": "poetic-modernism"
+      },
+      {
+        "label": "Concrete",
+        "slug": "concrete"
+      },
+      {
+        "label": "Landscape",
+        "slug": "landscape"
+      }
     ],
     "status": "published",
     "typology": "Leisure"
@@ -306,19 +438,31 @@
     "year": 1999,
     "description": "A luminous white volume set within the romantic gardens of the Serralves estate. The museum unfolds as a sequence of galleries connected by ramps and corridors that frame views of the surrounding park — Siza's characteristic integration of building, garden, and light at its most refined.",
     "address": "Rua Dom João de Castro, 210, Porto, Portugal",
-    "location": { "lat": 41.1594, "lng": -8.6594 },
+    "location": {
+      "lat": 41.1594,
+      "lng": -8.6594
+    },
     "googleMapsUrl": "https://maps.google.com/?q=41.1594,-8.6594",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Museo_Serralves._%286086057211%29.jpg/800px-Museo_Serralves._%286086057211%29.jpg",
+        "src": "/images/buildings/serralves-museum.jpg",
         "alt": "Serralves Museum white facade amid park gardens",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Minimalism", "slug": "minimalism" }
+      {
+        "label": "Poetic Modernism",
+        "slug": "poetic-modernism"
+      },
+      {
+        "label": "Museum",
+        "slug": "museum"
+      },
+      {
+        "label": "Minimalism",
+        "slug": "minimalism"
+      }
     ],
     "status": "published",
     "typology": "Museum"
@@ -333,19 +477,31 @@
     "year": 1996,
     "description": "A campus of semi-circular and triangular pavilions cascading down a terraced hillside toward the Douro River. Each building dialogues with its neighbors through courtyards and covered passages, creating a village-like academic community where every turn reveals the river below.",
     "address": "Via Panorâmica Edgar Cardoso 215, Porto, Portugal",
-    "location": { "lat": 41.1408, "lng": -8.6156 },
+    "location": {
+      "lat": 41.1408,
+      "lng": -8.6156
+    },
     "googleMapsUrl": "https://maps.google.com/?q=41.1408,-8.6156",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/FAUP.jpg/800px-FAUP.jpg",
+        "src": "/images/buildings/faculty-of-architecture-porto.jpg",
         "alt": "Faculty of Architecture Porto pavilions overlooking Douro River",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
-      { "label": "Education", "slug": "education" },
-      { "label": "Concrete", "slug": "concrete" }
+      {
+        "label": "Poetic Modernism",
+        "slug": "poetic-modernism"
+      },
+      {
+        "label": "Education",
+        "slug": "education"
+      },
+      {
+        "label": "Concrete",
+        "slug": "concrete"
+      }
     ],
     "status": "published",
     "typology": "Education"
@@ -360,19 +516,31 @@
     "year": 1998,
     "description": "Defined by a breathtaking catenary concrete canopy — a thin, draped sheet of reinforced concrete spanning 65 meters between two porticoes without any intermediate supports. The hovering veil creates a vast shaded ceremonial plaza that feels both impossibly light and anchored to the Tagus riverside.",
     "address": "Parque das Nações, Lisbon, Portugal",
-    "location": { "lat": 38.7633, "lng": -9.0935 },
+    "location": {
+      "lat": 38.7633,
+      "lng": -9.0935
+    },
     "googleMapsUrl": "https://maps.google.com/?q=38.7633,-9.0935",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pavilh%C3%A3o_de_Portugal_4.JPG/800px-Pavilh%C3%A3o_de_Portugal_4.JPG",
+        "src": "/images/buildings/portuguese-pavilion-expo98.jpg",
         "alt": "Portuguese Pavilion Expo 98 catenary concrete canopy",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
-      { "label": "Concrete", "slug": "concrete" },
-      { "label": "Public", "slug": "public" }
+      {
+        "label": "Poetic Modernism",
+        "slug": "poetic-modernism"
+      },
+      {
+        "label": "Concrete",
+        "slug": "concrete"
+      },
+      {
+        "label": "Public",
+        "slug": "public"
+      }
     ],
     "status": "published",
     "typology": "Pavilion"
@@ -387,19 +555,31 @@
     "year": 2008,
     "description": "A sculptural white concrete museum where looping ramps erupt from the main volume like arms reaching outward. Perched between a cliff and the Guaíba River in Porto Alegre, the building's dynamic form — Siza's most expressionistic work — creates a powerful dialogue between art, landscape, and movement.",
     "address": "Av. Padre Cacique, 2000, Porto Alegre, Brazil",
-    "location": { "lat": -30.0577, "lng": -51.2471 },
+    "location": {
+      "lat": -30.0577,
+      "lng": -51.2471
+    },
     "googleMapsUrl": "https://maps.google.com/?q=-30.0577,-51.2471",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Funda%C3%A7%C3%A3o_Iber%C3%AA_Camargo.jpg/800px-Funda%C3%A7%C3%A3o_Iber%C3%AA_Camargo.jpg",
+        "src": "/images/buildings/ibere-camargo-foundation.jpg",
         "alt": "Iberê Camargo Foundation white concrete with looping ramps",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Concrete", "slug": "concrete" }
+      {
+        "label": "Poetic Modernism",
+        "slug": "poetic-modernism"
+      },
+      {
+        "label": "Museum",
+        "slug": "museum"
+      },
+      {
+        "label": "Concrete",
+        "slug": "concrete"
+      }
     ],
     "status": "published",
     "typology": "Museum"
@@ -414,19 +594,31 @@
     "year": 2004,
     "description": "A Trappist monastery set in the Bohemian countryside where Pawson's radical minimalism meets the ascetic traditions of monastic life. Pristine white walls, precise proportions, and carefully calibrated natural light create spaces of extraordinary stillness — architecture stripped to its spiritual essence.",
     "address": "Nový Dvůr 1, 364 01 Toužim, Czech Republic",
-    "location": { "lat": 49.9833, "lng": 12.9833 },
+    "location": {
+      "lat": 49.9833,
+      "lng": 12.9833
+    },
     "googleMapsUrl": "https://maps.google.com/?q=49.9833,12.9833",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kl%C3%A1%C5%A1ter_Nov%C3%BD_Dv%C5%AFr%2C_2025_%2856%29.jpg/800px-Kl%C3%A1%C5%A1ter_Nov%C3%BD_Dv%C5%AFr%2C_2025_%2856%29.jpg",
+        "src": "/images/buildings/novy-dvur-monastery.jpg",
         "alt": "Nový Dvůr Monastery minimalist white interior",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Minimalism", "slug": "minimalism" },
-      { "label": "Sacred Architecture", "slug": "sacred-architecture" },
-      { "label": "Religious", "slug": "religious" }
+      {
+        "label": "Minimalism",
+        "slug": "minimalism"
+      },
+      {
+        "label": "Sacred Architecture",
+        "slug": "sacred-architecture"
+      },
+      {
+        "label": "Religious",
+        "slug": "religious"
+      }
     ],
     "status": "published",
     "typology": "Religious"
@@ -441,19 +633,31 @@
     "year": 2016,
     "description": "A dramatic conversion of the 1960s Commonwealth Institute building, preserving its iconic hyperbolic paraboloid roof while inserting a luminous oak-lined atrium at its heart. Pawson's intervention transforms a Cold War-era landmark into a serene temple of design with three floors of flexible gallery space.",
     "address": "224-238 Kensington High Street, London W8 6AG",
-    "location": { "lat": 51.4995, "lng": -0.1716 },
+    "location": {
+      "lat": 51.4995,
+      "lng": -0.1716
+    },
     "googleMapsUrl": "https://maps.google.com/?q=51.4995,-0.1716",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Design_Museum_%282%29_%28geograph_5246509%29.jpg/800px-Design_Museum_%282%29_%28geograph_5246509%29.jpg",
+        "src": "/images/buildings/design-museum-london.jpg",
         "alt": "Design Museum London oak-lined atrium under parabolic roof",
         "attribution": "Wikimedia Commons"
       }
     ],
     "tags": [
-      { "label": "Minimalism", "slug": "minimalism" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" }
+      {
+        "label": "Minimalism",
+        "slug": "minimalism"
+      },
+      {
+        "label": "Museum",
+        "slug": "museum"
+      },
+      {
+        "label": "Adaptive Reuse",
+        "slug": "adaptive-reuse"
+      }
     ],
     "status": "published",
     "typology": "Museum"
@@ -468,7 +672,10 @@
     "year": 1999,
     "description": "John Pawson's own London home is the purest expression of his minimalist philosophy — a Victorian terraced house gutted and reborn as a sequence of calm, light-filled rooms where every surface, joint, and shadow is deliberate. The house became an icon of domestic minimalism and the subject of his book 'Living and Eating.'",
     "address": "London, United Kingdom",
-    "location": { "lat": 51.5074, "lng": -0.1278 },
+    "location": {
+      "lat": 51.5074,
+      "lng": -0.1278
+    },
     "googleMapsUrl": "https://maps.google.com/?q=51.5074,-0.1278",
     "images": [
       {
@@ -477,8 +684,14 @@
       }
     ],
     "tags": [
-      { "label": "Minimalism", "slug": "minimalism" },
-      { "label": "Residential", "slug": "residential" }
+      {
+        "label": "Minimalism",
+        "slug": "minimalism"
+      },
+      {
+        "label": "Residential",
+        "slug": "residential"
+      }
     ],
     "status": "published",
     "typology": "Residential"

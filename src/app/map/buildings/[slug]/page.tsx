@@ -63,7 +63,7 @@ export default async function BuildingDetailPage({ params }: Props) {
       )}
       <div className="mb-8 h-px w-16 bg-foreground/20" />
 
-      {building.images[0]?.src && !building.images[0].src.startsWith("/images/") && (
+      {building.images[0]?.src && (
         <div className="mb-8 overflow-hidden border border-border">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

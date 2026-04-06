@@ -17,6 +17,7 @@ export interface Building {
   description: string;
   address: string;
   location: GeoLocation;
+  googleMapsUrl?: string;
   images: ImageMeta[];
   tags: Tag[];
   status: PublishStatus;

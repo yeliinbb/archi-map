@@ -115,6 +115,17 @@ export default async function BuildingDetailPage({ params }: Props) {
         </div>
       </div>
 
+      {building.googleMapsUrl && (
+        <a
+          href={building.googleMapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mb-8 inline-flex items-center gap-2 border border-border px-4 py-2 font-mono text-xs transition-colors hover:bg-accent"
+        >
+          View on Google Maps ↗
+        </a>
+      )}
+
       {building.tags.length > 0 && (
         <div className="flex flex-wrap gap-2">
           {building.tags.map((tag) => (

@@ -115,16 +115,29 @@ export default async function BuildingDetailPage({ params }: Props) {
         </div>
       </div>
 
-      {building.googleMapsUrl && (
+      <div className="mb-8">
+        <span className="mb-2 block font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase">
+          Location
+        </span>
+        <div className="overflow-hidden border border-border">
+          <iframe
+            title={`Map of ${building.name}`}
+            src={`https://www.openstreetmap.org/export/embed.html?bbox=${building.location.lng - 0.005},${building.location.lat - 0.003},${building.location.lng + 0.005},${building.location.lat + 0.003}&layer=mapnik&marker=${building.location.lat},${building.location.lng}`}
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            loading="lazy"
+          />
+        </div>
         <a
-          href={building.googleMapsUrl}
+          href={`https://www.google.com/maps/search/${encodeURIComponent(building.name + ", " + building.address)}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="mb-8 inline-flex items-center gap-2 border border-border px-4 py-2 font-mono text-xs transition-colors hover:bg-accent"
+          className="mt-2 inline-flex items-center gap-2 font-mono text-xs text-muted-foreground transition-colors hover:text-foreground"
         >
-          View on Google Maps ↗
+          Open in Google Maps ↗
         </a>
-      )}
+      </div>
 
       {building.tags.length > 0 && (
         <div className="flex flex-wrap gap-2">

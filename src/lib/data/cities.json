@@ -1,16 +1,56 @@
 [
   {
-    "id": "city-seoul",
-    "slug": "seoul",
-    "name": "Seoul",
-    "nameKo": "서울",
-    "country": "South Korea",
-    "description": "Seoul is a city where centuries-old palaces and temples sit alongside cutting-edge architecture and design districts. From the winding alleys of Bukchon to the bold curves of the DDP, Seoul's architectural landscape tells a story of rapid transformation and cultural layering.",
-    "location": { "lat": 37.5665, "lng": 126.978 },
+    "id": "city-sao-paulo",
+    "slug": "sao-paulo",
+    "name": "São Paulo",
+    "nameKo": "상파울루",
+    "country": "Brazil",
+    "description": "São Paulo is Latin America's largest city and a crucible of modernist and brutalist architecture. From Niemeyer's sinuous curves to Lina Bo Bardi's bold public spaces, the city's concrete jungle hides some of the most culturally vibrant buildings in the Southern Hemisphere.",
+    "location": { "lat": -23.5505, "lng": -46.6333 },
     "images": [
       {
-        "src": "/images/cities/seoul.jpg",
-        "alt": "Seoul skyline with traditional and modern architecture"
+        "src": "/images/cities/sao-paulo.jpg",
+        "alt": "São Paulo skyline with brutalist and modernist buildings"
+      }
+    ],
+    "tags": [
+      { "label": "South America", "slug": "south-america" },
+      { "label": "Brutalism", "slug": "brutalism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-salvador",
+    "slug": "salvador",
+    "name": "Salvador",
+    "nameKo": "살바도르",
+    "country": "Brazil",
+    "description": "Salvador da Bahia, Brazil's first capital, is where colonial Portuguese architecture meets Afro-Brazilian culture. Its Pelourinho district is a UNESCO World Heritage Site, and the city's layered history is inscribed in every facade.",
+    "location": { "lat": -12.9714, "lng": -38.5124 },
+    "images": [
+      {
+        "src": "/images/cities/salvador.jpg",
+        "alt": "Salvador da Bahia colorful colonial architecture"
+      }
+    ],
+    "tags": [
+      { "label": "South America", "slug": "south-america" },
+      { "label": "Colonial", "slug": "colonial" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-kanazawa",
+    "slug": "kanazawa",
+    "name": "Kanazawa",
+    "nameKo": "가나자와",
+    "country": "Japan",
+    "description": "Kanazawa is one of Japan's best-preserved Edo-era cities, where samurai districts, geisha quarters, and Kenroku-en garden coexist with bold contemporary architecture. SANAA's 21st Century Museum has made it a pilgrimage site for architecture lovers worldwide.",
+    "location": { "lat": 36.5613, "lng": 136.6562 },
+    "images": [
+      {
+        "src": "/images/cities/kanazawa.jpg",
+        "alt": "Kanazawa cityscape blending traditional and contemporary architecture"
       }
     ],
     "tags": [
@@ -20,62 +60,202 @@
     "status": "published"
   },
   {
-    "id": "city-tokyo",
-    "slug": "tokyo",
-    "name": "Tokyo",
-    "nameKo": "도쿄",
-    "country": "Japan",
-    "description": "Tokyo is an ever-evolving laboratory of architecture, where metabolist visions, minimalist residences, and hyper-dense urban fabric coexist. The city's relentless cycle of demolition and construction makes it one of the most architecturally dynamic cities on earth.",
-    "location": { "lat": 35.6762, "lng": 139.6503 },
-    "images": [
-      {
-        "src": "/images/cities/tokyo.jpg",
-        "alt": "Tokyo urban landscape with mixed architectural styles"
-      }
-    ],
-    "tags": [
-      { "label": "East Asia", "slug": "east-asia" },
-      { "label": "Metabolist", "slug": "metabolist" }
-    ],
-    "status": "published"
-  },
-  {
-    "id": "city-barcelona",
-    "slug": "barcelona",
-    "name": "Barcelona",
-    "nameKo": "바르셀로나",
-    "country": "Spain",
-    "description": "Barcelona is synonymous with architectural innovation, from Gaudí's organic masterpieces to the geometric precision of the Eixample grid. The city is a living museum of Art Nouveau, Gothic, and contemporary design.",
-    "location": { "lat": 41.3874, "lng": 2.1686 },
-    "images": [
-      {
-        "src": "/images/cities/barcelona.jpg",
-        "alt": "Barcelona architecture featuring Gaudí and modernist buildings"
-      }
-    ],
-    "tags": [
-      { "label": "Europe", "slug": "europe" },
-      { "label": "Art Nouveau", "slug": "art-nouveau" }
-    ],
-    "status": "published"
-  },
-  {
-    "id": "city-zurich",
-    "slug": "zurich",
-    "name": "Zürich",
-    "nameKo": "취리히",
+    "id": "city-lausanne",
+    "slug": "lausanne",
+    "name": "Lausanne",
+    "nameKo": "로잔",
     "country": "Switzerland",
-    "description": "Zürich is a quiet powerhouse of architectural discourse, home to ETH and a tradition of restrained, materially honest design. The city and its surrounding region have produced some of the most influential architects of the past century.",
-    "location": { "lat": 47.3769, "lng": 8.5417 },
+    "description": "Lausanne is a hillside city on Lake Geneva, home to EPFL — one of Europe's leading technical universities — and an emerging hub of contemporary architecture. The city's steep topography creates dramatic relationships between buildings and the Alpine landscape.",
+    "location": { "lat": 46.5197, "lng": 6.6323 },
     "images": [
       {
-        "src": "/images/cities/zurich.jpg",
-        "alt": "Zürich cityscape with Swiss precision architecture"
+        "src": "/images/cities/lausanne.jpg",
+        "alt": "Lausanne cityscape overlooking Lake Geneva"
       }
     ],
     "tags": [
       { "label": "Europe", "slug": "europe" },
       { "label": "Swiss Architecture", "slug": "swiss-architecture" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-new-york",
+    "slug": "new-york",
+    "name": "New York",
+    "nameKo": "뉴욕",
+    "country": "USA",
+    "description": "New York City is the world's most iconic skyline and a living encyclopedia of architectural history — from cast-iron SoHo to Art Deco midtown to the glass towers of Hudson Yards. Every era of architecture has left its mark on Manhattan's relentless grid.",
+    "location": { "lat": 40.7128, "lng": -74.0060 },
+    "images": [
+      {
+        "src": "/images/cities/new-york.jpg",
+        "alt": "New York City skyline with diverse architectural styles"
+      }
+    ],
+    "tags": [
+      { "label": "North America", "slug": "north-america" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-lens",
+    "slug": "lens",
+    "name": "Lens",
+    "nameKo": "랑스",
+    "country": "France",
+    "description": "Lens is a post-industrial city in northern France that has been reborn through culture. The arrival of the Louvre-Lens museum on the site of a former coal mine has transformed this working-class town into an unexpected destination for art and architecture.",
+    "location": { "lat": 50.4289, "lng": 2.8319 },
+    "images": [
+      {
+        "src": "/images/cities/lens.jpg",
+        "alt": "Lens cityscape with post-industrial and cultural architecture"
+      }
+    ],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Post-Industrial", "slug": "post-industrial" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-new-canaan",
+    "slug": "new-canaan",
+    "name": "New Canaan",
+    "nameKo": "뉴캐넌",
+    "country": "USA",
+    "description": "New Canaan, Connecticut is a quiet suburb that became an unlikely laboratory for modernist domestic architecture. Philip Johnson's Glass House, the Noyes House, and now SANAA's Grace Farms make it one of America's most architecturally significant small towns.",
+    "location": { "lat": 41.1468, "lng": -73.4946 },
+    "images": [
+      {
+        "src": "/images/cities/new-canaan.jpg",
+        "alt": "New Canaan Connecticut modernist architecture amid New England landscape"
+      }
+    ],
+    "tags": [
+      { "label": "North America", "slug": "north-america" },
+      { "label": "Modernism", "slug": "modernism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-leca-da-palmeira",
+    "slug": "leca-da-palmeira",
+    "name": "Leça da Palmeira",
+    "nameKo": "레사 다 팔메이라",
+    "country": "Portugal",
+    "description": "Leça da Palmeira is a coastal town near Porto where Álvaro Siza created his earliest and most celebrated work — the Piscinas de Marés tidal swimming pools. This modest Atlantic-facing settlement became a pilgrimage destination for architects seeking Siza's primal dialogue between concrete and ocean.",
+    "location": { "lat": 41.2048, "lng": -8.7186 },
+    "images": [
+      {
+        "src": "/images/cities/leca-da-palmeira.jpg",
+        "alt": "Leça da Palmeira Atlantic coastline with rocky shore"
+      }
+    ],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Coastal", "slug": "coastal" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-porto",
+    "slug": "porto",
+    "name": "Porto",
+    "nameKo": "포르투",
+    "country": "Portugal",
+    "description": "Porto is the birthplace of the 'Porto School' of architecture, led by Álvaro Siza and Eduardo Souto de Moura. The city's dramatic Douro River gorge, azulejo-clad facades, and modernist interventions create one of Europe's most photogenic and architecturally layered urban landscapes.",
+    "location": { "lat": 41.1579, "lng": -8.6291 },
+    "images": [
+      {
+        "src": "/images/cities/porto.jpg",
+        "alt": "Porto cityscape with Douro River and layered architecture"
+      }
+    ],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Poetic Modernism", "slug": "poetic-modernism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-lisbon",
+    "slug": "lisbon",
+    "name": "Lisbon",
+    "nameKo": "리스본",
+    "country": "Portugal",
+    "description": "Lisbon is a sun-drenched capital of seven hills where Manueline, Pombaline, and contemporary architecture overlap. The Expo 98 district along the Tagus River showcases Portugal's modern architectural ambitions, anchored by Siza's iconic Portuguese Pavilion.",
+    "location": { "lat": 38.7223, "lng": -9.1393 },
+    "images": [
+      {
+        "src": "/images/cities/lisbon.jpg",
+        "alt": "Lisbon cityscape with historic and modern architecture on hills"
+      }
+    ],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-porto-alegre",
+    "slug": "porto-alegre",
+    "name": "Porto Alegre",
+    "nameKo": "포르투알레그리",
+    "country": "Brazil",
+    "description": "Porto Alegre is the capital of southern Brazil's Rio Grande do Sul state, set on the banks of the Guaíba River. Known for its European-influenced culture, the city gained international architectural recognition with Álvaro Siza's sculptural Iberê Camargo Foundation.",
+    "location": { "lat": -30.0346, "lng": -51.2177 },
+    "images": [
+      {
+        "src": "/images/cities/porto-alegre.jpg",
+        "alt": "Porto Alegre waterfront with Guaíba River"
+      }
+    ],
+    "tags": [
+      { "label": "South America", "slug": "south-america" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-touzim",
+    "slug": "touzim",
+    "name": "Toužim",
+    "nameKo": "토우자임",
+    "country": "Czech Republic",
+    "description": "Toužim is a small Bohemian town in the western Czech Republic, surrounded by rolling farmland and forests. An unlikely destination for architectural pilgrimage, it is home to John Pawson's Nový Dvůr Monastery — a minimalist Trappist retreat that draws visitors from around the world.",
+    "location": { "lat": 50.0597, "lng": 12.9883 },
+    "images": [
+      {
+        "src": "/images/cities/touzim.jpg",
+        "alt": "Toužim Bohemian countryside landscape"
+      }
+    ],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Sacred Architecture", "slug": "sacred-architecture" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-london",
+    "slug": "london",
+    "name": "London",
+    "nameKo": "런던",
+    "country": "United Kingdom",
+    "description": "London is a palimpsest of architectural history — from medieval churches and Georgian terraces to high-tech towers and converted industrial spaces. The city's constant reinvention makes it one of the world's richest architectural landscapes, where every street tells a different century's story.",
+    "location": { "lat": 51.5074, "lng": -0.1278 },
+    "images": [
+      {
+        "src": "/images/cities/london.jpg",
+        "alt": "London skyline with historic and modern architecture"
+      }
+    ],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
     ],
     "status": "published"
   }

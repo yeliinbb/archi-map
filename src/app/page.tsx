@@ -1,23 +1,24 @@
 import Link from "next/link";
+import { getBuildings, getArchitects, getCities } from "@/lib/data/data";
 
 const entryPoints = [
   {
     title: "Buildings",
     description: "Explore curated architectural works across the globe",
     href: "/map/buildings",
-    count: "10",
+    count: getBuildings().length.toString(),
   },
   {
     title: "Architects",
     description: "Discover the minds behind iconic structures",
     href: "/map/architects",
-    count: "6",
+    count: getArchitects().length.toString(),
   },
   {
     title: "Cities",
     description: "Navigate architecture through urban geography",
     href: "/map/cities",
-    count: "4",
+    count: getCities().length.toString(),
   },
   {
     title: "Map",

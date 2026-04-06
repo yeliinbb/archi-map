@@ -1,252 +1,469 @@
 [
   {
-    "id": "bld-ddp",
-    "slug": "dongdaemun-design-plaza",
-    "name": "Dongdaemun Design Plaza",
-    "nameKo": "동대문디자인플라자",
-    "architectId": "arch-zaha-hadid",
-    "cityId": "city-seoul",
-    "year": 2014,
-    "description": "A neo-futuristic landmark designed by Zaha Hadid, the DDP is one of the largest 3D amorphous structures in the world. Its sweeping aluminum facade and flowing interior spaces have become Seoul's cultural epicenter for design exhibitions and events.",
-    "address": "281 Eulji-ro, Jung-gu, Seoul",
-    "location": { "lat": 37.5671, "lng": 127.0095 },
+    "id": "bld-masp",
+    "slug": "masp",
+    "name": "MASP — Museu de Arte de São Paulo",
+    "nameKo": "상파울루 미술관",
+    "architectId": "arch-lina-bo-bardi",
+    "cityId": "city-sao-paulo",
+    "year": 1968,
+    "description": "Suspended 8 meters above Avenida Paulista by two massive red concrete beams, MASP creates a free public plaza beneath — a radical gesture of civic generosity. The glass-walled gallery above displays paintings on Lina's iconic crystal easels, liberating art from the wall.",
+    "address": "Av. Paulista, 1578, São Paulo",
+    "location": { "lat": -23.5614, "lng": -46.6558 },
+    "googleMapsUrl": "https://maps.google.com/?q=-23.5614,-46.6558",
     "images": [
       {
-        "src": "/images/buildings/ddp.jpg",
-        "alt": "Dongdaemun Design Plaza exterior at dusk"
+        "src": "/images/buildings/masp.jpg",
+        "alt": "MASP suspended above Avenida Paulista with red beams"
       }
     ],
     "tags": [
-      { "label": "Deconstructivism", "slug": "deconstructivism" },
-      { "label": "Cultural", "slug": "cultural" },
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-sesc-pompeia",
+    "slug": "sesc-pompeia",
+    "name": "SESC Pompeia",
+    "nameKo": "세스크 폼페이아",
+    "architectId": "arch-lina-bo-bardi",
+    "cityId": "city-sao-paulo",
+    "year": 1986,
+    "description": "A former drum factory transformed into a cultural and leisure center for São Paulo's working class. Two raw concrete towers connected by aerial walkways with irregular window openings rise above workshops, theaters, and a river-like swimming pool — every surface pulses with color and human activity.",
+    "address": "Rua Clélia, 93, São Paulo",
+    "location": { "lat": -23.5327, "lng": -46.6843 },
+    "googleMapsUrl": "https://maps.google.com/?q=-23.5327,-46.6843",
+    "images": [
+      {
+        "src": "/images/buildings/sesc-pompeia.jpg",
+        "alt": "SESC Pompeia concrete towers with irregular window openings"
+      }
+    ],
+    "tags": [
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" },
       { "label": "Public", "slug": "public" }
     ],
     "status": "published",
     "typology": "Cultural Complex"
   },
   {
-    "id": "bld-sagrada-familia",
-    "slug": "sagrada-familia",
-    "name": "Sagrada Família",
-    "nameKo": "사그라다 파밀리아",
-    "architectId": "arch-antoni-gaudi",
-    "cityId": "city-barcelona",
-    "year": 1882,
-    "description": "Gaudí's unfinished masterpiece, the Sagrada Família is a basilica that defies architectural convention with its organic forms, hyperboloid structures, and intricate facades inspired by nature. Construction continues over 140 years after its inception.",
-    "address": "Carrer de Mallorca, 401, Barcelona",
-    "location": { "lat": 41.4036, "lng": 2.1744 },
+    "id": "bld-casa-de-vidro",
+    "slug": "casa-de-vidro",
+    "name": "Casa de Vidro",
+    "nameKo": "유리의 집",
+    "architectId": "arch-lina-bo-bardi",
+    "cityId": "city-sao-paulo",
+    "year": 1951,
+    "description": "Lina Bo Bardi's first built work in Brazil and her own home — a glass box perched on slender pilotis above the Atlantic Forest canopy of Morumbi. The tropical vegetation gradually reclaimed the structure, blurring the boundary between architecture and nature in exactly the way she intended.",
+    "address": "Rua General Almério de Moura, 200, São Paulo",
+    "location": { "lat": -23.5989, "lng": -46.7134 },
+    "googleMapsUrl": "https://maps.google.com/?q=-23.5989,-46.7134",
     "images": [
       {
-        "src": "/images/buildings/sagrada-familia.jpg",
-        "alt": "Sagrada Família basilica towering above Barcelona"
+        "src": "/images/buildings/casa-de-vidro.jpg",
+        "alt": "Casa de Vidro glass house surrounded by tropical forest"
       }
     ],
     "tags": [
-      { "label": "Art Nouveau", "slug": "art-nouveau" },
-      { "label": "Religious", "slug": "religious" },
-      { "label": "UNESCO", "slug": "unesco" }
-    ],
-    "status": "published",
-    "typology": "Religious"
-  },
-  {
-    "id": "bld-casa-batllo",
-    "slug": "casa-batllo",
-    "name": "Casa Batlló",
-    "nameKo": "카사 바트요",
-    "architectId": "arch-antoni-gaudi",
-    "cityId": "city-barcelona",
-    "year": 1906,
-    "description": "A masterpiece of Catalan Modernisme, Casa Batlló's skeletal balconies, iridescent tile facade, and dragon-spine roofline exemplify Gaudí's genius for transforming natural forms into inhabitable art.",
-    "address": "Passeig de Gràcia, 43, Barcelona",
-    "location": { "lat": 41.3916, "lng": 2.165 },
-    "images": [
-      {
-        "src": "/images/buildings/casa-batllo.jpg",
-        "alt": "Casa Batlló facade on Passeig de Gràcia"
-      }
-    ],
-    "tags": [
-      { "label": "Art Nouveau", "slug": "art-nouveau" },
+      { "label": "Modernism", "slug": "modernism" },
       { "label": "Residential", "slug": "residential" },
-      { "label": "UNESCO", "slug": "unesco" }
+      { "label": "Glass", "slug": "glass" }
     ],
     "status": "published",
     "typology": "Residential"
   },
   {
-    "id": "bld-church-of-light",
-    "slug": "church-of-the-light",
-    "name": "Church of the Light",
-    "nameKo": "빛의 교회",
-    "architectId": "arch-tadao-ando",
-    "cityId": "city-tokyo",
-    "year": 1989,
-    "description": "A minimalist chapel in Ibaraki, Osaka, where a cruciform slit in the concrete wall floods the austere interior with light. Ando's masterwork demonstrates how emptiness and light can create profound spiritual space.",
-    "address": "4-3-50 Kitakasugaoka, Ibaraki, Osaka",
-    "location": { "lat": 34.8147, "lng": 135.5681 },
+    "id": "bld-teatro-oficina",
+    "slug": "teatro-oficina",
+    "name": "Teatro Oficina",
+    "nameKo": "테아트로 오피시나",
+    "architectId": "arch-lina-bo-bardi",
+    "cityId": "city-sao-paulo",
+    "year": 1984,
+    "description": "A narrow, street-like theater space with exposed earth, scaffolding seating, and a retractable glass roof that rejects the traditional stage-audience divide. The audience becomes part of the performance in this raw, confrontational, and alive space that The Guardian called 'the world's best theatre.'",
+    "address": "Rua Jaceguai, 520, São Paulo",
+    "location": { "lat": -23.5567, "lng": -46.6397 },
+    "googleMapsUrl": "https://maps.google.com/?q=-23.5567,-46.6397",
     "images": [
       {
-        "src": "/images/buildings/church-of-light.jpg",
-        "alt": "Interior of Church of the Light with cruciform light"
-      }
-    ],
-    "tags": [
-      { "label": "Minimalism", "slug": "minimalism" },
-      { "label": "Religious", "slug": "religious" },
-      { "label": "Concrete", "slug": "concrete" }
-    ],
-    "status": "published",
-    "typology": "Religious"
-  },
-  {
-    "id": "bld-therme-vals",
-    "slug": "therme-vals",
-    "name": "Therme Vals",
-    "nameKo": "테르메 발스",
-    "architectId": "arch-peter-zumthor",
-    "cityId": "city-zurich",
-    "year": 1996,
-    "description": "Built over the only thermal springs in the Graubünden canton, Therme Vals is carved from 60,000 slabs of locally quarried Valser quartzite. Zumthor's design creates a cave-like sequence of spaces where water, stone, and light merge.",
-    "address": "7132 Vals, Switzerland",
-    "location": { "lat": 46.6167, "lng": 9.1833 },
-    "images": [
-      {
-        "src": "/images/buildings/therme-vals.jpg",
-        "alt": "Interior pool of Therme Vals with quartzite walls"
-      }
-    ],
-    "tags": [
-      { "label": "Phenomenology", "slug": "phenomenology" },
-      { "label": "Spa", "slug": "spa" },
-      { "label": "Stone", "slug": "stone" }
-    ],
-    "status": "published",
-    "typology": "Leisure"
-  },
-  {
-    "id": "bld-nezu-museum",
-    "slug": "nezu-museum",
-    "name": "Nezu Museum",
-    "nameKo": "네즈 미술관",
-    "architectId": "arch-kengo-kuma",
-    "cityId": "city-tokyo",
-    "year": 2009,
-    "description": "Situated in the upscale Aoyama district, the Nezu Museum is concealed behind a dramatic bamboo-lined approach and a sweeping roof of natural materials. Kuma's design creates a serene transition from Tokyo's urban intensity to contemplative garden spaces.",
-    "address": "6-5-1 Minamiaoyama, Minato, Tokyo",
-    "location": { "lat": 35.6614, "lng": 139.7147 },
-    "images": [
-      {
-        "src": "/images/buildings/nezu-museum.jpg",
-        "alt": "Nezu Museum entrance with bamboo-lined walkway"
-      }
-    ],
-    "tags": [
-      { "label": "Materiality", "slug": "materiality" },
-      { "label": "Museum", "slug": "museum" },
-      { "label": "Wood", "slug": "wood" }
-    ],
-    "status": "published",
-    "typology": "Museum"
-  },
-  {
-    "id": "bld-space-group",
-    "slug": "space-group-building",
-    "name": "Space Group Building",
-    "nameKo": "공간사옥",
-    "architectId": "arch-kim-swoo-geun",
-    "cityId": "city-seoul",
-    "year": 1977,
-    "description": "A brick labyrinth nestled in Seoul's Wonseo-dong, the Space Group Building is Kim Swoo-geun's architectural manifesto — a complex of interconnected volumes that reinterprets traditional Korean spatial sequences through a brutalist lens.",
-    "address": "83 Yulgok-ro, Jongno-gu, Seoul",
-    "location": { "lat": 37.5802, "lng": 126.9868 },
-    "images": [
-      {
-        "src": "/images/buildings/space-group.jpg",
-        "alt": "Space Group Building brick facade in Wonseo-dong"
+        "src": "/images/buildings/teatro-oficina.jpg",
+        "alt": "Teatro Oficina interior with scaffolding and exposed earth"
       }
     ],
     "tags": [
       { "label": "Brutalism", "slug": "brutalism" },
-      { "label": "Korean Modern", "slug": "korean-modern" },
-      { "label": "Office", "slug": "office" }
+      { "label": "Theater", "slug": "theater" },
+      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" }
     ],
     "status": "published",
-    "typology": "Office"
+    "typology": "Theater"
   },
   {
-    "id": "bld-japan-national-stadium",
-    "slug": "japan-national-stadium",
-    "name": "Japan National Stadium",
-    "nameKo": "일본 국립경기장",
-    "architectId": "arch-kengo-kuma",
-    "cityId": "city-tokyo",
-    "year": 2019,
-    "description": "Designed for the 2020 Tokyo Olympics, the stadium features a latticed timber canopy that wraps around the structure like a forest canopy. Kuma's design integrates 47 varieties of trees from Japan's 47 prefectures.",
-    "address": "10-1 Kasumigaokamachi, Shinjuku, Tokyo",
-    "location": { "lat": 35.6776, "lng": 139.7137 },
+    "id": "bld-solar-do-unhao",
+    "slug": "solar-do-unhao",
+    "name": "Solar do Unhão",
+    "nameKo": "솔라르 두 우냥",
+    "architectId": "arch-lina-bo-bardi",
+    "cityId": "city-salvador",
+    "year": 1963,
+    "description": "A 16th-century sugar mill and slave quarters on the Bay of All Saints, transformed by Lina into the Museum of Modern Art of Bahia. The restoration preserved the colonial scars while inserting a striking wooden staircase inspired by local ox-cart wheel construction — popular craft elevated to architecture.",
+    "address": "Av. do Contorno, Salvador",
+    "location": { "lat": -12.9786, "lng": -38.5136 },
+    "googleMapsUrl": "https://maps.google.com/?q=-12.9786,-38.5136",
     "images": [
       {
-        "src": "/images/buildings/japan-national-stadium.jpg",
-        "alt": "Japan National Stadium with timber lattice exterior"
+        "src": "/images/buildings/solar-do-unhao.jpg",
+        "alt": "Solar do Unhão colonial building overlooking the Bay of All Saints"
       }
     ],
     "tags": [
-      { "label": "Wood", "slug": "wood" },
-      { "label": "Sports", "slug": "sports" },
-      { "label": "Public", "slug": "public" }
-    ],
-    "status": "published",
-    "typology": "Sports"
-  },
-  {
-    "id": "bld-kolumba",
-    "slug": "kolumba-museum",
-    "name": "Kolumba Museum",
-    "nameKo": "콜룸바 미술관",
-    "architectId": "arch-peter-zumthor",
-    "cityId": "city-zurich",
-    "year": 2007,
-    "description": "Built atop the ruins of a Gothic church destroyed in WWII, Kolumba is a masterclass in architectural layering. Zumthor's signature grey brick walls, perforated with a custom 'filter brick,' allow light to seep through like memory itself.",
-    "address": "Kolumbastraße 4, 50667 Köln, Germany",
-    "location": { "lat": 50.9381, "lng": 6.9557 },
-    "images": [
-      {
-        "src": "/images/buildings/kolumba.jpg",
-        "alt": "Kolumba Museum perforated brick facade"
-      }
-    ],
-    "tags": [
-      { "label": "Phenomenology", "slug": "phenomenology" },
+      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" },
       { "label": "Museum", "slug": "museum" },
-      { "label": "Brick", "slug": "brick" }
+      { "label": "Colonial", "slug": "colonial" }
     ],
     "status": "published",
     "typology": "Museum"
   },
   {
-    "id": "bld-leeum",
-    "slug": "leeum-museum",
-    "name": "Leeum Museum of Art",
-    "nameKo": "리움미술관",
-    "architectId": "arch-tadao-ando",
-    "cityId": "city-seoul",
+    "id": "bld-21st-century-museum",
+    "slug": "21st-century-museum",
+    "name": "21st Century Museum of Contemporary Art, Kanazawa",
+    "nameKo": "가나자와 21세기 미술관",
+    "architectId": "arch-sanaa",
+    "cityId": "city-kanazawa",
     "year": 2004,
-    "description": "A tri-partite museum complex where three Pritzker laureates — Mario Botta, Jean Nouvel, and Rem Koolhaas — each designed a building, with Tadao Ando contributing Museum 2's signature concrete volumes for contemporary art.",
-    "address": "60-16 Itaewon-ro 55-gil, Yongsan-gu, Seoul",
-    "location": { "lat": 37.5343, "lng": 126.9981 },
+    "description": "A perfectly circular glass building with no front or back, inviting entry from every direction. SANAA's masterwork dissolves the boundary between museum and city through transparent walls and a constellation of white gallery boxes floating within an open, park-like plan.",
+    "address": "1-2-1 Hirosaka, Kanazawa, Ishikawa",
+    "location": { "lat": 36.5607, "lng": 136.6585 },
+    "googleMapsUrl": "https://maps.google.com/?q=36.5607,136.6585",
     "images": [
       {
-        "src": "/images/buildings/leeum.jpg",
-        "alt": "Leeum Museum of Art exterior"
+        "src": "/images/buildings/21st-century-museum.jpg",
+        "alt": "21st Century Museum of Contemporary Art circular glass facade"
       }
     ],
     "tags": [
-      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Transparency", "slug": "transparency" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Glass", "slug": "glass" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-rolex-learning-center",
+    "slug": "rolex-learning-center",
+    "name": "Rolex Learning Center",
+    "nameKo": "롤렉스 러닝 센터",
+    "architectId": "arch-sanaa",
+    "cityId": "city-lausanne",
+    "year": 2010,
+    "description": "A single undulating concrete slab that rises and dips like a landscape, creating hills, valleys, and patios within one continuous open floor. The building has no internal walls or doors — space is defined purely by topography, making movement through it feel like traversing a gentle terrain.",
+    "address": "EPFL, Route Cantonale, 1015 Lausanne",
+    "location": { "lat": 46.5185, "lng": 6.5685 },
+    "googleMapsUrl": "https://maps.google.com/?q=46.5185,6.5685",
+    "images": [
+      {
+        "src": "/images/buildings/rolex-learning-center.jpg",
+        "alt": "Rolex Learning Center undulating concrete form on EPFL campus"
+      }
+    ],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Education", "slug": "education" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Education"
+  },
+  {
+    "id": "bld-new-museum",
+    "slug": "new-museum",
+    "name": "New Museum",
+    "nameKo": "뉴 뮤지엄",
+    "architectId": "arch-sanaa",
+    "cityId": "city-new-york",
+    "year": 2007,
+    "description": "Seven stacked rectangular boxes, each slightly shifted off-axis, wrapped in an ethereal aluminum mesh skin. Rising from the gritty Bowery, the New Museum glows like a luminous lantern at night — SANAA's first building in North America and a quiet provocation against the surrounding urban density.",
+    "address": "235 Bowery, New York, NY 10002",
+    "location": { "lat": 40.7224, "lng": -73.9930 },
+    "googleMapsUrl": "https://maps.google.com/?q=40.7224,-73.9930",
+    "images": [
+      {
+        "src": "/images/buildings/new-museum.jpg",
+        "alt": "New Museum stacked boxes on the Bowery"
+      }
+    ],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
       { "label": "Museum", "slug": "museum" },
       { "label": "Contemporary", "slug": "contemporary" }
     ],
     "status": "published",
     "typology": "Museum"
+  },
+  {
+    "id": "bld-louvre-lens",
+    "slug": "louvre-lens",
+    "name": "Louvre-Lens",
+    "nameKo": "루브르 랑스",
+    "architectId": "arch-sanaa",
+    "cityId": "city-lens",
+    "year": 2012,
+    "description": "A low, shimmering aluminum-clad pavilion set on the grounds of a former coal mine in northern France. The building's reflective surfaces mirror sky, trees, and visitors, making it almost disappear into its park — a democratic gesture that brings the Louvre's collection to a post-industrial community.",
+    "address": "99 Rue Paul Bert, 62300 Lens, France",
+    "location": { "lat": 50.4318, "lng": 2.8044 },
+    "googleMapsUrl": "https://maps.google.com/?q=50.4318,2.8044",
+    "images": [
+      {
+        "src": "/images/buildings/louvre-lens.jpg",
+        "alt": "Louvre-Lens reflective aluminum facade in parkland"
+      }
+    ],
+    "tags": [
+      { "label": "Transparency", "slug": "transparency" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-grace-farms",
+    "slug": "grace-farms",
+    "name": "Grace Farms",
+    "nameKo": "그레이스 팜스",
+    "architectId": "arch-sanaa",
+    "cityId": "city-new-canaan",
+    "year": 2015,
+    "description": "Known simply as 'The River,' this sinuous glass-and-steel structure winds down a hillside like a stream through a meadow. Five interconnected pavilions for sanctuary, community, culture, nature, and justice flow seamlessly into New England's rolling landscape — architecture as topography.",
+    "address": "365 Lukes Wood Road, New Canaan, CT 06840",
+    "location": { "lat": 41.1325, "lng": -73.4948 },
+    "googleMapsUrl": "https://maps.google.com/?q=41.1325,-73.4948",
+    "images": [
+      {
+        "src": "/images/buildings/grace-farms.jpg",
+        "alt": "Grace Farms 'River' building winding through meadow landscape"
+      }
+    ],
+    "tags": [
+      { "label": "Transparency", "slug": "transparency" },
+      { "label": "Glass", "slug": "glass" },
+      { "label": "Landscape", "slug": "landscape" }
+    ],
+    "status": "published",
+    "typology": "Community Center"
+  },
+  {
+    "id": "bld-piscinas-de-mares",
+    "slug": "piscinas-de-mares",
+    "name": "Piscinas de Marés",
+    "nameKo": "레사 해수 수영장",
+    "architectId": "arch-alvaro-siza",
+    "cityId": "city-leca-da-palmeira",
+    "year": 1966,
+    "description": "Concrete walls gently guide the Atlantic Ocean into a series of tidal pools carved between the rocks of Leça da Palmeira. Siza's earliest masterwork is a lesson in restraint — the architecture barely announces itself, yet profoundly reshapes the experience of sea, sky, and stone.",
+    "address": "Praia de Leça da Palmeira, Matosinhos, Portugal",
+    "location": { "lat": 41.2047, "lng": -8.7193 },
+    "googleMapsUrl": "https://maps.google.com/?q=41.2047,-8.7193",
+    "images": [
+      {
+        "src": "/images/buildings/piscinas-de-mares.jpg",
+        "alt": "Piscinas de Marés concrete pools merging with Atlantic rocks"
+      }
+    ],
+    "tags": [
+      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Landscape", "slug": "landscape" }
+    ],
+    "status": "published",
+    "typology": "Leisure"
+  },
+  {
+    "id": "bld-serralves-museum",
+    "slug": "serralves-museum",
+    "name": "Serralves Museum",
+    "nameKo": "세랄베스 미술관",
+    "architectId": "arch-alvaro-siza",
+    "cityId": "city-porto",
+    "year": 1999,
+    "description": "A luminous white volume set within the romantic gardens of the Serralves estate. The museum unfolds as a sequence of galleries connected by ramps and corridors that frame views of the surrounding park — Siza's characteristic integration of building, garden, and light at its most refined.",
+    "address": "Rua Dom João de Castro, 210, Porto, Portugal",
+    "location": { "lat": 41.1594, "lng": -8.6594 },
+    "googleMapsUrl": "https://maps.google.com/?q=41.1594,-8.6594",
+    "images": [
+      {
+        "src": "/images/buildings/serralves-museum.jpg",
+        "alt": "Serralves Museum white facade amid park gardens"
+      }
+    ],
+    "tags": [
+      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Minimalism", "slug": "minimalism" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-faup",
+    "slug": "faculty-of-architecture-porto",
+    "name": "Faculty of Architecture, University of Porto",
+    "nameKo": "포르투 대학교 건축학부",
+    "architectId": "arch-alvaro-siza",
+    "cityId": "city-porto",
+    "year": 1996,
+    "description": "A campus of semi-circular and triangular pavilions cascading down a terraced hillside toward the Douro River. Each building dialogues with its neighbors through courtyards and covered passages, creating a village-like academic community where every turn reveals the river below.",
+    "address": "Via Panorâmica Edgar Cardoso 215, Porto, Portugal",
+    "location": { "lat": 41.1408, "lng": -8.6156 },
+    "googleMapsUrl": "https://maps.google.com/?q=41.1408,-8.6156",
+    "images": [
+      {
+        "src": "/images/buildings/faculty-of-architecture-porto.jpg",
+        "alt": "Faculty of Architecture Porto pavilions overlooking Douro River"
+      }
+    ],
+    "tags": [
+      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
+      { "label": "Education", "slug": "education" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Education"
+  },
+  {
+    "id": "bld-portuguese-pavilion",
+    "slug": "portuguese-pavilion-expo98",
+    "name": "Portuguese Pavilion, Expo 98",
+    "nameKo": "포르투갈 파빌리온 엑스포 98",
+    "architectId": "arch-alvaro-siza",
+    "cityId": "city-lisbon",
+    "year": 1998,
+    "description": "Defined by a breathtaking catenary concrete canopy — a thin, draped sheet of reinforced concrete spanning 65 meters between two porticoes without any intermediate supports. The hovering veil creates a vast shaded ceremonial plaza that feels both impossibly light and anchored to the Tagus riverside.",
+    "address": "Parque das Nações, Lisbon, Portugal",
+    "location": { "lat": 38.7633, "lng": -9.0935 },
+    "googleMapsUrl": "https://maps.google.com/?q=38.7633,-9.0935",
+    "images": [
+      {
+        "src": "/images/buildings/portuguese-pavilion-expo98.jpg",
+        "alt": "Portuguese Pavilion Expo 98 catenary concrete canopy"
+      }
+    ],
+    "tags": [
+      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Pavilion"
+  },
+  {
+    "id": "bld-ibere-camargo",
+    "slug": "ibere-camargo-foundation",
+    "name": "Iberê Camargo Foundation",
+    "nameKo": "이베레 카마르구 재단",
+    "architectId": "arch-alvaro-siza",
+    "cityId": "city-porto-alegre",
+    "year": 2008,
+    "description": "A sculptural white concrete museum where looping ramps erupt from the main volume like arms reaching outward. Perched between a cliff and the Guaíba River in Porto Alegre, the building's dynamic form — Siza's most expressionistic work — creates a powerful dialogue between art, landscape, and movement.",
+    "address": "Av. Padre Cacique, 2000, Porto Alegre, Brazil",
+    "location": { "lat": -30.0577, "lng": -51.2471 },
+    "googleMapsUrl": "https://maps.google.com/?q=-30.0577,-51.2471",
+    "images": [
+      {
+        "src": "/images/buildings/ibere-camargo-foundation.jpg",
+        "alt": "Iberê Camargo Foundation white concrete with looping ramps"
+      }
+    ],
+    "tags": [
+      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-novy-dvur",
+    "slug": "novy-dvur-monastery",
+    "name": "Nový Dvůr Monastery",
+    "nameKo": "노비 드부르 수도원",
+    "architectId": "arch-john-pawson",
+    "cityId": "city-touzim",
+    "year": 2004,
+    "description": "A Trappist monastery set in the Bohemian countryside where Pawson's radical minimalism meets the ascetic traditions of monastic life. Pristine white walls, precise proportions, and carefully calibrated natural light create spaces of extraordinary stillness — architecture stripped to its spiritual essence.",
+    "address": "Nový Dvůr 1, 364 01 Toužim, Czech Republic",
+    "location": { "lat": 49.9833, "lng": 12.9833 },
+    "googleMapsUrl": "https://maps.google.com/?q=49.9833,12.9833",
+    "images": [
+      {
+        "src": "/images/buildings/novy-dvur-monastery.jpg",
+        "alt": "Nový Dvůr Monastery minimalist white interior"
+      }
+    ],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Sacred Architecture", "slug": "sacred-architecture" },
+      { "label": "Religious", "slug": "religious" }
+    ],
+    "status": "published",
+    "typology": "Religious"
+  },
+  {
+    "id": "bld-design-museum-london",
+    "slug": "design-museum-london",
+    "name": "Design Museum London",
+    "nameKo": "디자인 뮤지엄 런던",
+    "architectId": "arch-john-pawson",
+    "cityId": "city-london",
+    "year": 2016,
+    "description": "A dramatic conversion of the 1960s Commonwealth Institute building, preserving its iconic hyperbolic paraboloid roof while inserting a luminous oak-lined atrium at its heart. Pawson's intervention transforms a Cold War-era landmark into a serene temple of design with three floors of flexible gallery space.",
+    "address": "224-238 Kensington High Street, London W8 6AG",
+    "location": { "lat": 51.4995, "lng": -0.1716 },
+    "googleMapsUrl": "https://maps.google.com/?q=51.4995,-0.1716",
+    "images": [
+      {
+        "src": "/images/buildings/design-museum-london.jpg",
+        "alt": "Design Museum London oak-lined atrium under parabolic roof"
+      }
+    ],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-pawson-house",
+    "slug": "pawson-house",
+    "name": "Pawson House",
+    "nameKo": "포슨 하우스",
+    "architectId": "arch-john-pawson",
+    "cityId": "city-london",
+    "year": 1999,
+    "description": "John Pawson's own London home is the purest expression of his minimalist philosophy — a Victorian terraced house gutted and reborn as a sequence of calm, light-filled rooms where every surface, joint, and shadow is deliberate. The house became an icon of domestic minimalism and the subject of his book 'Living and Eating.'",
+    "address": "London, United Kingdom",
+    "location": { "lat": 51.5074, "lng": -0.1278 },
+    "googleMapsUrl": "https://maps.google.com/?q=51.5074,-0.1278",
+    "images": [
+      {
+        "src": "/images/buildings/pawson-house.jpg",
+        "alt": "Pawson House minimalist interior with natural light"
+      }
+    ],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Residential", "slug": "residential" }
+    ],
+    "status": "published",
+    "typology": "Residential"
   }
 ]

@@ -1,124 +1,85 @@
 [
   {
-    "id": "arch-zaha-hadid",
-    "slug": "zaha-hadid",
-    "name": "Zaha Hadid",
-    "nameKo": "자하 하디드",
-    "nationality": "Iraqi-British",
-    "birthYear": 1950,
-    "deathYear": 2016,
-    "bio": "Zaha Hadid was a visionary architect known for her radical deconstructivist designs characterized by fluid forms and dynamic geometries. She was the first woman to receive the Pritzker Architecture Prize in 2004.",
+    "id": "arch-lina-bo-bardi",
+    "slug": "lina-bo-bardi",
+    "name": "Lina Bo Bardi",
+    "nameKo": "리나 보 바르디",
+    "nationality": "Italian-Brazilian",
+    "birthYear": 1914,
+    "deathYear": 1992,
+    "bio": "Lina Bo Bardi was an Italian-born Brazilian architect who fused modernist rigor with the warmth, color, and craft traditions of Brazil. Her buildings reject cold monumentality in favor of spaces that embrace community, improvisation, and everyday life — concrete structures made alive by vivid reds, yellows, and the human activity they frame.",
     "portrait": {
-      "src": "/images/architects/zaha-hadid.jpg",
-      "alt": "Portrait of Zaha Hadid"
+      "src": "/images/architects/lina-bo-bardi.jpg",
+      "alt": "Portrait of Lina Bo Bardi"
     },
     "tags": [
-      { "label": "Deconstructivism", "slug": "deconstructivism" },
-      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Tropical Modernism", "slug": "tropical-modernism" },
+      { "label": "Public", "slug": "public" }
     ],
     "status": "published",
-    "website": "https://www.zaha-hadid.com",
-    "notableWorks": ["Dongdaemun Design Plaza", "MAXXI", "Heydar Aliyev Center"]
+    "notableWorks": ["MASP", "SESC Pompeia", "Casa de Vidro", "Teatro Oficina", "Solar do Unhão"]
   },
   {
-    "id": "arch-tadao-ando",
-    "slug": "tadao-ando",
-    "name": "Tadao Ando",
-    "nameKo": "안도 다다오",
+    "id": "arch-sanaa",
+    "slug": "sanaa",
+    "name": "SANAA",
+    "nameKo": "사나",
     "nationality": "Japanese",
-    "birthYear": 1941,
-    "bio": "Tadao Ando is a self-taught architect renowned for his masterful use of concrete, light, and nature. His meditative spaces blend modernist geometry with traditional Japanese spatial sensibilities.",
+    "birthYear": 1995,
+    "bio": "SANAA, founded by Kazuyo Sejima and Ryue Nishizawa, is a Japanese architectural firm celebrated for its radically transparent, thin-skinned structures that dissolve the boundary between inside and outside. Winners of the 2010 Pritzker Prize, their work embodies lightness, openness, and an almost ethereal relationship with landscape and light.",
     "portrait": {
-      "src": "/images/architects/tadao-ando.jpg",
-      "alt": "Portrait of Tadao Ando"
+      "src": "/images/architects/sanaa.jpg",
+      "alt": "Portrait of SANAA — Kazuyo Sejima and Ryue Nishizawa"
     },
     "tags": [
       { "label": "Minimalism", "slug": "minimalism" },
-      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Transparency", "slug": "transparency" },
       { "label": "Pritzker Prize", "slug": "pritzker-prize" }
     ],
     "status": "published",
-    "website": "https://www.tadao-ando.com",
-    "notableWorks": ["Church of the Light", "Chichu Art Museum", "Ando Museum"]
+    "website": "https://www.sanaa.co.jp",
+    "notableWorks": ["21st Century Museum of Contemporary Art", "Rolex Learning Center", "New Museum", "Louvre-Lens", "Grace Farms"]
   },
   {
-    "id": "arch-antoni-gaudi",
-    "slug": "antoni-gaudi",
-    "name": "Antoni Gaudí",
-    "nameKo": "안토니 가우디",
-    "nationality": "Spanish",
-    "birthYear": 1852,
-    "deathYear": 1926,
-    "bio": "Antoni Gaudí was a Catalan architect whose organic, nature-inspired forms became the defining expression of Modernisme. His unfinished masterpiece, the Sagrada Família, remains Barcelona's most iconic landmark.",
+    "id": "arch-alvaro-siza",
+    "slug": "alvaro-siza",
+    "name": "Álvaro Siza Vieira",
+    "nameKo": "알바루 시자 비에이라",
+    "nationality": "Portuguese",
+    "birthYear": 1933,
+    "bio": "Álvaro Siza Vieira is a Portuguese architect whose poetic modernism transforms simple materials — white plaster, concrete, marble — into buildings of quiet, luminous power. Winner of the 1992 Pritzker Prize, his work is defined by an exquisite sensitivity to site, light, and the subtle dialogue between architecture and landscape.",
     "portrait": {
-      "src": "/images/architects/antoni-gaudi.jpg",
-      "alt": "Portrait of Antoni Gaudí"
+      "src": "/images/architects/alvaro-siza.jpg",
+      "alt": "Portrait of Álvaro Siza Vieira"
     },
     "tags": [
-      { "label": "Art Nouveau", "slug": "art-nouveau" },
-      { "label": "Modernisme", "slug": "modernisme" }
-    ],
-    "status": "published",
-    "notableWorks": ["Sagrada Família", "Casa Batlló", "Park Güell"]
-  },
-  {
-    "id": "arch-peter-zumthor",
-    "slug": "peter-zumthor",
-    "name": "Peter Zumthor",
-    "nameKo": "페터 춤토르",
-    "nationality": "Swiss",
-    "birthYear": 1943,
-    "bio": "Peter Zumthor is a Swiss architect celebrated for his phenomenological approach to architecture, where atmosphere, materiality, and sensory experience take precedence. His buildings are crafted with an almost obsessive attention to detail.",
-    "portrait": {
-      "src": "/images/architects/peter-zumthor.jpg",
-      "alt": "Portrait of Peter Zumthor"
-    },
-    "tags": [
-      { "label": "Phenomenology", "slug": "phenomenology" },
-      { "label": "Swiss Architecture", "slug": "swiss-architecture" },
+      { "label": "Poetic Modernism", "slug": "poetic-modernism" },
+      { "label": "Minimalism", "slug": "minimalism" },
       { "label": "Pritzker Prize", "slug": "pritzker-prize" }
     ],
     "status": "published",
-    "notableWorks": ["Therme Vals", "Bruder Klaus Field Chapel", "Kolumba Museum"]
+    "website": "https://www.alvarosizavieira.com",
+    "notableWorks": ["Piscinas de Marés", "Serralves Museum", "Faculty of Architecture", "Portuguese Pavilion Expo 98", "Iberê Camargo Foundation"]
   },
   {
-    "id": "arch-kengo-kuma",
-    "slug": "kengo-kuma",
-    "name": "Kengo Kuma",
-    "nameKo": "구마 겐고",
-    "nationality": "Japanese",
-    "birthYear": 1954,
-    "bio": "Kengo Kuma seeks to dissolve architecture into the environment through the innovative use of natural materials like wood, bamboo, and stone. His designs emphasize porosity, lightness, and connection to nature.",
+    "id": "arch-john-pawson",
+    "slug": "john-pawson",
+    "name": "John Pawson",
+    "nameKo": "존 포슨",
+    "nationality": "British",
+    "birthYear": 1949,
+    "bio": "John Pawson is a British architect and designer whose work pursues the philosophy of 'minimum' — the point where reduction ceases to diminish meaning and instead amplifies it. His spaces are defined by precise proportions, the play of natural light, and an almost monastic devotion to visual and spatial clarity.",
     "portrait": {
-      "src": "/images/architects/kengo-kuma.jpg",
-      "alt": "Portrait of Kengo Kuma"
+      "src": "/images/architects/john-pawson.jpg",
+      "alt": "Portrait of John Pawson"
     },
     "tags": [
-      { "label": "Materiality", "slug": "materiality" },
-      { "label": "Wood", "slug": "wood" }
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Sacred Architecture", "slug": "sacred-architecture" }
     ],
     "status": "published",
-    "website": "https://kkaa.co.jp",
-    "notableWorks": ["Japan National Stadium", "Nezu Museum", "V&A Dundee"]
-  },
-  {
-    "id": "arch-kim-swoo-geun",
-    "slug": "kim-swoo-geun",
-    "name": "Kim Swoo-geun",
-    "nameKo": "김수근",
-    "nationality": "Korean",
-    "birthYear": 1931,
-    "deathYear": 1986,
-    "bio": "Kim Swoo-geun was a pioneering Korean architect who synthesized modernist principles with Korean spatial traditions. His work laid the foundation for contemporary Korean architecture and influenced generations of architects.",
-    "portrait": {
-      "src": "/images/architects/kim-swoo-geun.jpg",
-      "alt": "Portrait of Kim Swoo-geun"
-    },
-    "tags": [
-      { "label": "Korean Modern", "slug": "korean-modern" },
-      { "label": "Brutalism", "slug": "brutalism" }
-    ],
-    "status": "published",
-    "notableWorks": ["Space Group Building", "Olympic Main Stadium", "Masan Cathedral"]
+    "website": "https://www.johnpawson.com",
+    "notableWorks": ["Nový Dvůr Monastery", "Design Museum London", "Pawson House"]
   }
 ]

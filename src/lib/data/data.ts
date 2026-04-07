@@ -21,6 +21,17 @@ export function getBuildingsByArchitect(architectId: string): Building[] {
   return getBuildings().filter((b) => b.architectId === architectId);
 }
 
+export function getBuildingById(id: string): Building | undefined {
+  return getBuildings().find((b) => b.id === id);
+}
+
+export function getBuildingsByIds(ids: string[]): Building[] {
+  const buildings = getBuildings();
+  return ids
+    .map((id) => buildings.find((b) => b.id === id))
+    .filter((b): b is Building => b !== undefined);
+}
+
 // --- Architects ---
 
 export function getArchitects(): Architect[] {

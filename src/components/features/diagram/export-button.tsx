@@ -2,12 +2,15 @@
 
 import { useCallback } from "react";
 import { Download } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface ExportButtonProps {
   targetRef: React.RefObject<HTMLDivElement | null>;
 }
 
 export function ExportButton({ targetRef }: ExportButtonProps) {
+  const t = useTranslations("diagram");
+
   const handleExport = useCallback(async () => {
     if (!targetRef.current) return;
 
@@ -30,7 +33,7 @@ export function ExportButton({ targetRef }: ExportButtonProps) {
       className="flex items-center gap-2 border border-border px-3 py-1.5 font-mono text-micro tracking-wider text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
     >
       <Download className="h-3 w-3" />
-      Export PNG
+      {t("exportPng")}
     </button>
   );
 }

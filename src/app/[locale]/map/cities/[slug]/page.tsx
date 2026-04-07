@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import {
   getCities,
@@ -11,7 +12,7 @@ import { TagBadge } from "@/components/ui/tag-badge";
 import { Divider } from "@/components/ui/divider";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 }
 
 export async function generateStaticParams() {
@@ -26,7 +27,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function CityDetailPage({ params }: Props) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("detail");
+
   const city = getCityBySlug(slug);
   if (!city) notFound();
 
@@ -38,7 +42,7 @@ export default async function CityDetailPage({ params }: Props) {
         href="/map/cities"
         className="mb-8 inline-block font-mono text-xs text-muted-foreground transition-colors hover:text-foreground"
       >
-        ← Cities
+        {t("backCities")}
       </Link>
 
       <div className="mb-3 flex items-center gap-2">
@@ -65,7 +69,7 @@ export default async function CityDetailPage({ params }: Props) {
       {buildings.length > 0 && (
         <div className="mb-8">
           <h2 className="mb-4 font-mono text-xs tracking-sublabel text-muted-foreground uppercase">
-            Buildings in {city.name}
+            {t("buildingsIn", { name: city.name })}
           </h2>
           <div className="space-y-px border border-border">
             {buildings.map((building) => {

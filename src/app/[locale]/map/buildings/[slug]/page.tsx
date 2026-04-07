@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import {
   getBuildingBySlug,
@@ -13,7 +14,7 @@ import { SelectionToggleButton } from "@/components/features/selection/selection
 import { SelectionBar } from "@/components/features/selection/selection-bar";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 }
 
 export async function generateStaticParams() {
@@ -28,7 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BuildingDetailPage({ params }: Props) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("detail");
+
   const building = getBuildingBySlug(slug);
   if (!building) notFound();
 
@@ -41,7 +45,7 @@ export default async function BuildingDetailPage({ params }: Props) {
         href="/map/buildings"
         className="mb-8 inline-block font-mono text-xs text-muted-foreground transition-colors hover:text-foreground"
       >
-        ← Buildings
+        {t("backBuildings")}
       </Link>
 
       <div className="mb-3 flex items-center gap-2">
@@ -89,7 +93,7 @@ export default async function BuildingDetailPage({ params }: Props) {
         {architect && (
           <div>
             <span className="font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
-              Architect
+              {t("architect")}
             </span>
             <p className="font-mono text-sm">
               <Link
@@ -104,7 +108,7 @@ export default async function BuildingDetailPage({ params }: Props) {
         {city && (
           <div>
             <span className="font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
-              City
+              {t("city")}
             </span>
             <p className="font-mono text-sm">
               <Link
@@ -118,7 +122,7 @@ export default async function BuildingDetailPage({ params }: Props) {
         )}
         <div>
           <span className="font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
-            Address
+            {t("address")}
           </span>
           <p className="font-mono text-sm">{building.address}</p>
         </div>
@@ -126,11 +130,11 @@ export default async function BuildingDetailPage({ params }: Props) {
 
       <div className="mb-8">
         <span className="mb-2 block font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
-          Location
+          {t("location")}
         </span>
         <div className="overflow-hidden border border-border">
           <iframe
-            title={`Map of ${building.name}`}
+            title={t("mapOf", { name: building.name })}
             src={`https://www.openstreetmap.org/export/embed.html?bbox=${building.location.lng - 0.005},${building.location.lat - 0.003},${building.location.lng + 0.005},${building.location.lat + 0.003}&layer=mapnik&marker=${building.location.lat},${building.location.lng}`}
             width="100%"
             height="300"
@@ -144,7 +148,7 @@ export default async function BuildingDetailPage({ params }: Props) {
           rel="noopener noreferrer"
           className="mt-2 inline-flex items-center gap-2 font-mono text-xs text-muted-foreground transition-colors hover:text-foreground"
         >
-          Open in Google Maps ↗
+          {t("openGoogleMaps")}
         </a>
       </div>
 

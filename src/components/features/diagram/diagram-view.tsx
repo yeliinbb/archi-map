@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect, useMemo } from "react";
+import { useTranslations } from "next-intl";
 import { NetworkDiagram } from "./network-diagram";
 import { LayoutControls, type LayoutMode } from "./layout-controls";
 import { ExportButton } from "./export-button";
@@ -18,6 +19,7 @@ export function DiagramView({
   architects,
   cities,
 }: DiagramViewProps) {
+  const t = useTranslations("diagram");
   const containerRef = useRef<HTMLDivElement>(null);
   const [layout, setLayout] = useState<LayoutMode>("force");
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
@@ -50,11 +52,14 @@ export function DiagramView({
       <div className="flex items-center justify-between border-b border-border px-4 py-2">
         <div className="flex items-center gap-4">
           <p className="font-mono text-micro tracking-sublabel text-muted-foreground uppercase">
-            Diagram
+            {t("title")}
           </p>
           <span className="font-mono text-micro text-muted-foreground">
-            {buildings.length} buildings · {architects.length} architects ·{" "}
-            {cities.length} cities
+            {t("stats", {
+              buildings: buildings.length,
+              architects: architects.length,
+              cities: cities.length,
+            })}
           </span>
         </div>
         <div className="flex items-center gap-3">

@@ -1,41 +1,50 @@
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { getBuildings, getArchitects, getCities } from "@/lib/data/data";
 import { Divider } from "@/components/ui/divider";
 
-const entryPoints = [
-  {
-    title: "Buildings",
-    description: "Explore curated architectural works across the globe",
-    href: "/map/buildings",
-    count: getBuildings().length.toString(),
-  },
-  {
-    title: "Architects",
-    description: "Discover the minds behind iconic structures",
-    href: "/map/architects",
-    count: getArchitects().length.toString(),
-  },
-  {
-    title: "Cities",
-    description: "Navigate architecture through urban geography",
-    href: "/map/cities",
-    count: getCities().length.toString(),
-  },
-  {
-    title: "Map",
-    description: "See everything plotted on a global map",
-    href: "/map",
-    count: "—",
-  },
-];
+interface Props {
+  params: Promise<{ locale: string }>;
+}
 
-export default function HomePage() {
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations();
+
+  const entryPoints = [
+    {
+      title: t("home.buildings.title"),
+      description: t("home.buildings.description"),
+      href: "/map/buildings" as const,
+      count: getBuildings().length.toString(),
+    },
+    {
+      title: t("home.architects.title"),
+      description: t("home.architects.description"),
+      href: "/map/architects" as const,
+      count: getArchitects().length.toString(),
+    },
+    {
+      title: t("home.cities.title"),
+      description: t("home.cities.description"),
+      href: "/map/cities" as const,
+      count: getCities().length.toString(),
+    },
+    {
+      title: t("home.map.title"),
+      description: t("home.map.description"),
+      href: "/map" as const,
+      count: "—",
+    },
+  ];
+
   return (
     <div className="mx-auto max-w-6xl px-6">
       {/* Hero */}
       <section className="flex min-h-[60vh] flex-col items-center justify-center py-24 text-center">
         <p className="mb-4 font-mono text-xs tracking-label text-muted-foreground uppercase">
-          Curated Architecture Archive
+          {t("home.subtitle")}
         </p>
         <h1 className="mb-6 max-w-2xl font-mono text-4xl font-light tracking-tight sm:text-5xl md:text-6xl">
           Archi
@@ -44,8 +53,7 @@ export default function HomePage() {
         </h1>
         <Divider size="lg" className="mb-8" />
         <p className="max-w-md font-mono text-sm leading-relaxed text-muted-foreground">
-          A curated collection of architectural works, architects, and cities —
-          mapped, cataloged, and interconnected.
+          {t("home.description")}
         </p>
       </section>
 
@@ -69,7 +77,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-6 font-mono text-xs text-muted-foreground transition-colors group-hover:text-foreground">
-              Explore →
+              {t("home.explore")}
             </div>
           </Link>
         ))}

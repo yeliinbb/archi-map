@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { Popup } from "react-map-gl/maplibre";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useSelectionStore } from "@/lib/stores/selection-store";
 import { getArchitectColor } from "@/lib/architect-colors";
 import type { Building, Architect } from "@/types";
@@ -17,6 +18,7 @@ export function BuildingPopup({
   architect,
   onClose,
 }: BuildingPopupProps) {
+  const t = useTranslations("selection");
   const { isSelected, toggleBuilding, selectedBuildingIds } =
     useSelectionStore();
   const selected = isSelected(building.id);
@@ -73,13 +75,13 @@ export function BuildingPopup({
                   : "border-border hover:bg-accent disabled:opacity-40"
               }`}
             >
-              {selected ? "Selected" : "Select"}
+              {selected ? t("selected") : t("select")}
             </button>
             <Link
               href={`/map/buildings/${building.slug}`}
               className="border border-border px-2 py-1 font-mono text-micro tracking-wider transition-colors hover:bg-accent"
             >
-              Details →
+              {t("details")}
             </Link>
           </div>
         </div>

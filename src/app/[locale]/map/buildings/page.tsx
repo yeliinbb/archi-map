@@ -1,28 +1,36 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { getBuildings, getArchitectById, getCityById } from "@/lib/data/data";
 import { TagBadge } from "@/components/ui/tag-badge";
 import { Divider } from "@/components/ui/divider";
 import { SelectionToggleButton } from "@/components/features/selection/selection-toggle-button";
 import { SelectionBar } from "@/components/features/selection/selection-bar";
 
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
 export const metadata: Metadata = {
   title: "Buildings",
 };
 
-export default function BuildingsPage() {
+export default async function BuildingsPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations();
   const buildings = getBuildings();
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
       <p className="mb-2 font-mono text-xs tracking-label text-muted-foreground uppercase">
-        Archive
+        {t("archive.label")}
       </p>
       <h1 className="mb-2 font-mono text-3xl font-light tracking-tight">
-        Buildings
+        {t("nav.buildings")}
       </h1>
       <p className="mb-8 font-mono text-sm text-muted-foreground">
-        {buildings.length} entries
+        {t("archive.entries", { count: buildings.length })}
       </p>
       <Divider className="mb-12" />
 

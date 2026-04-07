@@ -1,0 +1,96 @@
+{
+  "site": {
+    "name": "Archi Curation",
+    "short": "AC",
+    "copyright": "Archi Curation © {year}",
+    "description": "전 세계 건축, 건축가, 도시를 큐레이팅한 아카이브."
+  },
+  "nav": {
+    "map": "지도",
+    "buildings": "건축물",
+    "architects": "건축가",
+    "cities": "도시",
+    "diagram": "다이어그램",
+    "about": "소개",
+    "menu": "메뉴"
+  },
+  "home": {
+    "subtitle": "큐레이팅된 건축 아카이브",
+    "title": "Archi Curation",
+    "description": "전 세계의 건축물, 건축가, 도시를 엄선하여 매핑하고, 분류하며, 상호 연결합니다.",
+    "buildings": {
+      "title": "건축물",
+      "description": "전 세계 엄선된 건축물을 탐험하세요"
+    },
+    "architects": {
+      "title": "건축가",
+      "description": "상징적인 건축물 뒤에 있는 건축가를 만나보세요"
+    },
+    "cities": {
+      "title": "도시",
+      "description": "도시 지리를 통해 건축을 탐색하세요"
+    },
+    "map": {
+      "title": "지도",
+      "description": "모든 건축물을 세계 지도 위에서 확인하세요"
+    },
+    "explore": "탐험하기 →"
+  },
+  "about": {
+    "title": "소개",
+    "siteName": "Archi Curation",
+    "description1": "Archi Curation은 큐레이터가 직접 선별한 건축 아카이브로, 건축물과 건축가, 도시를 공간적 지식의 네트워크로 매핑합니다.",
+    "description2": "이 프로젝트는 건축을 고립된 객체가 아닌 관계의 네트워크로 제시하고자 합니다 — 디자이너와 작품 사이, 건축물과 도시 사이, 역사적 흐름과 동시대 실천 사이의 관계를.",
+    "description3": "각 항목은 신중하게 선별되고 맥락화되어, 기존 건축 데이터베이스를 넘어서는 시각을 제공합니다.",
+    "quote": "건축은 빛 속에 모인 형태들의, 정확하고 장엄한 학습된 유희이다.",
+    "quoteAuthor": "— 르 코르뷔지에"
+  },
+  "archive": {
+    "label": "Archive",
+    "entries": "{count}개 항목",
+    "building": "{count}개 건축물",
+    "present": "–현재"
+  },
+  "detail": {
+    "backBuildings": "← 건축물",
+    "backArchitects": "← 건축가",
+    "backCities": "← 도시",
+    "architect": "건축가",
+    "city": "도시",
+    "address": "주소",
+    "location": "위치",
+    "mapOf": "{name} 지도",
+    "openGoogleMaps": "Google Maps에서 보기 ↗",
+    "website": "웹사이트",
+    "buildingsInArchive": "아카이브 내 건축물",
+    "buildingsIn": "{name}의 건축물"
+  },
+  "selection": {
+    "title": "선택",
+    "clear": "초기화",
+    "generateDiagram": "다이어그램 생성 →",
+    "selectMinimum": "건축물을 2개 이상 선택하세요",
+    "selected": "선택됨",
+    "select": "선택",
+    "details": "상세 →",
+    "buildingsSelected": "{count}개 건축물 선택됨",
+    "viewDiagram": "다이어그램 보기 →"
+  },
+  "diagram": {
+    "title": "다이어그램",
+    "stats": "건축물 {buildings}개 · 건축가 {architects}명 · 도시 {cities}개",
+    "empty": {
+      "title": "선택 없음",
+      "subtitle": "다이어그램을 생성할 건축물을 선택하세요",
+      "description": "지도나 건축물 목록에서 건축물을 선택하면 건축가, 도시와의 관계를 시각화합니다.",
+      "goToMap": "지도로 이동",
+      "browseBuildings": "건축물 둘러보기"
+    },
+    "layout": {
+      "force": "포스",
+      "timeline": "타임라인",
+      "geography": "지리"
+    },
+    "exportPng": "PNG 내보내기"
+  }
+}

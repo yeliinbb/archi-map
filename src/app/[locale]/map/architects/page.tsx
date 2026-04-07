@@ -1,26 +1,34 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { getArchitects, getBuildingsByArchitect } from "@/lib/data/data";
 import { TagBadge } from "@/components/ui/tag-badge";
 import { Divider } from "@/components/ui/divider";
+
+interface Props {
+  params: Promise<{ locale: string }>;
+}
 
 export const metadata: Metadata = {
   title: "Architects",
 };
 
-export default function ArchitectsPage() {
+export default async function ArchitectsPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations();
   const architects = getArchitects();
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
       <p className="mb-2 font-mono text-xs tracking-label text-muted-foreground uppercase">
-        Archive
+        {t("archive.label")}
       </p>
       <h1 className="mb-2 font-mono text-3xl font-light tracking-tight">
-        Architects
+        {t("nav.architects")}
       </h1>
       <p className="mb-8 font-mono text-sm text-muted-foreground">
-        {architects.length} entries
+        {t("archive.entries", { count: architects.length })}
       </p>
       <Divider className="mb-12" />
 
@@ -43,7 +51,7 @@ export default function ArchitectsPage() {
                     {architect.birthYear}
                     {architect.deathYear
                       ? `–${architect.deathYear}`
-                      : "–present"}
+                      : t("archive.present")}
                   </span>
                 </div>
                 <h2 className="mb-1 font-mono text-base tracking-wide">
@@ -67,7 +75,7 @@ export default function ArchitectsPage() {
                   ))}
                 </div>
                 <span className="font-mono text-micro text-muted-foreground">
-                  {buildingCount} building{buildingCount !== 1 ? "s" : ""}
+                  {t("archive.building", { count: buildingCount })}
                 </span>
               </div>
             </Link>

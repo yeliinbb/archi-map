@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import {
   getArchitects,
@@ -11,7 +12,7 @@ import { TagBadge } from "@/components/ui/tag-badge";
 import { Divider } from "@/components/ui/divider";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 }
 
 export async function generateStaticParams() {
@@ -26,7 +27,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ArchitectDetailPage({ params }: Props) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations();
+
   const architect = getArchitectBySlug(slug);
   if (!architect) notFound();
 
@@ -38,7 +42,7 @@ export default async function ArchitectDetailPage({ params }: Props) {
         href="/map/architects"
         className="mb-8 inline-block font-mono text-xs text-muted-foreground transition-colors hover:text-foreground"
       >
-        ← Architects
+        {t("detail.backArchitects")}
       </Link>
 
       <div className="mb-3 flex items-center gap-2">
@@ -47,7 +51,9 @@ export default async function ArchitectDetailPage({ params }: Props) {
         </span>
         <span className="font-mono text-xs text-muted-foreground">
           {architect.birthYear}
-          {architect.deathYear ? `–${architect.deathYear}` : "–present"}
+          {architect.deathYear
+            ? `–${architect.deathYear}`
+            : t("archive.present")}
         </span>
       </div>
 
@@ -68,7 +74,7 @@ export default async function ArchitectDetailPage({ params }: Props) {
       {architect.website && (
         <div className="mb-8">
           <span className="font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
-            Website
+            {t("detail.website")}
           </span>
           <p className="font-mono text-sm">
             <a
@@ -86,7 +92,7 @@ export default async function ArchitectDetailPage({ params }: Props) {
       {buildings.length > 0 && (
         <div className="mb-8">
           <h2 className="mb-4 font-mono text-xs tracking-sublabel text-muted-foreground uppercase">
-            Buildings in Archive
+            {t("detail.buildingsInArchive")}
           </h2>
           <div className="space-y-px border border-border">
             {buildings.map((building) => {

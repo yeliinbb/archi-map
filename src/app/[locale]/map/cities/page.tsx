@@ -1,25 +1,33 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { getCities, getBuildingsByCity } from "@/lib/data/data";
 import { Divider } from "@/components/ui/divider";
+
+interface Props {
+  params: Promise<{ locale: string }>;
+}
 
 export const metadata: Metadata = {
   title: "Cities",
 };
 
-export default function CitiesPage() {
+export default async function CitiesPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations();
   const cities = getCities();
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
       <p className="mb-2 font-mono text-xs tracking-label text-muted-foreground uppercase">
-        Archive
+        {t("archive.label")}
       </p>
       <h1 className="mb-2 font-mono text-3xl font-light tracking-tight">
-        Cities
+        {t("nav.cities")}
       </h1>
       <p className="mb-8 font-mono text-sm text-muted-foreground">
-        {cities.length} entries
+        {t("archive.entries", { count: cities.length })}
       </p>
       <Divider className="mb-12" />
 
@@ -57,7 +65,7 @@ export default function CitiesPage() {
               </div>
               <div className="flex items-center justify-between font-mono text-micro text-muted-foreground">
                 <span>
-                  {buildingCount} building{buildingCount !== 1 ? "s" : ""}
+                  {t("archive.building", { count: buildingCount })}
                 </span>
                 <span className="transition-colors group-hover:text-foreground">
                   →

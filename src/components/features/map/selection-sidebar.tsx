@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useSelectionStore } from "@/lib/stores/selection-store";
 import { getArchitectColor } from "@/lib/architect-colors";
 import type { Building } from "@/types";
@@ -11,6 +12,7 @@ interface SelectionSidebarProps {
 }
 
 export function SelectionSidebar({ buildings }: SelectionSidebarProps) {
+  const t = useTranslations("selection");
   const { selectedBuildingIds, removeBuilding, clearSelection } =
     useSelectionStore();
 
@@ -27,7 +29,7 @@ export function SelectionSidebar({ buildings }: SelectionSidebarProps) {
       <div className="flex items-center justify-between border-b border-border p-4">
         <div>
           <p className="font-mono text-micro tracking-sublabel text-muted-foreground uppercase">
-            Selection
+            {t("title")}
           </p>
           <p className="font-mono text-xs text-muted-foreground">
             {selectedBuildingIds.length}/10
@@ -38,7 +40,7 @@ export function SelectionSidebar({ buildings }: SelectionSidebarProps) {
           onClick={clearSelection}
           className="font-mono text-micro text-muted-foreground transition-colors hover:text-foreground"
         >
-          Clear
+          {t("clear")}
         </button>
       </div>
 
@@ -80,11 +82,11 @@ export function SelectionSidebar({ buildings }: SelectionSidebarProps) {
               : ""
           }`}
         >
-          Generate Diagram →
+          {t("generateDiagram")}
         </Link>
         {selectedBuildingIds.length < 2 && (
           <p className="mt-2 text-center font-mono text-micro text-muted-foreground">
-            Select at least 2 buildings
+            {t("selectMinimum")}
           </p>
         )}
       </div>

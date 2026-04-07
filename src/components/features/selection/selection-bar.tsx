@@ -1,9 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useSelectionStore } from "@/lib/stores/selection-store";
 
 export function SelectionBar() {
+  const t = useTranslations("selection");
   const { selectedBuildingIds } = useSelectionStore();
   const count = selectedBuildingIds.length;
 
@@ -15,8 +17,7 @@ export function SelectionBar() {
     <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
         <p className="font-mono text-xs text-muted-foreground">
-          <span className="text-foreground">{count}</span> building
-          {count !== 1 ? "s" : ""} selected
+          {t("buildingsSelected", { count })}
         </p>
         <Link
           href={diagramUrl}
@@ -24,7 +25,7 @@ export function SelectionBar() {
             count < 2 ? "pointer-events-none opacity-40" : ""
           }`}
         >
-          View Diagram →
+          {t("viewDiagram")}
         </Link>
       </div>
     </div>

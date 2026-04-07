@@ -1,0 +1,96 @@
+{
+  "site": {
+    "name": "Archi Curation",
+    "short": "AC",
+    "copyright": "Archi Curation © {year}",
+    "description": "A curated archive of architecture, architects, and cities around the world."
+  },
+  "nav": {
+    "map": "Map",
+    "buildings": "Buildings",
+    "architects": "Architects",
+    "cities": "Cities",
+    "diagram": "Diagram",
+    "about": "About",
+    "menu": "Menu"
+  },
+  "home": {
+    "subtitle": "Curated Architecture Archive",
+    "title": "Archi Curation",
+    "description": "A curated collection of architectural works, architects, and cities — mapped, cataloged, and interconnected.",
+    "buildings": {
+      "title": "Buildings",
+      "description": "Explore curated architectural works across the globe"
+    },
+    "architects": {
+      "title": "Architects",
+      "description": "Discover the minds behind iconic structures"
+    },
+    "cities": {
+      "title": "Cities",
+      "description": "Navigate architecture through urban geography"
+    },
+    "map": {
+      "title": "Map",
+      "description": "See everything plotted on a global map"
+    },
+    "explore": "Explore →"
+  },
+  "about": {
+    "title": "About",
+    "siteName": "Archi Curation",
+    "description1": "Archi Curation is a curator-driven archive of architecture, mapping buildings, architects, and cities into an interconnected web of spatial knowledge.",
+    "description2": "The project aims to present architecture not as isolated objects but as a network of relationships — between designers and their works, between buildings and their cities, between historical movements and contemporary practice.",
+    "description3": "Each entry is carefully selected and contextualized, offering a perspective that goes beyond conventional architectural databases.",
+    "quote": "Architecture is the learned game, correct and magnificent, of forms assembled in the light.",
+    "quoteAuthor": "— Le Corbusier"
+  },
+  "archive": {
+    "label": "Archive",
+    "entries": "{count} entries",
+    "building": "{count, plural, one {# building} other {# buildings}}",
+    "present": "–present"
+  },
+  "detail": {
+    "backBuildings": "← Buildings",
+    "backArchitects": "← Architects",
+    "backCities": "← Cities",
+    "architect": "Architect",
+    "city": "City",
+    "address": "Address",
+    "location": "Location",
+    "mapOf": "Map of {name}",
+    "openGoogleMaps": "Open in Google Maps ↗",
+    "website": "Website",
+    "buildingsInArchive": "Buildings in Archive",
+    "buildingsIn": "Buildings in {name}"
+  },
+  "selection": {
+    "title": "Selection",
+    "clear": "Clear",
+    "generateDiagram": "Generate Diagram →",
+    "selectMinimum": "Select at least 2 buildings",
+    "selected": "Selected",
+    "select": "Select",
+    "details": "Details →",
+    "buildingsSelected": "{count, plural, one {# building} other {# buildings}} selected",
+    "viewDiagram": "View Diagram →"
+  },
+  "diagram": {
+    "title": "Diagram",
+    "stats": "{buildings} buildings · {architects} architects · {cities} cities",
+    "empty": {
+      "title": "No Selection",
+      "subtitle": "Select buildings to generate a diagram",
+      "description": "Choose buildings from the map or building list to visualize their relationships with architects and cities.",
+      "goToMap": "Go to Map",
+      "browseBuildings": "Browse Buildings"
+    },
+    "layout": {
+      "force": "Force",
+      "timeline": "Timeline",
+      "geography": "Geography"
+    },
+    "exportPng": "Export PNG"
+  }
+}

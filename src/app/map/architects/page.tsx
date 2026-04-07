@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getArchitects, getBuildingsByArchitect } from "@/lib/data/data";
-import { Badge } from "@/components/ui/badge";
+import { TagBadge } from "@/components/ui/tag-badge";
+import { Divider } from "@/components/ui/divider";
 
 export const metadata: Metadata = {
   title: "Architects",
@@ -12,7 +13,7 @@ export default function ArchitectsPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
-      <p className="mb-2 font-mono text-xs tracking-[0.3em] text-muted-foreground uppercase">
+      <p className="mb-2 font-mono text-xs tracking-label text-muted-foreground uppercase">
         Archive
       </p>
       <h1 className="mb-2 font-mono text-3xl font-light tracking-tight">
@@ -21,7 +22,7 @@ export default function ArchitectsPage() {
       <p className="mb-8 font-mono text-sm text-muted-foreground">
         {architects.length} entries
       </p>
-      <div className="mb-12 h-px w-16 bg-foreground/20" />
+      <Divider className="mb-12" />
 
       <div className="grid gap-px border border-border sm:grid-cols-2 lg:grid-cols-3">
         {architects.map((architect) => {
@@ -35,10 +36,10 @@ export default function ArchitectsPage() {
             >
               <div>
                 <div className="mb-3 flex items-baseline justify-between">
-                  <span className="font-mono text-[10px] text-muted-foreground">
+                  <span className="font-mono text-micro text-muted-foreground">
                     {architect.nationality}
                   </span>
-                  <span className="font-mono text-[10px] text-muted-foreground">
+                  <span className="font-mono text-micro text-muted-foreground">
                     {architect.birthYear}
                     {architect.deathYear
                       ? `–${architect.deathYear}`
@@ -60,16 +61,12 @@ export default function ArchitectsPage() {
               <div className="flex items-center justify-between">
                 <div className="flex flex-wrap gap-1">
                   {architect.tags.slice(0, 2).map((tag) => (
-                    <Badge
-                      key={tag.slug}
-                      variant="secondary"
-                      className="font-mono text-[10px] font-normal"
-                    >
+                    <TagBadge key={tag.slug}>
                       {tag.label}
-                    </Badge>
+                    </TagBadge>
                   ))}
                 </div>
-                <span className="font-mono text-[10px] text-muted-foreground">
+                <span className="font-mono text-micro text-muted-foreground">
                   {buildingCount} building{buildingCount !== 1 ? "s" : ""}
                 </span>
               </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getCities, getBuildingsByCity } from "@/lib/data/data";
+import { Divider } from "@/components/ui/divider";
 
 export const metadata: Metadata = {
   title: "Cities",
@@ -11,7 +12,7 @@ export default function CitiesPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
-      <p className="mb-2 font-mono text-xs tracking-[0.3em] text-muted-foreground uppercase">
+      <p className="mb-2 font-mono text-xs tracking-label text-muted-foreground uppercase">
         Archive
       </p>
       <h1 className="mb-2 font-mono text-3xl font-light tracking-tight">
@@ -20,7 +21,7 @@ export default function CitiesPage() {
       <p className="mb-8 font-mono text-sm text-muted-foreground">
         {cities.length} entries
       </p>
-      <div className="mb-12 h-px w-16 bg-foreground/20" />
+      <Divider className="mb-12" />
 
       <div className="grid gap-px border border-border sm:grid-cols-2">
         {cities.map((city) => {
@@ -34,10 +35,10 @@ export default function CitiesPage() {
             >
               <div>
                 <div className="mb-3 flex items-baseline justify-between">
-                  <span className="font-mono text-[10px] text-muted-foreground">
+                  <span className="font-mono text-micro text-muted-foreground">
                     {city.country}
                   </span>
-                  <span className="font-mono text-[10px] text-muted-foreground">
+                  <span className="font-mono text-micro text-muted-foreground">
                     {city.location.lat.toFixed(2)}°,{" "}
                     {city.location.lng.toFixed(2)}°
                   </span>
@@ -54,7 +55,7 @@ export default function CitiesPage() {
                   {city.description}
                 </p>
               </div>
-              <div className="flex items-center justify-between font-mono text-[10px] text-muted-foreground">
+              <div className="flex items-center justify-between font-mono text-micro text-muted-foreground">
                 <span>
                   {buildingCount} building{buildingCount !== 1 ? "s" : ""}
                 </span>

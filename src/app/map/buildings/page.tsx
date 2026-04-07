@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getBuildings, getArchitectById, getCityById } from "@/lib/data/data";
-import { Badge } from "@/components/ui/badge";
+import { TagBadge } from "@/components/ui/tag-badge";
+import { Divider } from "@/components/ui/divider";
+import { SelectionToggleButton } from "@/components/features/selection/selection-toggle-button";
+import { SelectionBar } from "@/components/features/selection/selection-bar";
 
 export const metadata: Metadata = {
   title: "Buildings",
@@ -12,7 +15,7 @@ export default function BuildingsPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
-      <p className="mb-2 font-mono text-xs tracking-[0.3em] text-muted-foreground uppercase">
+      <p className="mb-2 font-mono text-xs tracking-label text-muted-foreground uppercase">
         Archive
       </p>
       <h1 className="mb-2 font-mono text-3xl font-light tracking-tight">
@@ -21,7 +24,7 @@ export default function BuildingsPage() {
       <p className="mb-8 font-mono text-sm text-muted-foreground">
         {buildings.length} entries
       </p>
-      <div className="mb-12 h-px w-16 bg-foreground/20" />
+      <Divider className="mb-12" />
 
       <div className="grid gap-px border border-border sm:grid-cols-2">
         {buildings.map((building) => {
@@ -36,16 +39,13 @@ export default function BuildingsPage() {
             >
               <div>
                 <div className="mb-3 flex items-baseline justify-between">
-                  <span className="font-mono text-[10px] text-muted-foreground">
+                  <span className="font-mono text-micro text-muted-foreground">
                     {building.year}
                   </span>
                   {building.typology && (
-                    <Badge
-                      variant="outline"
-                      className="font-mono text-[10px] font-normal"
-                    >
+                    <TagBadge variant="outline">
                       {building.typology}
-                    </Badge>
+                    </TagBadge>
                   )}
                 </div>
                 <h2 className="mb-1 font-mono text-base tracking-wide">
@@ -60,18 +60,26 @@ export default function BuildingsPage() {
                   {building.description}
                 </p>
               </div>
-              <div className="flex items-center justify-between font-mono text-[10px] text-muted-foreground">
+              <div className="flex items-center justify-between font-mono text-micro text-muted-foreground">
                 <span>
                   {architect?.name} · {city?.name}
                 </span>
-                <span className="transition-colors group-hover:text-foreground">
-                  →
-                </span>
+                <div className="flex items-center gap-2">
+                  <SelectionToggleButton
+                    buildingId={building.id}
+                    architectId={building.architectId}
+                  />
+                  <span className="transition-colors group-hover:text-foreground">
+                    →
+                  </span>
+                </div>
               </div>
             </Link>
           );
         })}
       </div>
+
+      <SelectionBar />
     </div>
   );
 }

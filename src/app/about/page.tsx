@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Divider } from "@/components/ui/divider";
 
 export const metadata: Metadata = {
   title: "About",
@@ -7,13 +8,13 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-2xl px-6 py-24">
-      <p className="mb-2 font-mono text-xs tracking-[0.3em] text-muted-foreground uppercase">
+      <p className="mb-2 font-mono text-xs tracking-label text-muted-foreground uppercase">
         About
       </p>
       <h1 className="mb-8 font-mono text-3xl font-light tracking-tight">
         Archi Curation
       </h1>
-      <div className="mb-8 h-px w-16 bg-foreground/20" />
+      <Divider className="mb-8" />
 
       <div className="space-y-6 font-mono text-sm leading-relaxed text-muted-foreground">
         <p>

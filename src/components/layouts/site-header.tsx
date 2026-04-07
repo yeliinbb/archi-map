@@ -24,7 +24,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-7 w-7 items-center justify-center border border-foreground">
-            <span className="font-mono text-[10px] font-bold leading-none">
+            <span className="font-mono text-micro font-bold leading-none">
               AC
             </span>
           </div>

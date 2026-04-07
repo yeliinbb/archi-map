@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getBuildings, getArchitects, getCities } from "@/lib/data/data";
+import { Divider } from "@/components/ui/divider";
 
 const entryPoints = [
   {
@@ -33,7 +34,7 @@ export default function HomePage() {
     <div className="mx-auto max-w-6xl px-6">
       {/* Hero */}
       <section className="flex min-h-[60vh] flex-col items-center justify-center py-24 text-center">
-        <p className="mb-4 font-mono text-xs tracking-[0.3em] text-muted-foreground uppercase">
+        <p className="mb-4 font-mono text-xs tracking-label text-muted-foreground uppercase">
           Curated Architecture Archive
         </p>
         <h1 className="mb-6 max-w-2xl font-mono text-4xl font-light tracking-tight sm:text-5xl md:text-6xl">
@@ -41,7 +42,7 @@ export default function HomePage() {
           <br />
           Curation
         </h1>
-        <div className="mb-8 h-px w-24 bg-foreground/20" />
+        <Divider size="lg" className="mb-8" />
         <p className="max-w-md font-mono text-sm leading-relaxed text-muted-foreground">
           A curated collection of architectural works, architects, and cities —
           mapped, cataloged, and interconnected.
@@ -57,7 +58,7 @@ export default function HomePage() {
             className="group flex flex-col justify-between border border-border bg-background p-6 transition-colors hover:bg-accent"
           >
             <div>
-              <span className="mb-1 block font-mono text-[10px] text-muted-foreground">
+              <span className="mb-1 block font-mono text-micro text-muted-foreground">
                 {item.count}
               </span>
               <h2 className="mb-2 font-mono text-lg tracking-wide">

@@ -7,7 +7,10 @@ import {
   getArchitectById,
   getCityById,
 } from "@/lib/data/data";
-import { Badge } from "@/components/ui/badge";
+import { TagBadge } from "@/components/ui/tag-badge";
+import { Divider } from "@/components/ui/divider";
+import { SelectionToggleButton } from "@/components/features/selection/selection-toggle-button";
+import { SelectionBar } from "@/components/features/selection/selection-bar";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -46,22 +49,25 @@ export default async function BuildingDetailPage({ params }: Props) {
           {building.year}
         </span>
         {building.typology && (
-          <Badge
-            variant="outline"
-            className="font-mono text-[10px] font-normal"
-          >
+          <TagBadge variant="outline">
             {building.typology}
-          </Badge>
+          </TagBadge>
         )}
       </div>
 
-      <h1 className="mb-1 font-mono text-3xl font-light tracking-tight">
-        {building.name}
-      </h1>
+      <div className="mb-1 flex items-center gap-3">
+        <h1 className="font-mono text-3xl font-light tracking-tight">
+          {building.name}
+        </h1>
+        <SelectionToggleButton
+          buildingId={building.id}
+          architectId={building.architectId}
+        />
+      </div>
       {building.nameKo && (
         <p className="mb-4 text-sm text-muted-foreground">{building.nameKo}</p>
       )}
-      <div className="mb-8 h-px w-16 bg-foreground/20" />
+      <Divider className="mb-8" />
 
       {building.images[0]?.src && (
         <div className="mb-8 overflow-hidden border border-border">
@@ -82,7 +88,7 @@ export default async function BuildingDetailPage({ params }: Props) {
       <div className="mb-8 space-y-3 border-l border-border pl-4">
         {architect && (
           <div>
-            <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase">
+            <span className="font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
               Architect
             </span>
             <p className="font-mono text-sm">
@@ -97,7 +103,7 @@ export default async function BuildingDetailPage({ params }: Props) {
         )}
         {city && (
           <div>
-            <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase">
+            <span className="font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
               City
             </span>
             <p className="font-mono text-sm">
@@ -111,7 +117,7 @@ export default async function BuildingDetailPage({ params }: Props) {
           </div>
         )}
         <div>
-          <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase">
+          <span className="font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
             Address
           </span>
           <p className="font-mono text-sm">{building.address}</p>
@@ -119,7 +125,7 @@ export default async function BuildingDetailPage({ params }: Props) {
       </div>
 
       <div className="mb-8">
-        <span className="mb-2 block font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase">
+        <span className="mb-2 block font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
           Location
         </span>
         <div className="overflow-hidden border border-border">
@@ -145,16 +151,13 @@ export default async function BuildingDetailPage({ params }: Props) {
       {building.tags.length > 0 && (
         <div className="flex flex-wrap gap-2">
           {building.tags.map((tag) => (
-            <Badge
-              key={tag.slug}
-              variant="secondary"
-              className="font-mono text-[10px] font-normal"
-            >
+            <TagBadge key={tag.slug}>
               {tag.label}
-            </Badge>
+            </TagBadge>
           ))}
         </div>
       )}
+      <SelectionBar />
     </div>
   );
 }

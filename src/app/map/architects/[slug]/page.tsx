@@ -7,7 +7,8 @@ import {
   getBuildingsByArchitect,
   getCityById,
 } from "@/lib/data/data";
-import { Badge } from "@/components/ui/badge";
+import { TagBadge } from "@/components/ui/tag-badge";
+import { Divider } from "@/components/ui/divider";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -58,7 +59,7 @@ export default async function ArchitectDetailPage({ params }: Props) {
           {architect.nameKo}
         </p>
       )}
-      <div className="mb-8 h-px w-16 bg-foreground/20" />
+      <Divider className="mb-8" />
 
       <p className="mb-8 font-mono text-sm leading-relaxed text-muted-foreground">
         {architect.bio}
@@ -66,7 +67,7 @@ export default async function ArchitectDetailPage({ params }: Props) {
 
       {architect.website && (
         <div className="mb-8">
-          <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase">
+          <span className="font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
             Website
           </span>
           <p className="font-mono text-sm">
@@ -84,7 +85,7 @@ export default async function ArchitectDetailPage({ params }: Props) {
 
       {buildings.length > 0 && (
         <div className="mb-8">
-          <h2 className="mb-4 font-mono text-xs tracking-[0.2em] text-muted-foreground uppercase">
+          <h2 className="mb-4 font-mono text-xs tracking-sublabel text-muted-foreground uppercase">
             Buildings in Archive
           </h2>
           <div className="space-y-px border border-border">
@@ -98,7 +99,7 @@ export default async function ArchitectDetailPage({ params }: Props) {
                 >
                   <div>
                     <span className="font-mono text-sm">{building.name}</span>
-                    <span className="ml-2 font-mono text-[10px] text-muted-foreground">
+                    <span className="ml-2 font-mono text-micro text-muted-foreground">
                       {building.year} · {city?.name}
                     </span>
                   </div>
@@ -115,13 +116,9 @@ export default async function ArchitectDetailPage({ params }: Props) {
       {architect.tags.length > 0 && (
         <div className="flex flex-wrap gap-2">
           {architect.tags.map((tag) => (
-            <Badge
-              key={tag.slug}
-              variant="secondary"
-              className="font-mono text-[10px] font-normal"
-            >
+            <TagBadge key={tag.slug}>
               {tag.label}
-            </Badge>
+            </TagBadge>
           ))}
         </div>
       )}

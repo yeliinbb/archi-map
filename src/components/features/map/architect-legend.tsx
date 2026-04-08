@@ -33,19 +33,23 @@ export function ArchitectLegend({ architects }: ArchitectLegendProps) {
               key={architect.id}
               type="button"
               onClick={() => toggleHighlightArchitect(architect.id)}
-              className={`flex w-full cursor-pointer items-center gap-2 rounded-sm px-1 py-0.5 transition-opacity ${
+              className={`flex w-full cursor-pointer items-center gap-2 rounded-sm px-1.5 py-1 transition-all ${
                 isActive ? "opacity-100" : "opacity-30"
-              } hover:opacity-100`}
+              } hover:bg-accent hover:opacity-100`}
             >
               <span
-                className={`h-2 w-2 rounded-full transition-transform ${
+                className={`h-2 w-2 rounded-full transition-all ${
                   highlightedArchitectId === architect.id
-                    ? "scale-150"
-                    : ""
+                    ? "h-2.5 w-2.5"
+                    : "group-hover:scale-110"
                 }`}
                 style={{ backgroundColor: entry.color }}
               />
-              <span className="font-mono text-micro text-muted-foreground">
+              <span className={`font-mono text-micro transition-colors ${
+                highlightedArchitectId === architect.id
+                  ? "text-foreground"
+                  : "text-muted-foreground"
+              }`}>
                 {architect.name}
               </span>
             </button>

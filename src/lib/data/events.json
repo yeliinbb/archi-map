@@ -1,0 +1,77 @@
+[
+  {
+    "id": "evt-venice-biennale-2025",
+    "slug": "venice-biennale-2025",
+    "title": "Venice Architecture Biennale 2025",
+    "titleKo": "베니스 건축 비엔날레 2025",
+    "cityId": "city-lisbon",
+    "description": "The 19th International Architecture Exhibition brings together architects, designers, and thinkers from around the world to explore the theme of architecture's role in addressing global challenges. The Biennale transforms Venice's Arsenale and Giardini into a laboratory of spatial ideas.",
+    "date": {
+      "start": "2025-05-10",
+      "end": "2025-11-23"
+    },
+    "venue": "Giardini & Arsenale",
+    "address": "Sestiere Castello, Venice, Italy",
+    "location": {
+      "lat": 45.4298,
+      "lng": 12.3561
+    },
+    "images": [],
+    "tags": [
+      { "label": "Biennale", "slug": "biennale" },
+      { "label": "Exhibition", "slug": "exhibition" }
+    ],
+    "status": "published",
+    "website": "https://www.labiennale.org/en/architecture"
+  },
+  {
+    "id": "evt-milan-design-week-2025",
+    "slug": "milan-design-week-2025",
+    "title": "Milan Design Week 2025",
+    "titleKo": "밀라노 디자인 위크 2025",
+    "cityId": "city-lisbon",
+    "description": "The world's largest design event, Salone del Mobile and Fuorisalone transform Milan into an open-air museum of design innovation. Architecture firms, furniture brands, and independent designers present installations across the city's historic courtyards and industrial spaces.",
+    "date": {
+      "start": "2025-04-08",
+      "end": "2025-04-13"
+    },
+    "venue": "Fiera Milano & citywide",
+    "address": "Fiera Milano, Rho, Milan, Italy",
+    "location": {
+      "lat": 45.5187,
+      "lng": 9.0855
+    },
+    "images": [],
+    "tags": [
+      { "label": "Design Fair", "slug": "design-fair" },
+      { "label": "Furniture", "slug": "furniture" }
+    ],
+    "status": "published",
+    "website": "https://www.salonemilano.it"
+  },
+  {
+    "id": "evt-open-house-london-2025",
+    "slug": "open-house-london-2025",
+    "title": "Open House London 2025",
+    "titleKo": "오픈 하우스 런던 2025",
+    "cityId": "city-london",
+    "description": "An annual festival that opens the doors of London's most extraordinary buildings to the public for free. From private homes to government offices, participants can explore architecture that is normally hidden from view, celebrating the city's diverse built environment.",
+    "date": {
+      "start": "2025-09-20",
+      "end": "2025-09-21"
+    },
+    "venue": "Citywide",
+    "address": "London, United Kingdom",
+    "location": {
+      "lat": 51.5074,
+      "lng": -0.1278
+    },
+    "images": [],
+    "tags": [
+      { "label": "Festival", "slug": "festival" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "website": "https://openhouselondon.org.uk"
+  }
+]

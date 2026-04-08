@@ -1,0 +1,68 @@
+[
+  {
+    "id": "shop-vitra-design-museum-shop",
+    "slug": "vitra-design-museum-shop",
+    "name": "Vitra Design Museum Shop",
+    "nameKo": "비트라 디자인 뮤지엄 숍",
+    "cityId": "city-london",
+    "category": "Design Shop",
+    "description": "A carefully curated selection of design objects, furniture miniatures, and architecture books housed within the Vitra campus. The shop itself is a showcase of contemporary design thinking, offering pieces from both established and emerging designers.",
+    "address": "224-238 Kensington High Street, London W8 6AG",
+    "location": {
+      "lat": 51.4997,
+      "lng": -0.1713
+    },
+    "images": [],
+    "tags": [
+      { "label": "Design", "slug": "design" },
+      { "label": "Furniture", "slug": "furniture" }
+    ],
+    "status": "published",
+    "website": "https://www.designmuseum.org/shop",
+    "openingHours": "Mon–Sun 10:00–18:00"
+  },
+  {
+    "id": "shop-livraria-lello",
+    "slug": "livraria-lello",
+    "name": "Livraria Lello",
+    "nameKo": "렐루 서점",
+    "cityId": "city-porto",
+    "category": "Bookstore",
+    "description": "One of the world's most beautiful bookstores, featuring a stunning neo-Gothic interior with an iconic crimson staircase. Built in 1906, the building itself is an architectural masterpiece that inspired J.K. Rowling's vision of Hogwarts.",
+    "address": "R. das Carmelitas 144, 4050-161 Porto, Portugal",
+    "location": {
+      "lat": 41.1468,
+      "lng": -8.6149
+    },
+    "images": [],
+    "tags": [
+      { "label": "Bookstore", "slug": "bookstore" },
+      { "label": "Heritage", "slug": "heritage" }
+    ],
+    "status": "published",
+    "website": "https://www.livrarialello.pt",
+    "openingHours": "Mon–Sun 09:00–19:00"
+  },
+  {
+    "id": "shop-muji-ginza",
+    "slug": "muji-ginza",
+    "name": "MUJI Ginza",
+    "nameKo": "무지 긴자",
+    "cityId": "city-kanazawa",
+    "category": "Design Shop",
+    "description": "MUJI's flagship store in Tokyo's Ginza district occupies an entire building designed to embody the brand's philosophy of simplicity and essentialism. The space includes a MUJI Hotel, restaurant, and extensive product floors showcasing the intersection of design and daily life.",
+    "address": "3-3-5 Ginza, Chuo City, Tokyo",
+    "location": {
+      "lat": 35.6721,
+      "lng": 139.7653
+    },
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Design", "slug": "design" }
+    ],
+    "status": "published",
+    "website": "https://www.muji.com",
+    "openingHours": "Mon–Sun 10:00–21:00"
+  }
+]

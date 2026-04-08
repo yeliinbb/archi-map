@@ -51,7 +51,13 @@
     "description2": "The project aims to present architecture not as isolated objects but as a network of relationships — between designers and their works, between buildings and their cities, between historical movements and contemporary practice.",
     "description3": "Each entry is carefully selected and contextualized, offering a perspective that goes beyond conventional architectural databases.",
     "quote": "Architecture is the learned game, correct and magnificent, of forms assembled in the light.",
-    "quoteAuthor": "— Le Corbusier"
+    "quoteAuthor": "— Le Corbusier",
+    "archive": "Archive",
+    "statBuildings": "Buildings",
+    "statArchitects": "Architects",
+    "statCities": "Cities",
+    "techStack": "Tech Stack",
+    "links": "Links"
   },
   "buildings": {
     "viewList": "List",

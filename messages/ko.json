@@ -51,7 +51,13 @@
     "description2": "이 프로젝트는 건축을 고립된 객체가 아닌 관계의 네트워크로 제시하고자 합니다 — 디자이너와 작품 사이, 건축물과 도시 사이, 역사적 흐름과 동시대 실천 사이의 관계를.",
     "description3": "각 항목은 신중하게 선별되고 맥락화되어, 기존 건축 데이터베이스를 넘어서는 시각을 제공합니다.",
     "quote": "건축은 빛 속에 모인 형태들의, 정확하고 장엄한 학습된 유희이다.",
-    "quoteAuthor": "— 르 코르뷔지에"
+    "quoteAuthor": "— 르 코르뷔지에",
+    "archive": "아카이브",
+    "statBuildings": "건축물",
+    "statArchitects": "건축가",
+    "statCities": "도시",
+    "techStack": "기술 스택",
+    "links": "링크"
   },
   "buildings": {
     "viewList": "목록",

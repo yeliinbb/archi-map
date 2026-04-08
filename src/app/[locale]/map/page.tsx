@@ -16,13 +16,18 @@ export default function MapPage() {
   const cities = getCities();
   const allTags = getAllTags();
 
+  const buildingCounts: Record<string, number> = {};
+  for (const b of buildings) {
+    buildingCounts[b.architectId] = (buildingCounts[b.architectId] ?? 0) + 1;
+  }
+
   return (
     <div className="relative h-[calc(100vh-3.5rem)]">
       <MapView buildings={buildings} architects={architects} />
       <Suspense>
         <MapFilters cities={cities} tags={allTags} />
       </Suspense>
-      <ArchitectLegend architects={architects} />
+      <ArchitectLegend architects={architects} buildingCounts={buildingCounts} />
       <SelectionSidebar buildings={buildings} />
     </div>
   );

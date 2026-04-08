@@ -6,9 +6,10 @@ import type { Architect } from "@/types";
 
 interface ArchitectLegendProps {
   architects: Architect[];
+  buildingCounts?: Record<string, number>;
 }
 
-export function ArchitectLegend({ architects }: ArchitectLegendProps) {
+export function ArchitectLegend({ architects, buildingCounts }: ArchitectLegendProps) {
   const highlightedArchitectId = useMapFilterStore(
     (s) => s.highlightedArchitectId,
   );
@@ -51,6 +52,11 @@ export function ArchitectLegend({ architects }: ArchitectLegendProps) {
                   : "text-muted-foreground"
               }`}>
                 {architect.name}
+                {buildingCounts?.[architect.id] ? (
+                  <span className="text-muted-foreground/50">
+                    ({buildingCounts[architect.id]})
+                  </span>
+                ) : null}
               </span>
             </button>
           );

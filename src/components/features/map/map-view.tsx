@@ -22,6 +22,7 @@ export function MapView({ buildings, architects }: MapViewProps) {
   const [cursor, setCursor] = useState("");
   const selectedCityIds = useMapFilterStore((s) => s.selectedCityIds);
   const selectedTagSlugs = useMapFilterStore((s) => s.selectedTagSlugs);
+  const highlightedArchitectId = useMapFilterStore((s) => s.highlightedArchitectId);
   const selectedBuildingIds = useSelectionStore((s) => s.selectedBuildingIds);
 
   const filteredBuildings = useMemo(() => {
@@ -86,33 +87,50 @@ export function MapView({ buildings, architects }: MapViewProps) {
   const handleMouseEnter = useCallback(() => setCursor("pointer"), []);
   const handleMouseLeave = useCallback(() => setCursor(""), []);
 
-  // Selected buildings paint expressions
+  // Paint expressions — architect highlight + selection state
   const unclusteredPaint = useMemo((): CircleLayerSpecification["paint"] => {
-    const base: CircleLayerSpecification["paint"] = {
+    const hasHighlight = !!highlightedArchitectId;
+    const hasSelection = selectedBuildingIds.length > 0;
+
+    const paint: Record<string, unknown> = {
       "circle-color": ["get", "architectColor"],
       "circle-radius": 5,
       "circle-stroke-width": 2,
       "circle-stroke-color": "#ffffff",
     };
 
-    if (selectedBuildingIds.length === 0) return base;
-
-    return {
-      ...base,
-      "circle-radius": [
+    // Architect highlight: dim others, enlarge highlighted
+    if (hasHighlight) {
+      paint["circle-opacity"] = [
+        "case",
+        ["==", ["get", "architectId"], highlightedArchitectId],
+        1,
+        0.15,
+      ];
+      paint["circle-radius"] = [
+        "case",
+        ["==", ["get", "architectId"], highlightedArchitectId],
+        7,
+        4,
+      ];
+    } else if (hasSelection) {
+      // Selection state
+      paint["circle-radius"] = [
         "case",
         ["in", ["get", "id"], ["literal", selectedBuildingIds]],
         7,
         5,
-      ],
-      "circle-stroke-width": [
+      ];
+      paint["circle-stroke-width"] = [
         "case",
         ["in", ["get", "id"], ["literal", selectedBuildingIds]],
         3,
         2,
-      ],
-    };
-  }, [selectedBuildingIds]);
+      ];
+    }
+
+    return paint as CircleLayerSpecification["paint"];
+  }, [selectedBuildingIds, highlightedArchitectId]);
 
   return (
     <Map

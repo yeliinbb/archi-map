@@ -4,8 +4,10 @@ import type { Building } from "@/types";
 interface MapFilterState {
   selectedCityIds: string[];
   selectedTagSlugs: string[];
+  highlightedArchitectId: string | null;
   toggleCity: (cityId: string) => void;
   toggleTag: (tagSlug: string) => void;
+  toggleHighlightArchitect: (architectId: string) => void;
   clearFilters: () => void;
   hasFilters: () => boolean;
   getFilteredBuildings: (buildings: Building[]) => Building[];
@@ -16,6 +18,7 @@ interface MapFilterState {
 export const useMapFilterStore = create<MapFilterState>((set, get) => ({
   selectedCityIds: [],
   selectedTagSlugs: [],
+  highlightedArchitectId: null,
 
   toggleCity: (cityId) =>
     set((state) => ({
@@ -31,7 +34,14 @@ export const useMapFilterStore = create<MapFilterState>((set, get) => ({
         : [...state.selectedTagSlugs, tagSlug],
     })),
 
-  clearFilters: () => set({ selectedCityIds: [], selectedTagSlugs: [] }),
+  toggleHighlightArchitect: (architectId) =>
+    set((state) => ({
+      highlightedArchitectId:
+        state.highlightedArchitectId === architectId ? null : architectId,
+    })),
+
+  clearFilters: () =>
+    set({ selectedCityIds: [], selectedTagSlugs: [], highlightedArchitectId: null }),
 
   hasFilters: () => {
     const { selectedCityIds, selectedTagSlugs } = get();

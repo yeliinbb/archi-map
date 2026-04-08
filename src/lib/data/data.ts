@@ -1,7 +1,9 @@
-import type { Building, Architect, City, Tag } from "@/types";
+import type { Building, Architect, City, Shop, Event, Tag } from "@/types";
 import buildingsData from "./buildings.json";
 import architectsData from "./architects.json";
 import citiesData from "./cities.json";
+import shopsData from "./shops.json";
+import eventsData from "./events.json";
 
 // --- Buildings ---
 
@@ -117,4 +119,32 @@ export function getCityBySlug(slug: string): City | undefined {
 
 export function getCityById(id: string): City | undefined {
   return getCities().find((c) => c.id === id);
+}
+
+// --- Shops ---
+
+export function getShops(): Shop[] {
+  return (shopsData as Shop[]).filter((s) => s.status === "published");
+}
+
+export function getShopBySlug(slug: string): Shop | undefined {
+  return getShops().find((s) => s.slug === slug);
+}
+
+export function getShopsByCity(cityId: string): Shop[] {
+  return getShops().filter((s) => s.cityId === cityId);
+}
+
+// --- Events ---
+
+export function getEvents(): Event[] {
+  return (eventsData as Event[]).filter((e) => e.status === "published");
+}
+
+export function getEventBySlug(slug: string): Event | undefined {
+  return getEvents().find((e) => e.slug === slug);
+}
+
+export function getEventsByCity(cityId: string): Event[] {
+  return getEvents().filter((e) => e.cityId === cityId);
 }

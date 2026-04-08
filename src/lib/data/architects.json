@@ -81,5 +81,105 @@
     "status": "published",
     "website": "https://www.johnpawson.com",
     "notableWorks": ["Nový Dvůr Monastery", "Design Museum London", "Pawson House"]
+  },
+  {
+    "id": "arch-tadao-ando",
+    "slug": "tadao-ando",
+    "name": "Tadao Ando",
+    "nameKo": "안도 다다오",
+    "nationality": "Japanese",
+    "birthYear": 1941,
+    "bio": "Tadao Ando is a self-taught Japanese architect who transforms raw concrete into spaces of profound spiritual power. His buildings orchestrate light, water, and geometry with such precision that they become meditative experiences — austere surfaces that paradoxically feel warm and deeply human.",
+    "tags": [
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+    ],
+    "status": "published",
+    "notableWorks": ["Church of the Light", "Chichu Art Museum", "Punta della Dogana"]
+  },
+  {
+    "id": "arch-zaha-hadid",
+    "slug": "zaha-hadid",
+    "name": "Zaha Hadid",
+    "nameKo": "자하 하디드",
+    "nationality": "Iraqi-British",
+    "birthYear": 1950,
+    "deathYear": 2016,
+    "bio": "Zaha Hadid shattered conventions with fluid, gravity-defying forms that reimagined what buildings could be. The first woman to receive the Pritzker Prize, her parametric designs — swooping curves, fractured geometries, impossible cantilevers — brought radical dynamism to contemporary architecture.",
+    "tags": [
+      { "label": "Parametric", "slug": "parametric" },
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+    ],
+    "status": "published",
+    "notableWorks": ["Heydar Aliyev Center", "MAXXI Museum", "Guangzhou Opera House"]
+  },
+  {
+    "id": "arch-peter-zumthor",
+    "slug": "peter-zumthor",
+    "name": "Peter Zumthor",
+    "nameKo": "페터 춤토르",
+    "nationality": "Swiss",
+    "birthYear": 1943,
+    "bio": "Peter Zumthor crafts buildings with the care of a master carpenter, attending to every material, joint, and atmospheric quality. His architecture is about presence — the weight of stone, the warmth of wood, the way light enters a room — creating spaces that engage all the senses.",
+    "tags": [
+      { "label": "Phenomenology", "slug": "phenomenology" },
+      { "label": "Craft", "slug": "craft" },
+      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+    ],
+    "status": "published",
+    "notableWorks": ["Therme Vals", "Kolumba Museum", "Bruder Klaus Chapel"]
+  },
+  {
+    "id": "arch-herzog-de-meuron",
+    "slug": "herzog-de-meuron",
+    "name": "Herzog & de Meuron",
+    "nameKo": "헤르조그 & 드 뫼롱",
+    "nationality": "Swiss",
+    "birthYear": 1950,
+    "bio": "Jacques Herzog and Pierre de Meuron transform the surface of architecture into an expressive medium — perforated copper, etched glass, woven bamboo. Pritzker Prize winners in 2001, their buildings range from intimate wineries to Olympic stadiums, always pushing material innovation.",
+    "tags": [
+      { "label": "Material Innovation", "slug": "material-innovation" },
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+    ],
+    "status": "published",
+    "website": "https://www.herzogdemeuron.com",
+    "notableWorks": ["Tate Modern", "Bird's Nest", "Elbphilharmonie"]
+  },
+  {
+    "id": "arch-renzo-piano",
+    "slug": "renzo-piano",
+    "name": "Renzo Piano",
+    "nameKo": "렌조 피아노",
+    "nationality": "Italian",
+    "birthYear": 1937,
+    "bio": "Renzo Piano combines engineering ingenuity with humanistic sensibility, creating buildings that feel both technologically adventurous and warm. From the radical Centre Pompidou to the delicate Shard, his work spans five decades of reinventing what public architecture can be.",
+    "tags": [
+      { "label": "High-Tech", "slug": "high-tech" },
+      { "label": "Public", "slug": "public" },
+      { "label": "Pritzker Prize", "slug": "pritzker-prize" }
+    ],
+    "status": "published",
+    "website": "https://www.rpbw.com",
+    "notableWorks": ["Centre Pompidou", "The Shard", "Whitney Museum"]
+  },
+  {
+    "id": "arch-le-corbusier",
+    "slug": "le-corbusier",
+    "name": "Le Corbusier",
+    "nameKo": "르 코르뷔지에",
+    "nationality": "Swiss-French",
+    "birthYear": 1887,
+    "deathYear": 1965,
+    "bio": "Le Corbusier revolutionized modern architecture with his Five Points — pilotis, free plan, free façade, horizontal windows, and roof garden. His vision of architecture as a 'machine for living' shaped the 20th century, from the white villas of Poissy to the raw concrete of Chandigarh.",
+    "tags": [
+      { "label": "Modernism", "slug": "modernism" },
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Pioneer", "slug": "pioneer" }
+    ],
+    "status": "published",
+    "notableWorks": ["Villa Savoye", "Notre-Dame du Haut", "Unité d'Habitation"]
   }
 ]

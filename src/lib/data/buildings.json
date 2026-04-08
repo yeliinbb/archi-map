@@ -708,5 +708,796 @@
     ],
     "status": "published",
     "typology": "Residential"
+  },
+  {
+    "id": "bld-church-of-the-light",
+    "slug": "church-of-the-light",
+    "name": "Church of the Light",
+    "nameKo": "빛의 교회",
+    "architectId": "arch-tadao-ando",
+    "cityId": "city-osaka",
+    "year": 1989,
+    "description": "A cruciform slit carved into a bare concrete wall floods a darkened chapel with a cross of pure light. Tadao Ando's most iconic work reduces sacred architecture to its elemental essence — darkness, concrete, and the transcendent power of natural illumination.",
+    "address": "4-3-50 Kitakasugaoka, Ibaraki, Osaka 567-0048, Japan",
+    "location": {
+      "lat": 34.8114,
+      "lng": 135.5563
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=34.8114,135.5563",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Religious", "slug": "religious" }
+    ],
+    "status": "published",
+    "typology": "Religious"
+  },
+  {
+    "id": "bld-chichu-art-museum",
+    "slug": "chichu-art-museum",
+    "name": "Chichu Art Museum",
+    "nameKo": "지추 미술관",
+    "architectId": "arch-tadao-ando",
+    "cityId": "city-naoshima",
+    "year": 2004,
+    "description": "Built almost entirely underground to preserve the landscape of Naoshima island, the museum uses only natural light to illuminate works by Monet, Turrell, and De Maria. Ando's subterranean concrete labyrinth transforms the act of viewing art into a meditative descent toward light.",
+    "address": "3449-1 Naoshima, Kagawa 761-3110, Japan",
+    "location": {
+      "lat": 34.4614,
+      "lng": 133.9958
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=34.4614,133.9958",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-punta-della-dogana",
+    "slug": "punta-della-dogana",
+    "name": "Punta della Dogana",
+    "nameKo": "푼타 델라 도가나",
+    "architectId": "arch-tadao-ando",
+    "cityId": "city-venice",
+    "year": 2009,
+    "description": "A 17th-century customs warehouse at the triangular tip where the Grand Canal meets the Giudecca Canal, restored by Ando as a contemporary art museum for the Pinault Collection. Raw concrete walls inserted within the historic brick shell create a powerful dialogue between Venice's maritime past and minimalist restraint.",
+    "address": "Dorsoduro 2, 30123 Venice, Italy",
+    "location": {
+      "lat": 45.4306,
+      "lng": 12.3345
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=45.4306,12.3345",
+    "images": [],
+    "tags": [
+      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-4x4-house",
+    "slug": "4x4-house",
+    "name": "4×4 House",
+    "nameKo": "4×4 하우스",
+    "architectId": "arch-tadao-ando",
+    "cityId": "city-kobe",
+    "year": 2003,
+    "description": "A slender four-story concrete tower occupying a mere four-by-four meter footprint on the Kobe waterfront. Each floor is a single room stacked vertically, with the top-floor living space framing panoramic views of the Akashi Kaikyo Bridge — an exercise in compressing domestic life to its vertical minimum.",
+    "address": "Tarumi-ku, Kobe, Hyogo, Japan",
+    "location": {
+      "lat": 34.6301,
+      "lng": 135.0514
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=34.6301,135.0514",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Residential", "slug": "residential" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Residential"
+  },
+  {
+    "id": "bld-langen-foundation",
+    "slug": "langen-foundation",
+    "name": "Langen Foundation",
+    "nameKo": "랑겐 파운데이션",
+    "architectId": "arch-tadao-ando",
+    "cityId": "city-neuss",
+    "year": 2004,
+    "description": "Set within a former NATO missile base on Museum Island Hombroich, Ando's double-walled glass-and-concrete pavilion floats above a shallow reflecting pool. The austere galleries house Japanese and Western modern art in a space where military history and contemplative silence coexist.",
+    "address": "Raketenstation Hombroich 1, 41472 Neuss, Germany",
+    "location": {
+      "lat": 51.1683,
+      "lng": 6.6589
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=51.1683,6.6589",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Glass", "slug": "glass" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-row-house-sumiyoshi",
+    "slug": "row-house-sumiyoshi",
+    "name": "Row House in Sumiyoshi",
+    "nameKo": "스미요시 연립주택",
+    "architectId": "arch-tadao-ando",
+    "cityId": "city-osaka",
+    "year": 1976,
+    "description": "Ando's breakthrough work inserts a bare concrete box into the narrow slot of a traditional Osaka row house. An open courtyard bisects the plan, requiring residents to cross the outdoors to move between rooms — a radical assertion that architecture must engage nature, even at the cost of convenience.",
+    "address": "Sumiyoshi, Osaka, Japan",
+    "location": {
+      "lat": 34.6128,
+      "lng": 135.4937
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=34.6128,135.4937",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Residential", "slug": "residential" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Residential"
+  },
+  {
+    "id": "bld-heydar-aliyev-center",
+    "slug": "heydar-aliyev-center",
+    "name": "Heydar Aliyev Center",
+    "nameKo": "헤이다르 알리예프 센터",
+    "architectId": "arch-zaha-hadid",
+    "cityId": "city-baku",
+    "year": 2012,
+    "description": "A seamless white shell that flows from ground to roof without a single sharp edge, the Heydar Aliyev Center is Zaha Hadid's most fluid realization of her vision for architecture without corners. The building's undulating folds house a museum, gallery, and auditorium beneath a surface that seems to breathe.",
+    "address": "1 Heydar Aliyev prospekti, Baku, Azerbaijan",
+    "location": {
+      "lat": 40.3959,
+      "lng": 49.8678
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=40.3959,49.8678",
+    "images": [],
+    "tags": [
+      { "label": "Parametricism", "slug": "parametricism" },
+      { "label": "Public", "slug": "public" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published",
+    "typology": "Cultural Complex"
+  },
+  {
+    "id": "bld-maxxi-museum",
+    "slug": "maxxi-museum",
+    "name": "MAXXI Museum",
+    "nameKo": "막시 국립미술관",
+    "architectId": "arch-zaha-hadid",
+    "cityId": "city-rome",
+    "year": 2010,
+    "description": "Rome's national museum of 21st-century art is a labyrinth of intersecting concrete walls and swooping staircases that defy orthogonal convention. Hadid's first major Italian commission won the Stirling Prize for its radical spatial complexity — visitors navigate overlapping circulation paths that create constantly shifting perspectives.",
+    "address": "Via Guido Reni 4A, 00196 Rome, Italy",
+    "location": {
+      "lat": 41.9283,
+      "lng": 12.4652
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=41.9283,12.4652",
+    "images": [],
+    "tags": [
+      { "label": "Parametricism", "slug": "parametricism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-guangzhou-opera-house",
+    "slug": "guangzhou-opera-house",
+    "name": "Guangzhou Opera House",
+    "nameKo": "광저우 오페라하우스",
+    "architectId": "arch-zaha-hadid",
+    "cityId": "city-guangzhou",
+    "year": 2010,
+    "description": "Two pebble-like forms rest on the banks of the Pearl River, their faceted granite-and-glass surfaces evoking river-polished stones. Inside, a 1,800-seat auditorium unfolds in sweeping curves of smooth plaster, making Hadid's Guangzhou Opera House one of China's most acoustically and spatially ambitious cultural venues.",
+    "address": "1 Zhujiang West Road, Tianhe, Guangzhou, China",
+    "location": {
+      "lat": 23.1139,
+      "lng": 113.3179
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=23.1139,113.3179",
+    "images": [],
+    "tags": [
+      { "label": "Parametricism", "slug": "parametricism" },
+      { "label": "Public", "slug": "public" },
+      { "label": "Glass", "slug": "glass" }
+    ],
+    "status": "published",
+    "typology": "Theater"
+  },
+  {
+    "id": "bld-london-aquatics-centre",
+    "slug": "london-aquatics-centre",
+    "name": "London Aquatics Centre",
+    "nameKo": "런던 아쿠아틱스 센터",
+    "architectId": "arch-zaha-hadid",
+    "cityId": "city-london",
+    "year": 2011,
+    "description": "Designed for the 2012 Olympics, the Aquatics Centre's double-curved roof sweeps upward like a wave frozen in steel, spanning 160 meters over three pools. After the Games, the temporary wings were removed to reveal Hadid's original elegant parabolic form — a lasting legacy in London's Queen Elizabeth Olympic Park.",
+    "address": "Queen Elizabeth Olympic Park, London E20 2ZQ",
+    "location": {
+      "lat": 51.5415,
+      "lng": -0.0106
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=51.5415,-0.0106",
+    "images": [],
+    "tags": [
+      { "label": "Parametricism", "slug": "parametricism" },
+      { "label": "Public", "slug": "public" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Sports"
+  },
+  {
+    "id": "bld-vitra-fire-station",
+    "slug": "vitra-fire-station",
+    "name": "Vitra Fire Station",
+    "nameKo": "비트라 소방서",
+    "architectId": "arch-zaha-hadid",
+    "cityId": "city-weil-am-rhein",
+    "year": 1993,
+    "description": "Hadid's first completed building — a series of sharp concrete planes that seem to be caught mid-explosion, freezing the urgency of a fire station into angular form. The radical deconstructivist composition announced a new architectural language that would define her career and influence a generation.",
+    "address": "Charles-Eames-Straße 2, 79576 Weil am Rhein, Germany",
+    "location": {
+      "lat": 47.6042,
+      "lng": 7.6194
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=47.6042,7.6194",
+    "images": [],
+    "tags": [
+      { "label": "Deconstructivism", "slug": "deconstructivism" },
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Fire Station"
+  },
+  {
+    "id": "bld-therme-vals",
+    "slug": "therme-vals",
+    "name": "Therme Vals",
+    "nameKo": "테르메 발스",
+    "architectId": "arch-peter-zumthor",
+    "cityId": "city-vals",
+    "year": 1996,
+    "description": "Built from 60,000 slabs of locally quarried Valser quartzite, the thermal baths are carved into a mountainside like a cave. Zumthor orchestrates a primal sequence of light, steam, stone, and water — architecture experienced not through the eyes alone, but through the skin.",
+    "address": "7132 Vals, Switzerland",
+    "location": {
+      "lat": 46.6167,
+      "lng": 9.1833
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=46.6167,9.1833",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Landscape", "slug": "landscape" }
+    ],
+    "status": "published",
+    "typology": "Leisure"
+  },
+  {
+    "id": "bld-kolumba-museum",
+    "slug": "kolumba-museum",
+    "name": "Kolumba Museum",
+    "nameKo": "콜룸바 미술관",
+    "architectId": "arch-peter-zumthor",
+    "cityId": "city-cologne",
+    "year": 2007,
+    "description": "Rising from the ruins of a Gothic church destroyed in World War II, Kolumba layers two thousand years of history into a single building. Zumthor's pale grey brick walls, perforated with a delicate filter of light, hover over Roman excavations, medieval fragments, and contemporary art in an act of profound architectural reconciliation.",
+    "address": "Kolumbastraße 4, 50667 Cologne, Germany",
+    "location": {
+      "lat": 50.9383,
+      "lng": 6.9564
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=50.9383,6.9564",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Sacred Architecture", "slug": "sacred-architecture" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-bruder-klaus-chapel",
+    "slug": "bruder-klaus-chapel",
+    "name": "Bruder Klaus Field Chapel",
+    "nameKo": "브루더 클라우스 경당",
+    "architectId": "arch-peter-zumthor",
+    "cityId": "city-mechernich",
+    "year": 2007,
+    "description": "A rammed-earth tower standing alone in a farmer's field, its interior hollowed by burning 112 tree trunks to leave a charred, teardrop-shaped void open to the sky. Rain pools on the lead floor; light enters only from above and through tiny glass-plugged holes — a space of raw, almost primordial spirituality.",
+    "address": "Scheidweg, 53894 Mechernich, Germany",
+    "location": {
+      "lat": 50.5667,
+      "lng": 6.6333
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=50.5667,6.6333",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Religious", "slug": "religious" },
+      { "label": "Landscape", "slug": "landscape" }
+    ],
+    "status": "published",
+    "typology": "Religious"
+  },
+  {
+    "id": "bld-kunsthaus-bregenz",
+    "slug": "kunsthaus-bregenz",
+    "name": "Kunsthaus Bregenz",
+    "nameKo": "쿤스트하우스 브레겐츠",
+    "architectId": "arch-peter-zumthor",
+    "cityId": "city-bregenz",
+    "year": 1997,
+    "description": "A luminous glass-and-steel cube on the shores of Lake Constance, whose etched-glass facade diffuses Alpine daylight into pristine white gallery floors. Zumthor's deceptively simple envelope conceals a sophisticated system of light modulation — the building glows like a lantern, absorbing the colors of lake and sky.",
+    "address": "Karl-Tizian-Platz, 6900 Bregenz, Austria",
+    "location": {
+      "lat": 47.5031,
+      "lng": 9.7472
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=47.5031,9.7472",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Glass", "slug": "glass" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-steilneset-memorial",
+    "slug": "steilneset-memorial",
+    "name": "Steilneset Memorial",
+    "nameKo": "스타일네세트 기념관",
+    "architectId": "arch-peter-zumthor",
+    "cityId": "city-vardo",
+    "year": 2011,
+    "description": "A memorial to the 91 victims of the 17th-century Vardø witch trials, comprising Zumthor's smoked-glass pavilion housing a single burning chair by Louise Bourgeois, and a long timber-framed cocoon designed by the architect. Perched on the Arctic coast, the dual structures confront the violence of history with silence and flame.",
+    "address": "Steilneset, 9951 Vardø, Norway",
+    "location": {
+      "lat": 70.3700,
+      "lng": 31.1100
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=70.3700,31.1100",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Public", "slug": "public" },
+      { "label": "Landscape", "slug": "landscape" }
+    ],
+    "status": "published",
+    "typology": "Memorial"
+  },
+  {
+    "id": "bld-tate-modern",
+    "slug": "tate-modern",
+    "name": "Tate Modern",
+    "nameKo": "테이트 모던",
+    "architectId": "arch-herzog-de-meuron",
+    "cityId": "city-london",
+    "year": 2000,
+    "description": "The transformation of Giles Gilbert Scott's Bankside Power Station into the world's most visited modern art museum redefined what adaptive reuse could achieve. Herzog & de Meuron's masterstroke was restraint — the vast Turbine Hall became a cathedral-scale entrance, and the raw industrial character was preserved rather than polished away.",
+    "address": "Bankside, London SE1 9TG, United Kingdom",
+    "location": {
+      "lat": 51.5076,
+      "lng": -0.0994
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=51.5076,-0.0994",
+    "images": [],
+    "tags": [
+      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-elbphilharmonie",
+    "slug": "elbphilharmonie",
+    "name": "Elbphilharmonie",
+    "nameKo": "엘프필하모니",
+    "architectId": "arch-herzog-de-meuron",
+    "cityId": "city-hamburg",
+    "year": 2017,
+    "description": "A glittering glass wave perched atop a massive brick warehouse on the Elbe River, the Elbphilharmonie fuses Hamburg's maritime heritage with 21st-century acoustical engineering. The concert hall within, sculpted by algorithms to optimize sound, seats 2,100 listeners in a terraced vineyard configuration of extraordinary intimacy.",
+    "address": "Platz der Deutschen Einheit 1, 20457 Hamburg, Germany",
+    "location": {
+      "lat": 53.5413,
+      "lng": 9.9842
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=53.5413,9.9842",
+    "images": [],
+    "tags": [
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Public", "slug": "public" },
+      { "label": "Glass", "slug": "glass" }
+    ],
+    "status": "published",
+    "typology": "Concert Hall"
+  },
+  {
+    "id": "bld-birds-nest",
+    "slug": "birds-nest-beijing-national-stadium",
+    "name": "Bird's Nest (Beijing National Stadium)",
+    "nameKo": "베이징 국가체육장 (새 둥지)",
+    "architectId": "arch-herzog-de-meuron",
+    "cityId": "city-beijing",
+    "year": 2008,
+    "description": "A lattice of interwoven steel beams wraps a 91,000-seat stadium in what appears to be a colossal bird's nest — structure and ornament fused into a single gesture. Designed for the 2008 Olympics with Ai Weiwei as artistic consultant, it became an instant icon of China's emergence on the world stage.",
+    "address": "1 National Stadium S Rd, Chaoyang, Beijing, China",
+    "location": {
+      "lat": 39.9929,
+      "lng": 116.3966
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=39.9929,116.3966",
+    "images": [],
+    "tags": [
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Sports"
+  },
+  {
+    "id": "bld-caixaforum-madrid",
+    "slug": "caixaforum-madrid",
+    "name": "CaixaForum Madrid",
+    "nameKo": "카이샤포럼 마드리드",
+    "architectId": "arch-herzog-de-meuron",
+    "cityId": "city-madrid",
+    "year": 2008,
+    "description": "A former power station seemingly levitated off the ground by removing its granite base and inserting a rusted Corten steel crown, CaixaForum creates the illusion of a massive building floating above the Paseo del Prado. Patrick Blanc's vertical garden on the adjacent wall completes a provocative dialogue between architecture and nature.",
+    "address": "Paseo del Prado 36, 28014 Madrid, Spain",
+    "location": {
+      "lat": 40.4109,
+      "lng": -3.6934
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=40.4109,-3.6934",
+    "images": [],
+    "tags": [
+      { "label": "Adaptive Reuse", "slug": "adaptive-reuse" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-perez-art-museum-miami",
+    "slug": "perez-art-museum-miami",
+    "name": "Pérez Art Museum Miami",
+    "nameKo": "페레스 미술관 마이애미",
+    "architectId": "arch-herzog-de-meuron",
+    "cityId": "city-miami",
+    "year": 2013,
+    "description": "Elevated on stilts above Biscayne Bay to address both sea-level rise and hurricane flooding, PAMM is wrapped in hanging gardens and deep wooden verandas that blur the line between indoor and outdoor. Herzog & de Meuron's tropical museum redefines the relationship between art institution and subtropical climate.",
+    "address": "1103 Biscayne Blvd, Miami, FL 33132",
+    "location": {
+      "lat": 25.7862,
+      "lng": -80.1862
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=25.7862,-80.1862",
+    "images": [],
+    "tags": [
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Landscape", "slug": "landscape" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-1111-lincoln-road",
+    "slug": "1111-lincoln-road",
+    "name": "1111 Lincoln Road",
+    "nameKo": "1111 링컨 로드",
+    "architectId": "arch-herzog-de-meuron",
+    "cityId": "city-miami-beach",
+    "year": 2010,
+    "description": "A parking garage elevated to the status of architecture — each floor has a different height, and the open concrete structure doubles as an event venue, retail space, and rooftop residence. Herzog & de Meuron proved that even the most mundane program can become extraordinary when treated with spatial ambition.",
+    "address": "1111 Lincoln Road, Miami Beach, FL 33139",
+    "location": {
+      "lat": 25.7907,
+      "lng": -80.1399
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=25.7907,-80.1399",
+    "images": [],
+    "tags": [
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Concrete", "slug": "concrete" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Mixed Use"
+  },
+  {
+    "id": "bld-centre-pompidou",
+    "slug": "centre-pompidou",
+    "name": "Centre Pompidou",
+    "nameKo": "퐁피두 센터",
+    "architectId": "arch-renzo-piano",
+    "cityId": "city-paris",
+    "year": 1977,
+    "description": "Co-designed with Richard Rogers, the Centre Pompidou turned architecture inside out — exposing its structural skeleton, mechanical systems, and circulation in a riot of color-coded pipes and escalator tubes on the facade. The radical high-tech provocation scandalized Paris and democratized the museum, drawing millions to its open piazza.",
+    "address": "Place Georges-Pompidou, 75004 Paris, France",
+    "location": {
+      "lat": 48.8607,
+      "lng": 2.3523
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=48.8607,2.3523",
+    "images": [],
+    "tags": [
+      { "label": "High-Tech", "slug": "high-tech" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Public", "slug": "public" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-the-shard",
+    "slug": "the-shard",
+    "name": "The Shard",
+    "nameKo": "더 샤드",
+    "architectId": "arch-renzo-piano",
+    "cityId": "city-london",
+    "year": 2012,
+    "description": "At 310 meters, The Shard is Western Europe's tallest building — a crystalline spire of glass shards that tapers to an open apex, deliberately left incomplete as if dissolving into London's sky. Piano described it as a 16th-century pinnacle; critics called it a shard of glass driven into the heart of historic London.",
+    "address": "32 London Bridge Street, London SE1 9SG",
+    "location": {
+      "lat": 51.5045,
+      "lng": -0.0865
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=51.5045,-0.0865",
+    "images": [],
+    "tags": [
+      { "label": "High-Tech", "slug": "high-tech" },
+      { "label": "Glass", "slug": "glass" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published",
+    "typology": "Mixed Use"
+  },
+  {
+    "id": "bld-whitney-museum",
+    "slug": "whitney-museum",
+    "name": "Whitney Museum of American Art",
+    "nameKo": "휘트니 미술관",
+    "architectId": "arch-renzo-piano",
+    "cityId": "city-new-york",
+    "year": 2015,
+    "description": "Anchoring the southern end of the High Line, the Whitney's asymmetric stack of cantilevered galleries steps outward as it rises, creating expansive outdoor terraces with views of the Hudson River. Piano's industrial-chic vocabulary of steel, glass, and raw concrete pays homage to the Meatpacking District's working-class roots.",
+    "address": "99 Gansevoort Street, New York, NY 10014",
+    "location": {
+      "lat": 40.7396,
+      "lng": -74.0089
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=40.7396,-74.0089",
+    "images": [],
+    "tags": [
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Glass", "slug": "glass" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-fondation-beyeler",
+    "slug": "fondation-beyeler",
+    "name": "Fondation Beyeler",
+    "nameKo": "바이엘러 재단 미술관",
+    "architectId": "arch-renzo-piano",
+    "cityId": "city-basel",
+    "year": 1997,
+    "description": "A long, low pavilion of red porphyry walls and an overhanging glass roof set at the edge of a water garden in Riehen. Piano's design treats the museum as a finely tuned instrument for viewing art in natural light — the thin roof plane appears to float, and every gallery opens to views of the park and distant Vosges mountains.",
+    "address": "Baselstrasse 101, 4125 Riehen, Switzerland",
+    "location": {
+      "lat": 47.5917,
+      "lng": 7.6486
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=47.5917,7.6486",
+    "images": [],
+    "tags": [
+      { "label": "Minimalism", "slug": "minimalism" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Landscape", "slug": "landscape" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-california-academy-of-sciences",
+    "slug": "california-academy-of-sciences",
+    "name": "California Academy of Sciences",
+    "nameKo": "캘리포니아 과학 아카데미",
+    "architectId": "arch-renzo-piano",
+    "cityId": "city-san-francisco",
+    "year": 2008,
+    "description": "A living green roof of native California plants undulates over an aquarium, planetarium, and natural history museum in Golden Gate Park. Piano's design is one of the greenest museums on earth — the roof's rolling hills echo the surrounding landscape, and skylights open automatically to ventilate the building naturally.",
+    "address": "55 Music Concourse Drive, San Francisco, CA 94118",
+    "location": {
+      "lat": 37.7699,
+      "lng": -122.4661
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=37.7699,-122.4661",
+    "images": [],
+    "tags": [
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Museum", "slug": "museum" },
+      { "label": "Landscape", "slug": "landscape" }
+    ],
+    "status": "published",
+    "typology": "Museum"
+  },
+  {
+    "id": "bld-villa-savoye",
+    "slug": "villa-savoye",
+    "name": "Villa Savoye",
+    "nameKo": "빌라 사부아",
+    "architectId": "arch-le-corbusier",
+    "cityId": "city-poissy",
+    "year": 1931,
+    "description": "The manifesto of Le Corbusier's Five Points of Architecture made real — pilotis lift a white box above a meadow, a roof garden replaces the ground, ribbon windows wrap the facade, and a free plan liberates the interior. Villa Savoye remains the most influential house of the 20th century, a machine for living in that is also a poem.",
+    "address": "82 Rue de Villiers, 78300 Poissy, France",
+    "location": {
+      "lat": 48.9242,
+      "lng": 2.0281
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=48.9242,2.0281",
+    "images": [],
+    "tags": [
+      { "label": "Modernism", "slug": "modernism" },
+      { "label": "Residential", "slug": "residential" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Residential"
+  },
+  {
+    "id": "bld-ronchamp",
+    "slug": "notre-dame-du-haut-ronchamp",
+    "name": "Notre-Dame du Haut (Ronchamp)",
+    "nameKo": "롱샹 성당",
+    "architectId": "arch-le-corbusier",
+    "cityId": "city-ronchamp",
+    "year": 1955,
+    "description": "Perched on a hilltop in the Vosges foothills, Ronchamp's swooping concrete roof and thick, light-punctured walls shattered every expectation of what Le Corbusier — and modern architecture — could be. The chapel is sculptural, primal, and deeply spiritual, its irregular windows scattering colored light like a constellation across rough whitewashed walls.",
+    "address": "13 Rue de la Chapelle, 70250 Ronchamp, France",
+    "location": {
+      "lat": 47.7042,
+      "lng": 6.6208
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=47.7042,6.6208",
+    "images": [],
+    "tags": [
+      { "label": "Modernism", "slug": "modernism" },
+      { "label": "Religious", "slug": "religious" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Religious"
+  },
+  {
+    "id": "bld-unite-dhabitation",
+    "slug": "unite-dhabitation",
+    "name": "Unité d'Habitation",
+    "nameKo": "위니테 다비타시옹",
+    "architectId": "arch-le-corbusier",
+    "cityId": "city-marseille",
+    "year": 1952,
+    "description": "A self-contained 'vertical village' for 1,600 residents, raised on massive pilotis with internal streets, shops, a school, and a rooftop gymnasium. The Unité's raw béton brut finish — board-marked concrete left unfinished — gave birth to Brutalism, and its social ambition remains the benchmark for collective housing.",
+    "address": "280 Boulevard Michelet, 13008 Marseille, France",
+    "location": {
+      "lat": 43.2613,
+      "lng": 5.3966
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=43.2613,5.3966",
+    "images": [],
+    "tags": [
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Residential", "slug": "residential" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Residential"
+  },
+  {
+    "id": "bld-la-tourette",
+    "slug": "sainte-marie-de-la-tourette",
+    "name": "Sainte Marie de La Tourette",
+    "nameKo": "라 투레트 수도원",
+    "architectId": "arch-le-corbusier",
+    "cityId": "city-eveux",
+    "year": 1960,
+    "description": "A Dominican monastery hovering on pilotis above a sloping meadow near Lyon, its raw concrete corridors, cells, and chapel enclose a stark cloister open to the sky. La Tourette is Le Corbusier's most uncompromising exploration of light, proportion, and monastic austerity — an architecture that demands contemplation.",
+    "address": "Route de la Tourette, 69210 Éveux, France",
+    "location": {
+      "lat": 45.8167,
+      "lng": 4.6167
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=45.8167,4.6167",
+    "images": [],
+    "tags": [
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Religious", "slug": "religious" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Religious"
+  },
+  {
+    "id": "bld-carpenter-center",
+    "slug": "carpenter-center",
+    "name": "Carpenter Center for the Visual Arts",
+    "nameKo": "카펜터 센터",
+    "architectId": "arch-le-corbusier",
+    "cityId": "city-cambridge",
+    "year": 1963,
+    "description": "Le Corbusier's only building in North America threads a curving ramp through a concrete volume on the Harvard campus, inviting passersby to walk through the building itself. The brise-soleil, pilotis, and free-form plan demonstrate every principle of his architecture — a built manifesto set incongruously among Georgian brick.",
+    "address": "24 Quincy Street, Cambridge, MA 02138",
+    "location": {
+      "lat": 42.3745,
+      "lng": -71.1142
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=42.3745,-71.1142",
+    "images": [],
+    "tags": [
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Education", "slug": "education" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Education"
+  },
+  {
+    "id": "bld-chandigarh-capitol",
+    "slug": "chandigarh-capitol-complex",
+    "name": "Chandigarh Capitol Complex",
+    "nameKo": "찬디가르 캐피톨 콤플렉스",
+    "architectId": "arch-le-corbusier",
+    "cityId": "city-chandigarh",
+    "year": 1953,
+    "description": "The governmental heart of Le Corbusier's planned city of Chandigarh — comprising the High Court, Secretariat, and Legislative Assembly — is a monumental composition of raw concrete set against the Himalayan foothills. A UNESCO World Heritage Site, the Capitol Complex represents the most ambitious realization of modernist urban planning on a civic scale.",
+    "address": "Sector 1, Chandigarh, India",
+    "location": {
+      "lat": 30.7580,
+      "lng": 76.8050
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=30.7580,76.8050",
+    "images": [],
+    "tags": [
+      { "label": "Brutalism", "slug": "brutalism" },
+      { "label": "Public", "slug": "public" },
+      { "label": "Concrete", "slug": "concrete" }
+    ],
+    "status": "published",
+    "typology": "Government"
   }
 ]

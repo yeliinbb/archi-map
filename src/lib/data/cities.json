@@ -258,5 +258,425 @@
       { "label": "Contemporary", "slug": "contemporary" }
     ],
     "status": "published"
+  },
+  {
+    "id": "city-osaka",
+    "slug": "osaka",
+    "name": "Osaka",
+    "nameKo": "오사카",
+    "country": "Japan",
+    "description": "Osaka is Japan's second city and a sprawling commercial metropolis where Tadao Ando forged his austere concrete language amid the chaos of dense urban fabric. The city's energy and contradictions — neon excess alongside meditative minimalism — have shaped some of modern architecture's most radical residential experiments.",
+    "location": { "lat": 34.6937, "lng": 135.5023 },
+    "images": [],
+    "tags": [
+      { "label": "East Asia", "slug": "east-asia" },
+      { "label": "Minimalism", "slug": "minimalism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-naoshima",
+    "slug": "naoshima",
+    "name": "Naoshima",
+    "nameKo": "나오시마",
+    "country": "Japan",
+    "description": "A small island in Japan's Seto Inland Sea transformed into one of the world's most extraordinary art destinations. Tadao Ando's museums, embedded into the island's hillsides, anchor a landscape where contemporary art, architecture, and nature merge into a singular pilgrimage experience.",
+    "location": { "lat": 34.4614, "lng": 133.9958 },
+    "images": [],
+    "tags": [
+      { "label": "East Asia", "slug": "east-asia" },
+      { "label": "Minimalism", "slug": "minimalism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-venice",
+    "slug": "venice",
+    "name": "Venice",
+    "nameKo": "베네치아",
+    "country": "Italy",
+    "description": "Venice is an architectural palimpsest floating on water — Byzantine, Gothic, and Renaissance layers coexist in a city where every building negotiates with the lagoon. The Biennale and adaptive reuse of historic structures keep Venice at the center of contemporary architectural discourse.",
+    "location": { "lat": 45.4408, "lng": 12.3155 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-kobe",
+    "slug": "kobe",
+    "name": "Kobe",
+    "nameKo": "고베",
+    "country": "Japan",
+    "description": "Kobe is a port city compressed between mountains and sea, where the 1995 earthquake prompted a wave of reconstruction that attracted Japan's finest architects. Tadao Ando's works here exploit the dramatic tension between narrow waterfront sites and panoramic views of the Inland Sea.",
+    "location": { "lat": 34.6901, "lng": 135.1956 },
+    "images": [],
+    "tags": [
+      { "label": "East Asia", "slug": "east-asia" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-neuss",
+    "slug": "neuss",
+    "name": "Neuss",
+    "nameKo": "노이스",
+    "country": "Germany",
+    "description": "Neuss is a Rhine-side city near Düsseldorf, home to the Museum Island Hombroich — a former NATO missile base transformed into a landscape of art and architecture. Tadao Ando's Langen Foundation anchors this unique cultural park where Cold War relics meet contemplative gallery spaces.",
+    "location": { "lat": 51.1983, "lng": 6.6919 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-baku",
+    "slug": "baku",
+    "name": "Baku",
+    "nameKo": "바쿠",
+    "country": "Azerbaijan",
+    "description": "Baku is a city of contrasts where the medieval walled Old City meets a 21st-century skyline of ambitious cultural projects. Zaha Hadid's Heydar Aliyev Center epitomizes the capital's rapid architectural transformation, positioning Azerbaijan at the intersection of Eastern and Western design ambitions.",
+    "location": { "lat": 40.4093, "lng": 49.8671 },
+    "images": [],
+    "tags": [
+      { "label": "Contemporary", "slug": "contemporary" },
+      { "label": "Parametricism", "slug": "parametricism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-rome",
+    "slug": "rome",
+    "name": "Rome",
+    "nameKo": "로마",
+    "country": "Italy",
+    "description": "The Eternal City is a living museum of architectural history spanning three millennia — from the Pantheon's concrete dome to Zaha Hadid's MAXXI. Rome's dense stratification of ancient, baroque, and contemporary layers makes every new intervention an act of negotiation with the weight of history.",
+    "location": { "lat": 41.9028, "lng": 12.4964 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-guangzhou",
+    "slug": "guangzhou",
+    "name": "Guangzhou",
+    "nameKo": "광저우",
+    "country": "China",
+    "description": "Guangzhou is southern China's commercial powerhouse, where rapid urbanization has attracted international architects to design landmark cultural facilities along the Pearl River. Zaha Hadid's Opera House anchors the Zhujiang New Town district, signaling the city's ambition to rival Beijing and Shanghai as a cultural capital.",
+    "location": { "lat": 23.1291, "lng": 113.2644 },
+    "images": [],
+    "tags": [
+      { "label": "East Asia", "slug": "east-asia" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-weil-am-rhein",
+    "slug": "weil-am-rhein",
+    "name": "Weil am Rhein",
+    "nameKo": "바일 암 라인",
+    "country": "Germany",
+    "description": "A small German town on the Swiss border that became an unlikely architectural pilgrimage site thanks to the Vitra Campus — an open-air museum of buildings by Hadid, Gehry, Ando, Herzog & de Meuron, and SANAA. Hadid's Fire Station here launched her career from paper architecture to built reality.",
+    "location": { "lat": 47.5942, "lng": 7.6211 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-vals",
+    "slug": "vals",
+    "name": "Vals",
+    "nameKo": "발스",
+    "country": "Switzerland",
+    "description": "A remote Alpine village in the Swiss canton of Graubünden, Vals would be known only for its thermal springs were it not for Peter Zumthor's legendary bathhouse. The Therme Vals has made this tiny settlement a global destination for architects seeking the most sensory building of the late 20th century.",
+    "location": { "lat": 46.6167, "lng": 9.1833 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Minimalism", "slug": "minimalism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-cologne",
+    "slug": "cologne",
+    "name": "Cologne",
+    "nameKo": "쾰른",
+    "country": "Germany",
+    "description": "Cologne is a Rhineland city defined by its Gothic cathedral and the scars of wartime destruction. The city's reconstruction created space for bold contemporary insertions, including Zumthor's Kolumba Museum, which bridges Roman ruins, medieval fragments, and modern art in a single building.",
+    "location": { "lat": 50.9375, "lng": 6.9603 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-mechernich",
+    "slug": "mechernich",
+    "name": "Mechernich",
+    "nameKo": "메허르니히",
+    "country": "Germany",
+    "description": "A small town in the Eifel region of western Germany, Mechernich is home to Peter Zumthor's Bruder Klaus Field Chapel — a rammed-earth tower standing alone in agricultural fields. The chapel has made this quiet rural landscape an essential stop on any serious architectural tour of Europe.",
+    "location": { "lat": 50.5936, "lng": 6.6556 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Sacred Architecture", "slug": "sacred-architecture" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-bregenz",
+    "slug": "bregenz",
+    "name": "Bregenz",
+    "nameKo": "브레겐츠",
+    "country": "Austria",
+    "description": "Bregenz is a lakeside Austrian city on the eastern shore of Lake Constance, known for its floating opera stage and Peter Zumthor's Kunsthaus — a glass cube that has become one of the most celebrated small museums in Europe. The city's Alpine setting and cultural ambition belie its modest size.",
+    "location": { "lat": 47.5031, "lng": 9.7471 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Minimalism", "slug": "minimalism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-vardo",
+    "slug": "vardo",
+    "name": "Vardø",
+    "nameKo": "바르되",
+    "country": "Norway",
+    "description": "Vardø is Norway's easternmost town, a remote Arctic fishing settlement on the Barents Sea. Peter Zumthor and Louise Bourgeois's Steilneset Memorial, commemorating 17th-century witch trials, has placed this windswept outpost on the global architectural map.",
+    "location": { "lat": 70.3700, "lng": 31.1100 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-hamburg",
+    "slug": "hamburg",
+    "name": "Hamburg",
+    "nameKo": "함부르크",
+    "country": "Germany",
+    "description": "Hamburg is Germany's great port city, where the massive HafenCity redevelopment is transforming former docklands into a new urban quarter. Herzog & de Meuron's Elbphilharmonie, crowning a historic warehouse with a glass wave, has become the city's defining landmark and one of Europe's most celebrated concert halls.",
+    "location": { "lat": 53.5511, "lng": 9.9937 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-beijing",
+    "slug": "beijing",
+    "name": "Beijing",
+    "nameKo": "베이징",
+    "country": "China",
+    "description": "Beijing's architectural landscape spans from the Forbidden City's imperial geometry to the audacious structures of the 2008 Olympics. The Bird's Nest stadium and CCTV Headquarters signaled China's arrival as a patron of the world's most ambitious contemporary architecture.",
+    "location": { "lat": 39.9042, "lng": 116.4074 },
+    "images": [],
+    "tags": [
+      { "label": "East Asia", "slug": "east-asia" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-madrid",
+    "slug": "madrid",
+    "name": "Madrid",
+    "nameKo": "마드리드",
+    "country": "Spain",
+    "description": "Madrid's architectural identity ranges from Hapsburg austerity and Bourbon grandeur to bold contemporary interventions along the Paseo del Prado. Herzog & de Meuron's CaixaForum and Jean Nouvel's Reina Sofía extension have reinvigorated the city's museum mile with provocative 21st-century forms.",
+    "location": { "lat": 40.4168, "lng": -3.7038 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-miami",
+    "slug": "miami",
+    "name": "Miami",
+    "nameKo": "마이애미",
+    "country": "USA",
+    "description": "Miami is a subtropical metropolis where Art Deco heritage meets explosive contemporary development. The city's waterfront museums and cultural district, anchored by the Pérez Art Museum, showcase architecture's response to climate, sea-level rise, and the energy of Latin American cultural exchange.",
+    "location": { "lat": 25.7617, "lng": -80.1918 },
+    "images": [],
+    "tags": [
+      { "label": "North America", "slug": "north-america" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-miami-beach",
+    "slug": "miami-beach",
+    "name": "Miami Beach",
+    "nameKo": "마이애미 비치",
+    "country": "USA",
+    "description": "Miami Beach is home to the largest collection of Art Deco architecture in the world and an increasingly ambitious program of contemporary building. Herzog & de Meuron's 1111 Lincoln Road proved that even a parking garage can become a cultural landmark on this barrier island.",
+    "location": { "lat": 25.7907, "lng": -80.1300 },
+    "images": [],
+    "tags": [
+      { "label": "North America", "slug": "north-america" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-paris",
+    "slug": "paris",
+    "name": "Paris",
+    "nameKo": "파리",
+    "country": "France",
+    "description": "Paris is the city where modern architecture was both born and resisted — from Le Corbusier's villas to Piano and Rogers's Centre Pompidou. The tension between Haussmann's classical order and radical contemporary insertions continues to make Paris one of the world's most architecturally charged capitals.",
+    "location": { "lat": 48.8566, "lng": 2.3522 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Modernism", "slug": "modernism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-basel",
+    "slug": "basel",
+    "name": "Basel",
+    "nameKo": "바젤",
+    "country": "Switzerland",
+    "description": "Basel is Switzerland's cultural capital, home to Herzog & de Meuron's headquarters and an extraordinary concentration of museums, including the Fondation Beyeler and Vitra Campus nearby. The city's commitment to architectural quality has made it a living laboratory for contemporary Swiss design.",
+    "location": { "lat": 47.5596, "lng": 7.5886 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Swiss Architecture", "slug": "swiss-architecture" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-san-francisco",
+    "slug": "san-francisco",
+    "name": "San Francisco",
+    "nameKo": "샌프란시스코",
+    "country": "USA",
+    "description": "San Francisco's architecture reflects its history of booms and reinventions — Victorian painted ladies, earthquake-resilient engineering, and a growing collection of green buildings. Renzo Piano's California Academy of Sciences in Golden Gate Park exemplifies the city's commitment to sustainable design.",
+    "location": { "lat": 37.7749, "lng": -122.4194 },
+    "images": [],
+    "tags": [
+      { "label": "North America", "slug": "north-america" },
+      { "label": "Contemporary", "slug": "contemporary" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-poissy",
+    "slug": "poissy",
+    "name": "Poissy",
+    "nameKo": "푸아시",
+    "country": "France",
+    "description": "A quiet suburb northwest of Paris, Poissy is known to architects worldwide as the site of Le Corbusier's Villa Savoye — the single most influential house of the modern movement. The pilotis-raised white box in its meadow setting remains a place of architectural pilgrimage nearly a century after completion.",
+    "location": { "lat": 48.9292, "lng": 2.0483 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Modernism", "slug": "modernism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-ronchamp",
+    "slug": "ronchamp",
+    "name": "Ronchamp",
+    "nameKo": "롱샹",
+    "country": "France",
+    "description": "A small town in the Franche-Comté region of eastern France, Ronchamp is synonymous with Le Corbusier's chapel of Notre-Dame du Haut — a sculptural masterpiece that broke with the rationalism of his earlier work. The hilltop chapel draws tens of thousands of architectural pilgrims each year.",
+    "location": { "lat": 47.7042, "lng": 6.6208 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Sacred Architecture", "slug": "sacred-architecture" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-marseille",
+    "slug": "marseille",
+    "name": "Marseille",
+    "nameKo": "마르세유",
+    "country": "France",
+    "description": "France's oldest city and largest Mediterranean port, Marseille is a gritty, multicultural metropolis where Le Corbusier built his most influential housing project — the Unité d'Habitation. The city's raw energy and diverse heritage continue to attract architects experimenting with social and urban innovation.",
+    "location": { "lat": 43.2965, "lng": 5.3698 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Brutalism", "slug": "brutalism" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-eveux",
+    "slug": "eveux",
+    "name": "Éveux",
+    "nameKo": "에뵈",
+    "country": "France",
+    "description": "A small commune near Lyon, Éveux is home to Le Corbusier's Sainte Marie de La Tourette — a Dominican monastery that is among the most powerful sacred buildings of the 20th century. The austere concrete structure above rolling meadows continues to function as an active religious community.",
+    "location": { "lat": 45.8167, "lng": 4.6167 },
+    "images": [],
+    "tags": [
+      { "label": "Europe", "slug": "europe" },
+      { "label": "Sacred Architecture", "slug": "sacred-architecture" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-cambridge",
+    "slug": "cambridge",
+    "name": "Cambridge",
+    "nameKo": "케임브리지",
+    "country": "USA",
+    "description": "Cambridge, Massachusetts is home to Harvard and MIT — two universities whose campuses constitute an open-air museum of modern architecture, from Aalto's Baker House to Saarinen's MIT Chapel. Le Corbusier's Carpenter Center remains the only building by the master on North American soil.",
+    "location": { "lat": 42.3736, "lng": -71.1097 },
+    "images": [],
+    "tags": [
+      { "label": "North America", "slug": "north-america" },
+      { "label": "Education", "slug": "education" }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "city-chandigarh",
+    "slug": "chandigarh",
+    "name": "Chandigarh",
+    "nameKo": "찬디가르",
+    "country": "India",
+    "description": "Chandigarh is the only city in the world designed entirely by Le Corbusier — a planned capital for the Indian state of Punjab built from scratch in the 1950s. Its Capitol Complex, a UNESCO World Heritage Site, remains the most monumental realization of modernist urban planning.",
+    "location": { "lat": 30.7333, "lng": 76.7794 },
+    "images": [],
+    "tags": [
+      { "label": "Modernism", "slug": "modernism" },
+      { "label": "Brutalism", "slug": "brutalism" }
+    ],
+    "status": "published"
   }
 ]

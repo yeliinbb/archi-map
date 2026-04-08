@@ -22,6 +22,36 @@ export const ARCHITECT_COLORS: Record<
     hex: "#4a9e6e",
     label: "Pawson",
   },
+  "arch-tadao-ando": {
+    color: "oklch(0.55 0.12 280)",
+    hex: "#4a4a9e",
+    label: "Ando",
+  },
+  "arch-zaha-hadid": {
+    color: "oklch(0.6 0.18 340)",
+    hex: "#b84a7a",
+    label: "Hadid",
+  },
+  "arch-peter-zumthor": {
+    color: "oklch(0.62 0.08 60)",
+    hex: "#8a7a5a",
+    label: "Zumthor",
+  },
+  "arch-herzog-de-meuron": {
+    color: "oklch(0.58 0.14 200)",
+    hex: "#3a7a8a",
+    label: "HdM",
+  },
+  "arch-renzo-piano": {
+    color: "oklch(0.65 0.16 120)",
+    hex: "#5a9a3a",
+    label: "Piano",
+  },
+  "arch-le-corbusier": {
+    color: "oklch(0.6 0.1 30)",
+    hex: "#9a6a5a",
+    label: "Le Corbusier",
+  },
 };
 
 const FALLBACK_COLOR = "oklch(0.5 0 0)";

@@ -174,3 +174,22 @@
     ),
     linear-gradient(90deg, oklch(0.985 0 0 / 4%) 1px, transparent 1px);
 }
+
+/* Line drawing animation for home hero */
+@keyframes draw-line {
+  from {
+    stroke-dashoffset: var(--dasharray, 320);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

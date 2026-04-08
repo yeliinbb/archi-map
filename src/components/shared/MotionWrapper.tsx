@@ -22,6 +22,21 @@ export function FadeIn({ children, className, ...props }: MotionDivProps) {
   );
 }
 
+export function FadeInView({ children, className, ...props }: MotionDivProps) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: DURATION.slow, ease: EASE.smooth }}
+      className={className}
+      {...props}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
 const staggerVariants = {
   hidden: {},
   show: {

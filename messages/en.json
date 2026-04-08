@@ -136,6 +136,8 @@
       "poster": "Poster"
     },
     "exportPng": "Export PNG",
-    "labels": "Labels"
+    "labels": "Labels",
+    "share": "Share",
+    "copied": "Copied!"
   }
 }

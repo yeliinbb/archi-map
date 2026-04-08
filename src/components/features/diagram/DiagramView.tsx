@@ -1,7 +1,8 @@
 "use client";
 
-import { useRef, useState, useEffect, useMemo } from "react";
+import { useRef, useState, useEffect, useMemo, useCallback } from "react";
 import { useTranslations } from "next-intl";
+import { Link2 } from "lucide-react";
 import { NetworkDiagram } from "./NetworkDiagram";
 import { LayoutControls } from "./LayoutControls";
 import type { LayoutMode } from "./layouts";
@@ -24,7 +25,14 @@ export function DiagramView({
   const containerRef = useRef<HTMLDivElement>(null);
   const [layout, setLayout] = useState<LayoutMode>("force");
   const [showLabels, setShowLabels] = useState(true);
+  const [copied, setCopied] = useState(false);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+  const handleShare = useCallback(async () => {
+    await navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }, []);
 
   const graph = useMemo(
     () => buildDiagramGraph(buildings, architects, cities),
@@ -78,6 +86,16 @@ export function DiagramView({
             {t("labels")}
           </button>
           <ExportButton targetRef={containerRef} />
+          <button
+            type="button"
+            onClick={handleShare}
+            className="flex items-center gap-2 border border-border px-2 py-1.5 font-mono text-micro tracking-wider text-muted-foreground transition-colors hover:bg-accent hover:text-foreground sm:px-3"
+          >
+            <Link2 className="h-3 w-3" />
+            <span className="hidden sm:inline">
+              {copied ? t("copied") : t("share")}
+            </span>
+          </button>
         </div>
       </div>
       <div ref={containerRef} className="flex-1">

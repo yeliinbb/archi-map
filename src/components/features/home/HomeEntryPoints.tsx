@@ -1,8 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import {
-  StaggerContainer,
-  StaggerItem,
-} from "@/components/shared/motion-wrapper";
+import { StaggerContainer, StaggerItem } from "@/components/shared";
 
 interface HomeEntryPointItem {
   title: string;

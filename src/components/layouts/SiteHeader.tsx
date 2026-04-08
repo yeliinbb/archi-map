@@ -4,9 +4,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Button } from "@/components/ui/button";
-import { LocaleSwitcher } from "@/components/layouts/locale-switcher";
+import { Sheet, SheetContent, SheetTrigger, Button } from "@/components/ui";
+import { LocaleSwitcher } from "./LocaleSwitcher";
 
 export function SiteHeader() {
   const t = useTranslations();

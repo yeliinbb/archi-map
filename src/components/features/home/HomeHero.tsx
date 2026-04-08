@@ -1,5 +1,5 @@
-import { FadeIn } from "@/components/shared/motion-wrapper";
-import { Divider } from "@/components/ui/divider";
+import { FadeIn } from "@/components/shared";
+import { Divider } from "@/components/ui";
 
 interface HomeHeroProps {
   subtitle: string;

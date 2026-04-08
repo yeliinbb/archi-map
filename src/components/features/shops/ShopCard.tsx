@@ -1,6 +1,6 @@
 import { Link } from "@/i18n/navigation";
-import { TagBadge } from "@/components/ui/tag-badge";
-import { OptimizedImage } from "@/components/shared/optimized-image";
+import { TagBadge } from "@/components/ui";
+import { OptimizedImage } from "@/components/shared";
 import type { Shop } from "@/types";
 
 interface ShopCardProps {

@@ -6,7 +6,7 @@ import { SlidersHorizontal, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useMapFilterStore } from "@/lib/stores/map-filter-store";
-import { TagBadge } from "@/components/ui/tag-badge";
+import { TagBadge } from "@/components/ui";
 import type { City, Tag } from "@/types";
 
 interface MapFiltersProps {

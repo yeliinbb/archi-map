@@ -3,7 +3,7 @@
 import { useState, useCallback, useRef, useMemo } from "react";
 import Map, { Source, Layer, type MapRef, type MapLayerMouseEvent } from "react-map-gl/maplibre";
 import type { GeoJSONSource, CircleLayerSpecification } from "maplibre-gl";
-import { BuildingPopup } from "./building-popup";
+import { BuildingPopup } from "./BuildingPopup";
 import { useMapFilterStore } from "@/lib/stores/map-filter-store";
 import { useSelectionStore } from "@/lib/stores/selection-store";
 import { buildingsToFeatureCollection } from "@/lib/map/buildings-to-geojson";

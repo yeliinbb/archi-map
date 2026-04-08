@@ -1,8 +1,8 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
-import { SelectionToggleButton } from "@/components/features/selection/selection-toggle-button";
-import { OptimizedImage } from "@/components/shared/optimized-image";
+import { SelectionToggleButton } from "@/components/features/selection";
+import { OptimizedImage } from "@/components/shared";
 import { getArchitectColor } from "@/lib/architect-colors";
 import type { Building, Architect } from "@/types";
 

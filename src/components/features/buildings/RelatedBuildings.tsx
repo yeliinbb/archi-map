@@ -1,7 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { getArchitectById } from "@/lib/data/data";
 import { getArchitectColor } from "@/lib/architect-colors";
-import { TagBadge } from "@/components/ui/tag-badge";
+import { TagBadge } from "@/components/ui";
 import type { Building } from "@/types";
 
 interface RelatedBuildingsProps {

@@ -2,10 +2,10 @@
 
 import { useRef, useState, useEffect, useMemo } from "react";
 import { useTranslations } from "next-intl";
-import { NetworkDiagram } from "./network-diagram";
-import { LayoutControls } from "./layout-controls";
+import { NetworkDiagram } from "./NetworkDiagram";
+import { LayoutControls } from "./LayoutControls";
 import type { LayoutMode } from "./layouts";
-import { ExportButton } from "./export-button";
+import { ExportButton } from "./ExportButton";
 import { buildDiagramGraph } from "@/lib/diagram/transform";
 import type { Building, Architect, City } from "@/types";
 

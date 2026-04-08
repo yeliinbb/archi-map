@@ -4,7 +4,7 @@ import { Popup } from "react-map-gl/maplibre";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useSelectionStore } from "@/lib/stores/selection-store";
-import { OptimizedImage } from "@/components/shared/optimized-image";
+import { OptimizedImage } from "@/components/shared";
 import { getArchitectColor } from "@/lib/architect-colors";
 import type { Building, Architect } from "@/types";
 

@@ -138,6 +138,8 @@
     "exportPng": "PNG 내보내기",
     "labels": "라벨",
     "share": "공유",
-    "copied": "복사됨!"
+    "copied": "복사됨!",
+    "captionGenerate": "AI 캡션",
+    "captionLoading": "생성 중..."
   }
 }

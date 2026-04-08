@@ -1,13 +1,14 @@
 "use client";
 
 import { useRef, useState, useEffect, useMemo, useCallback } from "react";
-import { useTranslations } from "next-intl";
-import { Link2 } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+import { Link2, Sparkles } from "lucide-react";
 import { NetworkDiagram } from "./NetworkDiagram";
 import { LayoutControls } from "./LayoutControls";
 import type { LayoutMode } from "./layouts";
 import { ExportButton } from "./ExportButton";
 import { buildDiagramGraph } from "@/lib/diagram/transform";
+import { generateCurationCaption } from "@/app/actions/generate-caption";
 import type { Building, Architect, City } from "@/types";
 
 interface DiagramViewProps {
@@ -22,10 +23,13 @@ export function DiagramView({
   cities,
 }: DiagramViewProps) {
   const t = useTranslations("diagram");
+  const locale = useLocale();
   const containerRef = useRef<HTMLDivElement>(null);
   const [layout, setLayout] = useState<LayoutMode>("force");
   const [showLabels, setShowLabels] = useState(true);
   const [copied, setCopied] = useState(false);
+  const [caption, setCaption] = useState<string | null>(null);
+  const [captionLoading, setCaptionLoading] = useState(false);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   const handleShare = useCallback(async () => {
@@ -33,6 +37,14 @@ export function DiagramView({
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }, []);
+
+  const handleGenerateCaption = useCallback(async () => {
+    setCaptionLoading(true);
+    setCaption(null);
+    const result = await generateCurationCaption(buildings, architects, locale);
+    setCaption(result.caption);
+    setCaptionLoading(false);
+  }, [buildings, architects, locale]);
 
   const graph = useMemo(
     () => buildDiagramGraph(buildings, architects, cities),
@@ -98,8 +110,8 @@ export function DiagramView({
           </button>
         </div>
       </div>
-      <div ref={containerRef} className="flex-1">
-        {dimensions.width > 0 && dimensions.height > 0 && (
+      <div ref={containerRef} className="relative flex-1">
+        {dimensions.width > 0 && dimensions.height > 0 ? (
           <NetworkDiagram
             graph={graph}
             layout={layout}
@@ -107,7 +119,27 @@ export function DiagramView({
             height={dimensions.height}
             showLabels={showLabels}
           />
-        )}
+        ) : null}
+
+        {/* AI Caption overlay */}
+        <div className="absolute bottom-4 left-4 right-4 z-10 flex items-end gap-3">
+          <button
+            type="button"
+            onClick={handleGenerateCaption}
+            disabled={captionLoading}
+            className="flex shrink-0 items-center gap-2 border border-border bg-background/90 px-3 py-1.5 font-mono text-micro tracking-wider text-muted-foreground backdrop-blur-sm transition-colors hover:bg-accent hover:text-foreground disabled:opacity-50"
+          >
+            <Sparkles className="h-3 w-3" />
+            {captionLoading ? t("captionLoading") : t("captionGenerate")}
+          </button>
+          {caption ? (
+            <div className="max-w-md border border-border bg-background/90 p-3 backdrop-blur-sm">
+              <p className="font-mono text-xs leading-relaxed text-muted-foreground">
+                {caption}
+              </p>
+            </div>
+          ) : null}
+        </div>
       </div>
     </div>
   );

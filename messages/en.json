@@ -138,6 +138,8 @@
     "exportPng": "Export PNG",
     "labels": "Labels",
     "share": "Share",
-    "copied": "Copied!"
+    "copied": "Copied!",
+    "captionGenerate": "AI Caption",
+    "captionLoading": "Generating..."
   }
 }

@@ -21,7 +21,7 @@ export function LayoutControls({ current, onChange }: LayoutControlsProps) {
           key={mode}
           type="button"
           onClick={() => onChange(mode)}
-          className={`px-3 py-1.5 font-mono text-micro tracking-wider transition-colors ${
+          className={`px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
             current === mode
               ? "bg-foreground text-background"
               : "bg-background text-muted-foreground hover:bg-accent hover:text-foreground"

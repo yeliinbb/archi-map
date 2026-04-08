@@ -49,12 +49,12 @@ export function DiagramView({
 
   return (
     <div className="flex h-full flex-col">
-      <div className="flex items-center justify-between border-b border-border px-4 py-2">
+      <div className="flex flex-col gap-2 border-b border-border px-4 py-2 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-4">
           <p className="font-mono text-micro tracking-sublabel text-muted-foreground uppercase">
             {t("title")}
           </p>
-          <span className="font-mono text-micro text-muted-foreground">
+          <span className="hidden font-mono text-micro text-muted-foreground sm:inline">
             {t("stats", {
               buildings: buildings.length,
               architects: architects.length,
@@ -62,7 +62,7 @@ export function DiagramView({
             })}
           </span>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <LayoutControls current={layout} onChange={setLayout} />
           <ExportButton targetRef={containerRef} />
         </div>

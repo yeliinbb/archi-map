@@ -33,7 +33,7 @@ export function ExportButton({ targetRef }: ExportButtonProps) {
       className="flex items-center gap-2 border border-border px-3 py-1.5 font-mono text-micro tracking-wider text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
     >
       <Download className="h-3 w-3" />
-      {t("exportPng")}
+      <span className="hidden sm:inline">{t("exportPng")}</span>
     </button>
   );
 }

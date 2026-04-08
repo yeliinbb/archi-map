@@ -7,11 +7,14 @@ import {
   getBuildings,
   getArchitectById,
   getCityById,
+  getRelatedBuildings,
 } from "@/lib/data/data";
 import { TagBadge } from "@/components/ui/tag-badge";
 import { Divider } from "@/components/ui/divider";
+import { OptimizedImage } from "@/components/shared/optimized-image";
 import { SelectionToggleButton } from "@/components/features/selection/selection-toggle-button";
 import { SelectionBar } from "@/components/features/selection/selection-bar";
+import { RelatedBuildings } from "@/components/features/buildings/related-buildings";
 
 interface Props {
   params: Promise<{ slug: string; locale: string }>;
@@ -38,6 +41,7 @@ export default async function BuildingDetailPage({ params }: Props) {
 
   const architect = getArchitectById(building.architectId);
   const city = getCityById(building.cityId);
+  const relatedBuildings = getRelatedBuildings(building, 4);
 
   return (
     <div className="mx-auto max-w-2xl px-6 py-24">
@@ -73,17 +77,18 @@ export default async function BuildingDetailPage({ params }: Props) {
       )}
       <Divider className="mb-8" />
 
-      {building.images[0]?.src && (
+      {building.images[0]?.src ? (
         <div className="mb-8 overflow-hidden border border-border">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <OptimizedImage
             src={building.images[0].src}
             alt={building.images[0].alt}
-            className="w-full object-cover"
-            loading="lazy"
+            fill
+            aspectRatio="16/9"
+            sizes="(max-width: 672px) 100vw, 672px"
+            priority
           />
         </div>
-      )}
+      ) : null}
 
       <p className="mb-8 font-mono text-sm leading-relaxed text-muted-foreground">
         {building.description}
@@ -152,15 +157,28 @@ export default async function BuildingDetailPage({ params }: Props) {
         </a>
       </div>
 
-      {building.tags.length > 0 && (
-        <div className="flex flex-wrap gap-2">
+      {building.tags.length > 0 ? (
+        <div className="mb-12 flex flex-wrap gap-2">
           {building.tags.map((tag) => (
-            <TagBadge key={tag.slug}>
-              {tag.label}
-            </TagBadge>
+            <Link key={tag.slug} href={`/map/buildings/tags/${tag.slug}`}>
+              <TagBadge className="cursor-pointer hover:bg-accent">
+                {tag.label}
+              </TagBadge>
+            </Link>
           ))}
         </div>
-      )}
+      ) : null}
+
+      {/* Related Buildings */}
+      {relatedBuildings.length > 0 ? (
+        <div className="mb-8">
+          <span className="mb-4 block font-mono text-micro tracking-wider text-muted-foreground/60 uppercase">
+            {t("relatedBuildings")}
+          </span>
+          <RelatedBuildings buildings={relatedBuildings} />
+        </div>
+      ) : null}
+
       <SelectionBar />
     </div>
   );

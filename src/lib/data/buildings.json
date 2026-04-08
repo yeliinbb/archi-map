@@ -18,7 +18,9 @@
       {
         "src": "/images/buildings/masp.jpg",
         "alt": "MASP suspended above Avenida Paulista with red beams",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 2703,
+        "height": 2225
       }
     ],
     "tags": [
@@ -53,13 +55,7 @@
       "lng": -46.6843
     },
     "googleMapsUrl": "https://maps.google.com/?q=-23.5327,-46.6843",
-    "images": [
-      {
-        "src": "/images/buildings/sesc-pompeia.jpg",
-        "alt": "SESC Pompeia concrete towers with irregular window openings",
-        "attribution": "Wikimedia Commons"
-      }
-    ],
+    "images": [],
     "tags": [
       {
         "label": "Brutalism",
@@ -96,7 +92,9 @@
       {
         "src": "/images/buildings/casa-de-vidro.jpg",
         "alt": "Casa de Vidro glass house surrounded by tropical forest",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 400,
+        "height": 600
       }
     ],
     "tags": [
@@ -135,7 +133,9 @@
       {
         "src": "/images/buildings/teatro-oficina.jpg",
         "alt": "Teatro Oficina interior with scaffolding and exposed earth",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 3179,
+        "height": 5003
       }
     ],
     "tags": [
@@ -174,7 +174,9 @@
       {
         "src": "/images/buildings/solar-do-unhao.jpg",
         "alt": "Solar do Unhão colonial building overlooking the Bay of All Saints",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 5393,
+        "height": 3030
       }
     ],
     "tags": [
@@ -213,7 +215,9 @@
       {
         "src": "/images/buildings/21st-century-museum.jpg",
         "alt": "21st Century Museum of Contemporary Art circular glass facade",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 3861,
+        "height": 2574
       }
     ],
     "tags": [
@@ -252,7 +256,9 @@
       {
         "src": "/images/buildings/rolex-learning-center.jpg",
         "alt": "Rolex Learning Center undulating concrete form on EPFL campus",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 1024,
+        "height": 683
       }
     ],
     "tags": [
@@ -291,7 +297,9 @@
       {
         "src": "/images/buildings/new-museum.jpg",
         "alt": "New Museum stacked boxes on the Bowery",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 369,
+        "height": 270
       }
     ],
     "tags": [
@@ -330,7 +338,9 @@
       {
         "src": "/images/buildings/louvre-lens.jpg",
         "alt": "Louvre-Lens reflective aluminum facade in parkland",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 6740,
+        "height": 2832
       }
     ],
     "tags": [
@@ -369,7 +379,9 @@
       {
         "src": "/images/buildings/grace-farms.jpg",
         "alt": "Grace Farms 'River' building winding through meadow landscape",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 6000,
+        "height": 4000
       }
     ],
     "tags": [
@@ -408,7 +420,9 @@
       {
         "src": "/images/buildings/piscinas-de-mares.jpg",
         "alt": "Piscinas de Marés concrete pools merging with Atlantic rocks",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 1280,
+        "height": 640
       }
     ],
     "tags": [
@@ -447,7 +461,9 @@
       {
         "src": "/images/buildings/serralves-museum.jpg",
         "alt": "Serralves Museum white facade amid park gardens",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 3470,
+        "height": 2598
       }
     ],
     "tags": [
@@ -486,7 +502,9 @@
       {
         "src": "/images/buildings/faculty-of-architecture-porto.jpg",
         "alt": "Faculty of Architecture Porto pavilions overlooking Douro River",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 1414,
+        "height": 1885
       }
     ],
     "tags": [
@@ -525,7 +543,9 @@
       {
         "src": "/images/buildings/portuguese-pavilion-expo98.jpg",
         "alt": "Portuguese Pavilion Expo 98 catenary concrete canopy",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 350,
+        "height": 222
       }
     ],
     "tags": [
@@ -564,7 +584,9 @@
       {
         "src": "/images/buildings/ibere-camargo-foundation.jpg",
         "alt": "Iberê Camargo Foundation white concrete with looping ramps",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 1024,
+        "height": 653
       }
     ],
     "tags": [
@@ -599,13 +621,7 @@
       "lng": 12.9833
     },
     "googleMapsUrl": "https://maps.google.com/?q=49.9833,12.9833",
-    "images": [
-      {
-        "src": "/images/buildings/novy-dvur-monastery.jpg",
-        "alt": "Nový Dvůr Monastery minimalist white interior",
-        "attribution": "Wikimedia Commons"
-      }
-    ],
+    "images": [],
     "tags": [
       {
         "label": "Minimalism",
@@ -642,7 +658,9 @@
       {
         "src": "/images/buildings/design-museum-london.jpg",
         "alt": "Design Museum London oak-lined atrium under parabolic roof",
-        "attribution": "Wikimedia Commons"
+        "attribution": "Wikimedia Commons",
+        "width": 5762,
+        "height": 3841
       }
     ],
     "tags": [
@@ -677,12 +695,7 @@
       "lng": -0.1278
     },
     "googleMapsUrl": "https://maps.google.com/?q=51.5074,-0.1278",
-    "images": [
-      {
-        "src": "/images/buildings/pawson-house.jpg",
-        "alt": "Pawson House minimalist interior with natural light"
-      }
-    ],
+    "images": [],
     "tags": [
       {
         "label": "Minimalism",

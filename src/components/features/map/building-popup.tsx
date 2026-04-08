@@ -4,6 +4,7 @@ import { Popup } from "react-map-gl/maplibre";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useSelectionStore } from "@/lib/stores/selection-store";
+import { OptimizedImage } from "@/components/shared/optimized-image";
 import { getArchitectColor } from "@/lib/architect-colors";
 import type { Building, Architect } from "@/types";
 
@@ -34,16 +35,17 @@ export function BuildingPopup({
       maxWidth="240px"
     >
       <div className="w-[240px]">
-        {building.images[0]?.src && (
-          <div className="h-[120px] overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+        {building.images[0]?.src ? (
+          <div className="h-[120px]">
+            <OptimizedImage
               src={building.images[0].src}
               alt={building.images[0].alt}
-              className="h-full w-full object-cover"
+              fill
+              sizes="240px"
+              className="object-cover"
             />
           </div>
-        )}
+        ) : null}
         <div className="p-3">
           <div className="mb-1 flex items-center gap-2">
             <span
@@ -57,11 +59,11 @@ export function BuildingPopup({
           <h3 className="mb-0.5 font-mono text-sm leading-tight tracking-wide">
             {building.name}
           </h3>
-          {architect && (
+          {architect ? (
             <p className="mb-3 font-mono text-micro text-muted-foreground">
               {architect.name}
             </p>
-          )}
+          ) : null}
           <div className="flex items-center gap-2">
             <button
               type="button"

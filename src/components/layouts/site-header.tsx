@@ -19,6 +19,8 @@ export function SiteHeader() {
     { name: t("nav.buildings"), href: "/map/buildings" },
     { name: t("nav.architects"), href: "/map/architects" },
     { name: t("nav.cities"), href: "/map/cities" },
+    { name: t("nav.shops"), href: "/map/shops" },
+    { name: t("nav.events"), href: "/map/events" },
     { name: t("nav.diagram"), href: "/diagram" },
     { name: t("nav.about"), href: "/about" },
   ];

@@ -10,6 +10,8 @@
     "buildings": "Buildings",
     "architects": "Architects",
     "cities": "Cities",
+    "shops": "Shops",
+    "events": "Events",
     "diagram": "Diagram",
     "about": "About",
     "menu": "Menu"
@@ -97,6 +99,18 @@
     "details": "Details →",
     "buildingsSelected": "{count, plural, one {# building} other {# buildings}} selected",
     "viewDiagram": "View Diagram →"
+  },
+  "shops": {
+    "label": "Archive",
+    "title": "Shops",
+    "back": "← Shops",
+    "hours": "Hours"
+  },
+  "events": {
+    "label": "Archive",
+    "title": "Events",
+    "back": "← Events",
+    "venue": "Venue"
   },
   "diagram": {
     "title": "Diagram",

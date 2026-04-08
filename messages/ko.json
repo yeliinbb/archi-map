@@ -10,6 +10,8 @@
     "buildings": "건축물",
     "architects": "건축가",
     "cities": "도시",
+    "shops": "숍",
+    "events": "이벤트",
     "diagram": "다이어그램",
     "about": "소개",
     "menu": "메뉴"
@@ -97,6 +99,18 @@
     "details": "상세 →",
     "buildingsSelected": "{count}개 건축물 선택됨",
     "viewDiagram": "다이어그램 보기 →"
+  },
+  "shops": {
+    "label": "아카이브",
+    "title": "숍",
+    "back": "← 숍",
+    "hours": "영업시간"
+  },
+  "events": {
+    "label": "아카이브",
+    "title": "이벤트",
+    "back": "← 이벤트",
+    "venue": "장소"
   },
   "diagram": {
     "title": "다이어그램",

@@ -125,7 +125,9 @@
     "layout": {
       "force": "Force",
       "timeline": "Timeline",
-      "geography": "Geography"
+      "geography": "Geography",
+      "blueprint": "Blueprint",
+      "poster": "Poster"
     },
     "exportPng": "Export PNG"
   }

@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import * as d3 from "d3";
 import type { DiagramNode, DiagramLink, DiagramGraph } from "@/lib/diagram/transform";
-import type { LayoutMode } from "./layout-controls";
+import { LAYOUTS, type LayoutMode } from "./layouts";
 
 interface NetworkDiagramProps {
   graph: DiagramGraph;
@@ -13,9 +13,9 @@ interface NetworkDiagramProps {
 }
 
 const NODE_RADIUS = {
-  building: 18,
-  architect: 14,
-  city: 12,
+  building: 16,
+  architect: 12,
+  city: 10,
 };
 
 export function NetworkDiagram({
@@ -41,10 +41,8 @@ export function NetworkDiagram({
     const nodes: DiagramNode[] = graph.nodes.map((n) => ({ ...n }));
     const links: DiagramLink[] = graph.links.map((l) => ({
       ...l,
-      source:
-        typeof l.source === "string" ? l.source : l.source.id,
-      target:
-        typeof l.target === "string" ? l.target : l.target.id,
+      source: typeof l.source === "string" ? l.source : l.source.id,
+      target: typeof l.target === "string" ? l.target : l.target.id,
     }));
 
     // Grid pattern
@@ -66,7 +64,7 @@ export function NetworkDiagram({
       .attr("x2", (d) => d.x2)
       .attr("y2", (d) => d.y2)
       .attr("stroke", "oklch(0.145 0 0 / 5%)")
-      .attr("stroke-width", 1);
+      .attr("stroke-width", 0.5);
 
     svg
       .append("rect")
@@ -97,76 +95,16 @@ export function NetworkDiagram({
           .distance((l) => {
             const link = l as unknown as DiagramLink;
             return link.type === "same-architect" ? 60 : 100;
-          })
-      )
-      .force("charge", d3.forceManyBody().strength(-300))
-      .force("center", d3.forceCenter(width / 2, height / 2))
-      .force("collide", d3.forceCollide(30));
+          }),
+      );
 
-    // Apply layout-specific forces
-    if (layout === "timeline") {
-      const years = nodes
-        .filter((n) => n.year)
-        .map((n) => n.year!);
-      if (years.length > 0) {
-        const timeScale = d3
-          .scaleLinear()
-          .domain([Math.min(...years), Math.max(...years)])
-          .range([100, width - 100]);
-        simulation.force(
-          "x",
-          d3
-            .forceX((d) => {
-              const node = d as DiagramNode;
-              if (node.year) return timeScale(node.year);
-              // Position architects/cities at centroid of their buildings
-              return width / 2;
-            })
-            .strength(0.8)
-        );
-        simulation.force(
-          "y",
-          d3.forceY(height / 2).strength(0.1)
-        );
-      }
-    } else if (layout === "geography") {
-      const lngs = nodes
-        .filter((n) => n.location)
-        .map((n) => n.location!.lng);
-      const lats = nodes
-        .filter((n) => n.location)
-        .map((n) => n.location!.lat);
-      if (lngs.length > 0 && lats.length > 0) {
-        const xScale = d3
-          .scaleLinear()
-          .domain([Math.min(...lngs), Math.max(...lngs)])
-          .range([100, width - 100]);
-        const yScale = d3
-          .scaleLinear()
-          .domain([Math.max(...lats), Math.min(...lats)])
-          .range([100, height - 100]);
-        simulation.force(
-          "x",
-          d3
-            .forceX((d) => {
-              const node = d as DiagramNode;
-              return node.location ? xScale(node.location.lng) : width / 2;
-            })
-            .strength(0.8)
-        );
-        simulation.force(
-          "y",
-          d3
-            .forceY((d) => {
-              const node = d as DiagramNode;
-              return node.location ? yScale(node.location.lat) : height / 2;
-            })
-            .strength(0.8)
-        );
-      }
+    // Apply layout via plugin
+    const layoutPlugin = LAYOUTS[layout];
+    if (layoutPlugin) {
+      layoutPlugin.apply({ simulation, nodes, links, width, height });
     }
 
-    // Links
+    // Links — improved styling
     const linkGroup = g
       .append("g")
       .selectAll("line")
@@ -174,9 +112,9 @@ export function NetworkDiagram({
       .join("line")
       .attr("stroke", (d) => {
         const link = d as unknown as DiagramLink;
-        return link.type === "same-architect"
-          ? "oklch(0.5 0 0 / 15%)"
-          : "oklch(0.5 0 0 / 30%)";
+        if (link.type === "same-architect") return "oklch(0.5 0 0 / 12%)";
+        if (link.type === "city-building") return "oklch(0.5 0 0 / 20%)";
+        return "oklch(0.5 0 0 / 30%)";
       })
       .attr("stroke-width", (d) => {
         const link = d as unknown as DiagramLink;
@@ -184,7 +122,7 @@ export function NetworkDiagram({
       })
       .attr("stroke-dasharray", (d) => {
         const link = d as unknown as DiagramLink;
-        return link.type === "same-architect" ? "4 4" : "none";
+        return link.type === "same-architect" ? "3 3" : "none";
       });
 
     // Nodes group
@@ -213,22 +151,28 @@ export function NetworkDiagram({
         d.fy = null;
       });
 
-    (nodeGroup as d3.Selection<SVGGElement, DiagramNode, SVGGElement, unknown>).call(drag);
+    (
+      nodeGroup as d3.Selection<
+        SVGGElement,
+        DiagramNode,
+        SVGGElement,
+        unknown
+      >
+    ).call(drag);
 
-    // Draw node shapes
+    // Draw node shapes — polished
     nodeGroup.each(function (d) {
       const el = d3.select(this);
       const r = NODE_RADIUS[d.type];
 
       if (d.type === "building") {
-        // Circle for buildings
         el.append("circle")
           .attr("r", r)
           .attr("fill", d.color)
           .attr("stroke", "var(--background)")
-          .attr("stroke-width", 2);
+          .attr("stroke-width", 2)
+          .attr("opacity", 0.9);
       } else if (d.type === "architect") {
-        // Rounded rect for architects
         el.append("rect")
           .attr("x", -r)
           .attr("y", -r)
@@ -237,28 +181,48 @@ export function NetworkDiagram({
           .attr("rx", 3)
           .attr("fill", d.color)
           .attr("stroke", "var(--background)")
-          .attr("stroke-width", 2);
+          .attr("stroke-width", 2)
+          .attr("opacity", 0.9);
       } else {
-        // Triangle for cities
         const triPath = d3.symbol().type(d3.symbolTriangle).size(r * r * 2);
         el.append("path")
           .attr("d", triPath)
           .attr("fill", d.color)
           .attr("stroke", "var(--background)")
-          .attr("stroke-width", 2);
+          .attr("stroke-width", 2)
+          .attr("opacity", 0.9);
       }
     });
 
-    // Labels
-    nodeGroup
-      .append("text")
-      .text((d) => d.label)
-      .attr("dy", (d) => NODE_RADIUS[d.type] + 14)
-      .attr("text-anchor", "middle")
-      .attr("font-family", "var(--font-geist-mono), monospace")
-      .attr("font-size", "9px")
-      .attr("fill", "var(--foreground)")
-      .attr("opacity", 0.7);
+    // Labels — improved with background
+    nodeGroup.each(function (d) {
+      const el = d3.select(this);
+      const r = NODE_RADIUS[d.type];
+      const labelY = r + 14;
+
+      // Label background
+      const textNode = el
+        .append("text")
+        .text(d.label)
+        .attr("dy", labelY)
+        .attr("text-anchor", "middle")
+        .attr("font-family", "var(--font-geist-mono), monospace")
+        .attr("font-size", "9px")
+        .attr("fill", "var(--foreground)")
+        .attr("opacity", 0.8);
+
+      // Measure and add background rect
+      const bbox = (textNode.node() as SVGTextElement)?.getBBox();
+      if (bbox) {
+        el.insert("rect", "text")
+          .attr("x", bbox.x - 2)
+          .attr("y", bbox.y - 1)
+          .attr("width", bbox.width + 4)
+          .attr("height", bbox.height + 2)
+          .attr("fill", "var(--background)")
+          .attr("opacity", 0.7);
+      }
+    });
 
     // Hover events
     nodeGroup
@@ -273,12 +237,15 @@ export function NetworkDiagram({
     // Tick
     simulation.on("tick", () => {
       linkGroup
-        .attr("x1", (d) => ((d.source as unknown as DiagramNode).x ?? 0))
-        .attr("y1", (d) => ((d.source as unknown as DiagramNode).y ?? 0))
-        .attr("x2", (d) => ((d.target as unknown as DiagramNode).x ?? 0))
-        .attr("y2", (d) => ((d.target as unknown as DiagramNode).y ?? 0));
+        .attr("x1", (d) => (d.source as unknown as DiagramNode).x ?? 0)
+        .attr("y1", (d) => (d.source as unknown as DiagramNode).y ?? 0)
+        .attr("x2", (d) => (d.target as unknown as DiagramNode).x ?? 0)
+        .attr("y2", (d) => (d.target as unknown as DiagramNode).y ?? 0);
 
-      nodeGroup.attr("transform", (d) => `translate(${d.x ?? 0},${d.y ?? 0})`);
+      nodeGroup.attr(
+        "transform",
+        (d) => `translate(${d.x ?? 0},${d.y ?? 0})`,
+      );
     });
 
     return () => {
@@ -294,9 +261,9 @@ export function NetworkDiagram({
         height={height}
         className="bg-background"
       />
-      {tooltip && (
+      {tooltip ? (
         <div
-          className="pointer-events-none absolute z-20 border border-border bg-background p-3 shadow-sm"
+          className="pointer-events-none absolute z-20 border border-border bg-background p-3"
           style={{
             left: tooltip.x + 16,
             top: tooltip.y - 8,
@@ -305,21 +272,22 @@ export function NetworkDiagram({
           <p className="font-mono text-micro tracking-wider text-muted-foreground uppercase">
             {tooltip.node.type}
           </p>
-          <p className="font-mono text-xs font-medium">{tooltip.node.label}</p>
-          {tooltip.node.labelKo && (
+          <p className="font-mono text-xs font-medium">
+            {tooltip.node.label}
+          </p>
+          {tooltip.node.labelKo ? (
             <p className="font-mono text-micro text-muted-foreground">
               {tooltip.node.labelKo}
             </p>
-          )}
-          {tooltip.node.year && (
+          ) : null}
+          {tooltip.node.year ? (
             <p className="font-mono text-micro text-muted-foreground">
               {tooltip.node.year}
             </p>
-          )}
+          ) : null}
         </div>
-      )}
+      ) : null}
 
-      {/* Watermark for export */}
       <div className="absolute bottom-3 right-3 font-mono text-[9px] text-muted-foreground/40">
         Archi Curation
       </div>

@@ -3,7 +3,8 @@
 import { useRef, useState, useEffect, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import { NetworkDiagram } from "./network-diagram";
-import { LayoutControls, type LayoutMode } from "./layout-controls";
+import { LayoutControls } from "./layout-controls";
+import type { LayoutMode } from "./layouts";
 import { ExportButton } from "./export-button";
 import { buildDiagramGraph } from "@/lib/diagram/transform";
 import type { Building, Architect, City } from "@/types";

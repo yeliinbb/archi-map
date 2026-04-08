@@ -125,7 +125,9 @@
     "layout": {
       "force": "포스",
       "timeline": "타임라인",
-      "geography": "지리"
+      "geography": "지리",
+      "blueprint": "블루프린트",
+      "poster": "포스터"
     },
     "exportPng": "PNG 내보내기"
   }

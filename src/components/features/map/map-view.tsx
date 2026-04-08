@@ -7,6 +7,7 @@ import { BuildingPopup } from "./building-popup";
 import { useMapFilterStore } from "@/lib/stores/map-filter-store";
 import { useSelectionStore } from "@/lib/stores/selection-store";
 import { buildingsToFeatureCollection } from "@/lib/map/buildings-to-geojson";
+import { getArchitectHex as getArchitectHexColor } from "@/lib/architect-colors";
 import type { Building, Architect } from "@/types";
 
 const MAP_STYLE = "https://tiles.openfreemap.org/styles/liberty";
@@ -36,9 +37,17 @@ export function MapView({ buildings, architects }: MapViewProps) {
     });
   }, [buildings, selectedCityIds, selectedTagSlugs]);
 
+  // When architect is highlighted, show only their buildings
+  const displayBuildings = useMemo(() => {
+    if (!highlightedArchitectId) return filteredBuildings;
+    return filteredBuildings.filter(
+      (b) => b.architectId === highlightedArchitectId,
+    );
+  }, [filteredBuildings, highlightedArchitectId]);
+
   const geojsonData = useMemo(
-    () => buildingsToFeatureCollection(filteredBuildings),
-    [filteredBuildings],
+    () => buildingsToFeatureCollection(displayBuildings),
+    [displayBuildings],
   );
 
   const getArchitect = useCallback(
@@ -87,34 +96,16 @@ export function MapView({ buildings, architects }: MapViewProps) {
   const handleMouseEnter = useCallback(() => setCursor("pointer"), []);
   const handleMouseLeave = useCallback(() => setCursor(""), []);
 
-  // Paint expressions — architect highlight + selection state
+  // Paint expressions — selection state
   const unclusteredPaint = useMemo((): CircleLayerSpecification["paint"] => {
-    const hasHighlight = !!highlightedArchitectId;
-    const hasSelection = selectedBuildingIds.length > 0;
-
     const paint: Record<string, unknown> = {
       "circle-color": ["get", "architectColor"],
-      "circle-radius": 5,
+      "circle-radius": highlightedArchitectId ? 7 : 5,
       "circle-stroke-width": 2,
       "circle-stroke-color": "#ffffff",
     };
 
-    // Architect highlight: dim others, enlarge highlighted
-    if (hasHighlight) {
-      paint["circle-opacity"] = [
-        "case",
-        ["==", ["get", "architectId"], highlightedArchitectId],
-        1,
-        0.15,
-      ];
-      paint["circle-radius"] = [
-        "case",
-        ["==", ["get", "architectId"], highlightedArchitectId],
-        7,
-        4,
-      ];
-    } else if (hasSelection) {
-      // Selection state
+    if (selectedBuildingIds.length > 0 && !highlightedArchitectId) {
       paint["circle-radius"] = [
         "case",
         ["in", ["get", "id"], ["literal", selectedBuildingIds]],
@@ -163,7 +154,9 @@ export function MapView({ buildings, architects }: MapViewProps) {
           type="circle"
           filter={["has", "point_count"]}
           paint={{
-            "circle-color": "#666666",
+            "circle-color": highlightedArchitectId
+              ? (getArchitectHexColor(highlightedArchitectId))
+              : "#666666",
             "circle-radius": [
               "step",
               ["get", "point_count"],

@@ -33,7 +33,7 @@ export function ArchitectLegend({ architects }: ArchitectLegendProps) {
               key={architect.id}
               type="button"
               onClick={() => toggleHighlightArchitect(architect.id)}
-              className={`flex w-full items-center gap-2 rounded-sm px-1 py-0.5 transition-opacity ${
+              className={`flex w-full cursor-pointer items-center gap-2 rounded-sm px-1 py-0.5 transition-opacity ${
                 isActive ? "opacity-100" : "opacity-30"
               } hover:opacity-100`}
             >

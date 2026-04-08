@@ -1,11 +1,16 @@
+import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import {
   getBuildingsByIds,
   getArchitectById,
   getCityById,
 } from "@/lib/data/data";
-import { DiagramView, DiagramEmpty } from "@/components/features/diagram";
+import { DiagramEmpty } from "@/components/features/diagram";
 import type { Architect, City } from "@/types";
+
+const DiagramView = dynamic(
+  () => import("@/components/features/diagram/DiagramView").then((m) => m.DiagramView),
+);
 
 export const metadata: Metadata = {
   title: "Diagram",

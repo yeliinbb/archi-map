@@ -1,7 +1,12 @@
 import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { getBuildings, getArchitects, getCities, getAllTags } from "@/lib/data/data";
-import { MapView, ArchitectLegend, SelectionSidebar, MapFilters } from "@/components/features/map";
+import { ArchitectLegend, SelectionSidebar, MapFilters } from "@/components/features/map";
+
+const MapView = dynamic(
+  () => import("@/components/features/map/MapView").then((m) => m.MapView),
+);
 
 export const metadata: Metadata = {
   title: "Map",

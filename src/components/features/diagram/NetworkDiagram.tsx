@@ -10,6 +10,7 @@ interface NetworkDiagramProps {
   layout: LayoutMode;
   width: number;
   height: number;
+  showLabels?: boolean;
 }
 
 const NODE_RADIUS = {
@@ -23,6 +24,7 @@ export function NetworkDiagram({
   layout,
   width,
   height,
+  showLabels = true,
 }: NetworkDiagramProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const [tooltip, setTooltip] = useState<{
@@ -187,35 +189,35 @@ export function NetworkDiagram({
       }
     });
 
-    // Labels — improved with background
-    nodeGroup.each(function (d) {
-      const el = d3.select(this);
-      const r = NODE_RADIUS[d.type];
-      const labelY = r + 14;
+    // Labels — conditional on showLabels
+    if (showLabels) {
+      nodeGroup.each(function (d) {
+        const el = d3.select(this);
+        const r = NODE_RADIUS[d.type];
+        const labelY = r + 14;
 
-      // Label background
-      const textNode = el
-        .append("text")
-        .text(d.label)
-        .attr("dy", labelY)
-        .attr("text-anchor", "middle")
-        .attr("font-family", "var(--font-geist-mono), monospace")
-        .attr("font-size", "9px")
-        .attr("fill", "var(--foreground)")
-        .attr("opacity", 0.8);
+        const textNode = el
+          .append("text")
+          .text(d.label)
+          .attr("dy", labelY)
+          .attr("text-anchor", "middle")
+          .attr("font-family", "var(--font-geist-mono), monospace")
+          .attr("font-size", "9px")
+          .attr("fill", "var(--foreground)")
+          .attr("opacity", 0.8);
 
-      // Measure and add background rect
-      const bbox = (textNode.node() as SVGTextElement)?.getBBox();
-      if (bbox) {
-        el.insert("rect", "text")
-          .attr("x", bbox.x - 2)
-          .attr("y", bbox.y - 1)
-          .attr("width", bbox.width + 4)
-          .attr("height", bbox.height + 2)
-          .attr("fill", "var(--background)")
-          .attr("opacity", 0.7);
-      }
-    });
+        const bbox = (textNode.node() as SVGTextElement)?.getBBox();
+        if (bbox) {
+          el.insert("rect", "text")
+            .attr("x", bbox.x - 2)
+            .attr("y", bbox.y - 1)
+            .attr("width", bbox.width + 4)
+            .attr("height", bbox.height + 2)
+            .attr("fill", "var(--background)")
+            .attr("opacity", 0.7);
+        }
+      });
+    }
 
     // Hover events
     nodeGroup
@@ -263,7 +265,7 @@ export function NetworkDiagram({
     return () => {
       simulation.stop();
     };
-  }, [graph, layout, width, height]);
+  }, [graph, layout, width, height, showLabels]);
 
   return (
     <div className="relative">

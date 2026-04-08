@@ -135,6 +135,7 @@
       "blueprint": "블루프린트",
       "poster": "포스터"
     },
-    "exportPng": "PNG 내보내기"
+    "exportPng": "PNG 내보내기",
+    "labels": "라벨"
   }
 }

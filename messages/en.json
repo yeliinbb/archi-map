@@ -135,6 +135,7 @@
       "blueprint": "Blueprint",
       "poster": "Poster"
     },
-    "exportPng": "Export PNG"
+    "exportPng": "Export PNG",
+    "labels": "Labels"
   }
 }

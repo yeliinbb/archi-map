@@ -23,6 +23,7 @@ export function DiagramView({
   const t = useTranslations("diagram");
   const containerRef = useRef<HTMLDivElement>(null);
   const [layout, setLayout] = useState<LayoutMode>("force");
+  const [showLabels, setShowLabels] = useState(true);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   const graph = useMemo(
@@ -65,6 +66,17 @@ export function DiagramView({
         </div>
         <div className="flex items-center gap-2 sm:gap-3">
           <LayoutControls current={layout} onChange={setLayout} />
+          <button
+            type="button"
+            onClick={() => setShowLabels(!showLabels)}
+            className={`border px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
+              showLabels
+                ? "border-foreground bg-foreground text-background"
+                : "border-border bg-background text-muted-foreground hover:bg-accent hover:text-foreground"
+            }`}
+          >
+            {t("labels")}
+          </button>
           <ExportButton targetRef={containerRef} />
         </div>
       </div>
@@ -75,6 +87,7 @@ export function DiagramView({
             layout={layout}
             width={dimensions.width}
             height={dimensions.height}
+            showLabels={showLabels}
           />
         )}
       </div>

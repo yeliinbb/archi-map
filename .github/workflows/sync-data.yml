@@ -1,0 +1,65 @@
+name: Sync Data from Google Sheets
+
+on:
+  workflow_dispatch:
+    inputs:
+      entity:
+        description: "동기화할 엔티티 (all, buildings, architects, cities, shops, events)"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - buildings
+          - architects
+          - cities
+          - shops
+          - events
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download CSV from Google Sheets
+        env:
+          GOOGLE_SHEETS_ID: ${{ secrets.GOOGLE_SHEETS_ID }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          # TODO: Google Sheets API를 사용하여 CSV 다운로드
+          # 각 탭을 개별 CSV 파일로 내보내기
+          # 출력: ./data-csv/buildings.csv, architects.csv, ...
+          echo "⚠️ Google Sheets API 연동 미구현 — 템플릿"
+          exit 1
+
+      - name: Convert CSV to JSON
+        run: npx tsx scripts/csv-to-json.ts --input ./data-csv/ --output ./src/lib/data/
+
+      - name: Validate data
+        run: npm run validate
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: sync data from Google Sheets"
+          title: "chore: Google Sheets 데이터 동기화"
+          body: |
+            Google Sheets에서 데이터를 동기화했습니다.
+            - 엔티티: ${{ github.event.inputs.entity }}
+            - 자동 검증 통과 확인
+          branch: data-sync/${{ github.run_id }}
+          base: master

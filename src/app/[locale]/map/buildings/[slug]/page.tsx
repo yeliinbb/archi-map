@@ -9,12 +9,10 @@ import {
   getCityById,
   getRelatedBuildings,
 } from "@/lib/data/data";
-import { TagBadge } from "@/components/ui/tag-badge";
-import { Divider } from "@/components/ui/divider";
-import { OptimizedImage } from "@/components/shared/optimized-image";
-import { SelectionToggleButton } from "@/components/features/selection/selection-toggle-button";
-import { SelectionBar } from "@/components/features/selection/selection-bar";
-import { RelatedBuildings } from "@/components/features/buildings/related-buildings";
+import { TagBadge, Divider } from "@/components/ui";
+import { OptimizedImage } from "@/components/shared";
+import { SelectionToggleButton, SelectionBar } from "@/components/features/selection";
+import { RelatedBuildings } from "@/components/features/buildings";
 
 interface Props {
   params: Promise<{ slug: string; locale: string }>;

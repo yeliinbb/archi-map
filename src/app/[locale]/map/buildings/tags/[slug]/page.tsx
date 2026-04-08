@@ -7,11 +7,9 @@ import {
   getArchitectById,
   getCityById,
 } from "@/lib/data/data";
-import { TagBadge } from "@/components/ui/tag-badge";
-import { Divider } from "@/components/ui/divider";
-import { SelectionToggleButton } from "@/components/features/selection/selection-toggle-button";
-import { SelectionBar } from "@/components/features/selection/selection-bar";
-import { StaggerContainer, StaggerItem } from "@/components/shared/motion-wrapper";
+import { TagBadge, Divider } from "@/components/ui";
+import { SelectionToggleButton, SelectionBar } from "@/components/features/selection";
+import { StaggerContainer, StaggerItem } from "@/components/shared";
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;

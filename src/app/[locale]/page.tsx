@@ -1,9 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getBuildings, getArchitects, getCities } from "@/lib/data/data";
-import { HomeHero } from "@/components/features/home/home-hero";
-import { HomeEntryPoints } from "@/components/features/home/home-entry-points";
-import { LineAnimation } from "@/components/features/home/line-animation";
-import { FadeIn } from "@/components/shared/motion-wrapper";
+import { HomeHero, HomeEntryPoints, LineAnimation } from "@/components/features/home";
+import { FadeIn } from "@/components/shared";
 
 interface Props {
   params: Promise<{ locale: string }>;

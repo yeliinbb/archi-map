@@ -1,10 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { getBuildings, getArchitects, getCities, getAllTags } from "@/lib/data/data";
-import { MapView } from "@/components/features/map/map-view";
-import { ArchitectLegend } from "@/components/features/map/architect-legend";
-import { SelectionSidebar } from "@/components/features/map/selection-sidebar";
-import { MapFilters } from "@/components/features/map/map-filters";
+import { MapView, ArchitectLegend, SelectionSidebar, MapFilters } from "@/components/features/map";
 
 export const metadata: Metadata = {
   title: "Map",

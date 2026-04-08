@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getEvents } from "@/lib/data/data";
-import { EventCard } from "@/components/features/events/event-card";
-import { FadeIn, StaggerContainer, StaggerItem } from "@/components/shared/motion-wrapper";
+import { EventCard } from "@/components/features/events";
+import { FadeIn, StaggerContainer, StaggerItem } from "@/components/shared";
 
 interface Props {
   params: Promise<{ locale: string }>;

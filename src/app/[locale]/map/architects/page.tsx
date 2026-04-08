@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getArchitects, getBuildingsByArchitect } from "@/lib/data/data";
-import { TagBadge } from "@/components/ui/tag-badge";
-import { Divider } from "@/components/ui/divider";
-import { StaggerContainer, StaggerItem } from "@/components/shared/motion-wrapper";
+import { TagBadge, Divider } from "@/components/ui";
+import { StaggerContainer, StaggerItem } from "@/components/shared";
 
 interface Props {
   params: Promise<{ locale: string }>;

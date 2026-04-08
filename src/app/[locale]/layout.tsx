@@ -2,9 +2,8 @@ import { NextIntlClientProvider, useLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { SiteHeader } from "@/components/layouts/site-header";
-import { SiteFooter } from "@/components/layouts/site-footer";
-import { PageTransition } from "@/components/shared/page-transition";
+import { SiteHeader, SiteFooter } from "@/components/layouts";
+import { PageTransition } from "@/components/shared";
 
 type Props = {
   children: React.ReactNode;

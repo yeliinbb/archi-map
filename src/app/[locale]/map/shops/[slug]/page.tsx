@@ -3,8 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import { getShopBySlug, getShops, getCityById } from "@/lib/data/data";
-import { TagBadge } from "@/components/ui/tag-badge";
-import { Divider } from "@/components/ui/divider";
+import { TagBadge, Divider } from "@/components/ui";
 
 interface Props {
   params: Promise<{ slug: string; locale: string }>;

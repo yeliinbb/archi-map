@@ -8,13 +8,10 @@ import {
   getCityById,
   getAllTags,
 } from "@/lib/data/data";
-import { TagBadge } from "@/components/ui/tag-badge";
-import { Divider } from "@/components/ui/divider";
-import { SelectionToggleButton } from "@/components/features/selection/selection-toggle-button";
-import { SelectionBar } from "@/components/features/selection/selection-bar";
-import { ViewToggle } from "@/components/features/buildings/view-toggle";
-import { BuildingGridCard } from "@/components/features/buildings/building-grid-card";
-import { StaggerContainer, StaggerItem } from "@/components/shared/motion-wrapper";
+import { TagBadge, Divider } from "@/components/ui";
+import { SelectionToggleButton, SelectionBar } from "@/components/features/selection";
+import { ViewToggle, BuildingGridCard } from "@/components/features/buildings";
+import { StaggerContainer, StaggerItem } from "@/components/shared";
 
 interface Props {
   params: Promise<{ locale: string }>;

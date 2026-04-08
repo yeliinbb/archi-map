@@ -8,8 +8,7 @@ import {
   getBuildingsByCity,
   getArchitectById,
 } from "@/lib/data/data";
-import { TagBadge } from "@/components/ui/tag-badge";
-import { Divider } from "@/components/ui/divider";
+import { TagBadge, Divider } from "@/components/ui";
 
 interface Props {
   params: Promise<{ slug: string; locale: string }>;

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Divider } from "@/components/ui/divider";
+import { Divider } from "@/components/ui";
 
 interface Props {
   params: Promise<{ locale: string }>;

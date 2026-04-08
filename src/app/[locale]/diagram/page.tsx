@@ -4,8 +4,7 @@ import {
   getArchitectById,
   getCityById,
 } from "@/lib/data/data";
-import { DiagramView } from "@/components/features/diagram/diagram-view";
-import { DiagramEmpty } from "@/components/features/diagram/diagram-empty";
+import { DiagramView, DiagramEmpty } from "@/components/features/diagram";
 import type { Architect, City } from "@/types";
 
 export const metadata: Metadata = {

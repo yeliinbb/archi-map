@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { getArchitects, getBuildingsByArchitect } from "@/lib/data/data";
 import { TagBadge } from "@/components/ui/tag-badge";
 import { Divider } from "@/components/ui/divider";
+import { StaggerContainer, StaggerItem } from "@/components/shared/motion-wrapper";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -32,13 +33,13 @@ export default async function ArchitectsPage({ params }: Props) {
       </p>
       <Divider className="mb-12" />
 
-      <div className="grid gap-px border border-border sm:grid-cols-2 lg:grid-cols-3">
+      <StaggerContainer className="grid gap-px border border-border sm:grid-cols-2 lg:grid-cols-3">
         {architects.map((architect) => {
           const buildingCount = getBuildingsByArchitect(architect.id).length;
 
           return (
+            <StaggerItem key={architect.id}>
             <Link
-              key={architect.id}
               href={`/map/architects/${architect.slug}`}
               className="group flex flex-col justify-between border border-border bg-background p-6 transition-colors hover:bg-accent"
             >
@@ -79,9 +80,10 @@ export default async function ArchitectsPage({ params }: Props) {
                 </span>
               </div>
             </Link>
+            </StaggerItem>
           );
         })}
-      </div>
+      </StaggerContainer>
     </div>
   );
 }

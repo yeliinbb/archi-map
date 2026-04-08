@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useSelectionStore } from "@/lib/stores/selection-store";
 import { getArchitectColor } from "@/lib/architect-colors";
 
@@ -19,8 +20,9 @@ export function SelectionToggleButton({
   const atMax = selectedBuildingIds.length >= 10;
 
   return (
-    <button
+    <motion.button
       type="button"
+      whileTap={{ scale: 0.85 }}
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -34,10 +36,12 @@ export function SelectionToggleButton({
       }`}
       aria-label={selected ? "Remove from selection" : "Add to selection"}
     >
-      <span
+      <motion.span
         className={`block h-2 w-2 rounded-full ${selected ? "" : "opacity-60"}`}
         style={{ backgroundColor: selected ? "var(--background)" : color }}
+        animate={{ scale: selected ? 1 : 0.8 }}
+        transition={{ type: "spring", stiffness: 500, damping: 15 }}
       />
-    </button>
+    </motion.button>
   );
 }

@@ -34,7 +34,13 @@
       "title": "Map",
       "description": "See everything plotted on a global map"
     },
-    "explore": "Explore →"
+    "explore": "Explore →",
+    "featured": {
+      "label": "Featured",
+      "curation": "Curated Selection",
+      "featuredCity": "Featured City",
+      "viewAll": "View All →"
+    }
   },
   "about": {
     "title": "About",
@@ -44,6 +50,21 @@
     "description3": "Each entry is carefully selected and contextualized, offering a perspective that goes beyond conventional architectural databases.",
     "quote": "Architecture is the learned game, correct and magnificent, of forms assembled in the light.",
     "quoteAuthor": "— Le Corbusier"
+  },
+  "buildings": {
+    "viewList": "List",
+    "viewGrid": "Grid",
+    "filterByTag": "Filter by Tag",
+    "allTags": "All Tags",
+    "taggedWith": "Tagged: {tag}",
+    "resultsCount": "{count} results"
+  },
+  "map": {
+    "filters": "Filters",
+    "filterCity": "City",
+    "filterTag": "Tag / Style",
+    "clearFilters": "Clear Filters",
+    "noResults": "No buildings match current filters"
   },
   "archive": {
     "label": "Archive",
@@ -63,7 +84,8 @@
     "openGoogleMaps": "Open in Google Maps ↗",
     "website": "Website",
     "buildingsInArchive": "Buildings in Archive",
-    "buildingsIn": "Buildings in {name}"
+    "buildingsIn": "Buildings in {name}",
+    "relatedBuildings": "Related Buildings"
   },
   "selection": {
     "title": "Selection",

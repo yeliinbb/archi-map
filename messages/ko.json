@@ -34,7 +34,13 @@
       "title": "지도",
       "description": "모든 건축물을 세계 지도 위에서 확인하세요"
     },
-    "explore": "탐험하기 →"
+    "explore": "탐험하기 →",
+    "featured": {
+      "label": "추천",
+      "curation": "큐레이션 셀렉션",
+      "featuredCity": "추천 도시",
+      "viewAll": "모두 보기 →"
+    }
   },
   "about": {
     "title": "소개",
@@ -44,6 +50,21 @@
     "description3": "각 항목은 신중하게 선별되고 맥락화되어, 기존 건축 데이터베이스를 넘어서는 시각을 제공합니다.",
     "quote": "건축은 빛 속에 모인 형태들의, 정확하고 장엄한 학습된 유희이다.",
     "quoteAuthor": "— 르 코르뷔지에"
+  },
+  "buildings": {
+    "viewList": "목록",
+    "viewGrid": "그리드",
+    "filterByTag": "태그로 필터",
+    "allTags": "전체 태그",
+    "taggedWith": "태그: {tag}",
+    "resultsCount": "{count}개 결과"
+  },
+  "map": {
+    "filters": "필터",
+    "filterCity": "도시",
+    "filterTag": "태그 / 스타일",
+    "clearFilters": "필터 초기화",
+    "noResults": "현재 필터에 해당하는 건축물이 없습니다"
   },
   "archive": {
     "label": "Archive",
@@ -63,7 +84,8 @@
     "openGoogleMaps": "Google Maps에서 보기 ↗",
     "website": "웹사이트",
     "buildingsInArchive": "아카이브 내 건축물",
-    "buildingsIn": "{name}의 건축물"
+    "buildingsIn": "{name}의 건축물",
+    "relatedBuildings": "관련 건축물"
   },
   "selection": {
     "title": "선택",

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { SiteHeader } from "@/components/layouts/site-header";
 import { SiteFooter } from "@/components/layouts/site-footer";
+import { PageTransition } from "@/components/shared/page-transition";
 
 type Props = {
   children: React.ReactNode;
@@ -29,7 +30,9 @@ export default async function LocaleLayout({ children, params }: Props) {
       <div className="grid-overlay pointer-events-none fixed inset-0 z-0" />
       <div className="relative z-10 flex min-h-screen flex-col">
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <SiteFooter />
       </div>
     </NextIntlClientProvider>

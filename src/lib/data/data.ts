@@ -1,4 +1,4 @@
-import type { Building, Architect, City } from "@/types";
+import type { Building, Architect, City, Tag } from "@/types";
 import buildingsData from "./buildings.json";
 import architectsData from "./architects.json";
 import citiesData from "./cities.json";
@@ -30,6 +30,63 @@ export function getBuildingsByIds(ids: string[]): Building[] {
   return ids
     .map((id) => buildings.find((b) => b.id === id))
     .filter((b): b is Building => b !== undefined);
+}
+
+// --- Featured ---
+
+const FEATURED_IDS = [
+  "bld-masp",
+  "bld-21st-century-museum",
+  "bld-serralves-museum",
+  "bld-novy-dvur",
+];
+
+export function getFeaturedBuildings(): Building[] {
+  return getBuildingsByIds(FEATURED_IDS);
+}
+
+// --- Related ---
+
+export function getRelatedBuildings(
+  building: Building,
+  limit = 4
+): Building[] {
+  const all = getBuildings().filter((b) => b.id !== building.id);
+  const scored = all.map((b) => {
+    let score = 0;
+    if (b.architectId === building.architectId) score += 3;
+    if (b.cityId === building.cityId) score += 2;
+    if (b.typology && b.typology === building.typology) score += 1;
+    const sharedTags = b.tags.filter((t) =>
+      building.tags.some((bt) => bt.slug === t.slug)
+    );
+    score += sharedTags.length;
+    return { building: b, score };
+  });
+  return scored
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((s) => s.building);
+}
+
+// --- Tags ---
+
+export function getBuildingsByTag(tagSlug: string): Building[] {
+  return getBuildings().filter((b) =>
+    b.tags.some((t) => t.slug === tagSlug)
+  );
+}
+
+export function getAllTags(): Tag[] {
+  const tagMap = new Map<string, Tag>();
+  for (const building of getBuildings()) {
+    for (const tag of building.tags) {
+      if (!tagMap.has(tag.slug)) {
+        tagMap.set(tag.slug, tag);
+      }
+    }
+  }
+  return [...tagMap.values()].sort((a, b) => a.label.localeCompare(b.label));
 }
 
 // --- Architects ---

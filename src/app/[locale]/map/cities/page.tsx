@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getCities, getBuildingsByCity } from "@/lib/data/data";
 import { Divider } from "@/components/ui/divider";
+import { StaggerContainer, StaggerItem } from "@/components/shared/motion-wrapper";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -31,13 +32,13 @@ export default async function CitiesPage({ params }: Props) {
       </p>
       <Divider className="mb-12" />
 
-      <div className="grid gap-px border border-border sm:grid-cols-2">
+      <StaggerContainer className="grid gap-px border border-border sm:grid-cols-2">
         {cities.map((city) => {
           const buildingCount = getBuildingsByCity(city.id).length;
 
           return (
+            <StaggerItem key={city.id}>
             <Link
-              key={city.id}
               href={`/map/cities/${city.slug}`}
               className="group flex flex-col justify-between border border-border bg-background p-6 transition-colors hover:bg-accent"
             >
@@ -72,9 +73,10 @@ export default async function CitiesPage({ params }: Props) {
                 </span>
               </div>
             </Link>
+            </StaggerItem>
           );
         })}
-      </div>
+      </StaggerContainer>
     </div>
   );
 }

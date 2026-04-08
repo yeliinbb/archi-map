@@ -45,32 +45,21 @@ export function NetworkDiagram({
       target: typeof l.target === "string" ? l.target : l.target.id,
     }));
 
-    // Grid pattern
+    // Layout plugin
     const defs = svg.append("defs");
-    defs
-      .append("pattern")
-      .attr("id", "grid")
-      .attr("width", 40)
-      .attr("height", 40)
-      .attr("patternUnits", "userSpaceOnUse")
-      .selectAll("line")
-      .data([
-        { x1: 0, y1: 0, x2: 40, y2: 0 },
-        { x1: 0, y1: 0, x2: 0, y2: 40 },
-      ])
-      .join("line")
-      .attr("x1", (d) => d.x1)
-      .attr("y1", (d) => d.y1)
-      .attr("x2", (d) => d.x2)
-      .attr("y2", (d) => d.y2)
-      .attr("stroke", "oklch(0.145 0 0 / 5%)")
-      .attr("stroke-width", 0.5);
+    const layoutPlugin = LAYOUTS[layout];
 
-    svg
-      .append("rect")
-      .attr("width", width)
-      .attr("height", height)
-      .attr("fill", "url(#grid)");
+    // Background/overlay — delegated to layout plugin
+    if (layoutPlugin?.renderOverlay) {
+      layoutPlugin.renderOverlay({ svg, g: svg.append("g"), defs, nodes, width, height });
+    } else {
+      // Default: plain background
+      svg
+        .append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("fill", "var(--background)");
+    }
 
     // Container for zoom
     const g = svg.append("g");
@@ -98,23 +87,27 @@ export function NetworkDiagram({
           }),
       );
 
-    // Apply layout via plugin
-    const layoutPlugin = LAYOUTS[layout];
+    // Apply layout forces via plugin
     if (layoutPlugin) {
       layoutPlugin.apply({ simulation, nodes, links, width, height });
     }
 
-    // Links — improved styling
+    // Links — mode-aware styling
+    const linkCurve = layoutPlugin?.linkCurve ?? "straight";
+    const linkBaseOpacity = layoutPlugin?.linkOpacity ?? 1;
+
     const linkGroup = g
       .append("g")
-      .selectAll("line")
+      .selectAll("path")
       .data(links)
-      .join("line")
+      .join("path")
+      .attr("fill", "none")
       .attr("stroke", (d) => {
         const link = d as unknown as DiagramLink;
-        if (link.type === "same-architect") return "oklch(0.5 0 0 / 12%)";
-        if (link.type === "city-building") return "oklch(0.5 0 0 / 20%)";
-        return "oklch(0.5 0 0 / 30%)";
+        const alpha = linkBaseOpacity;
+        if (link.type === "same-architect") return `oklch(0.5 0 0 / ${12 * alpha}%)`;
+        if (link.type === "city-building") return `oklch(0.5 0 0 / ${20 * alpha}%)`;
+        return `oklch(0.5 0 0 / ${30 * alpha}%)`;
       })
       .attr("stroke-width", (d) => {
         const link = d as unknown as DiagramLink;
@@ -234,13 +227,32 @@ export function NetworkDiagram({
         setTooltip(null);
       });
 
+    // Link path generator based on mode
+    const linkPath = (d: unknown) => {
+      const link = d as unknown as DiagramLink;
+      const s = link.source as unknown as DiagramNode;
+      const t = link.target as unknown as DiagramNode;
+      const sx = s.x ?? 0;
+      const sy = s.y ?? 0;
+      const tx = t.x ?? 0;
+      const ty = t.y ?? 0;
+
+      if (linkCurve === "arc") {
+        const dx = tx - sx;
+        const dy = ty - sy;
+        const dr = Math.sqrt(dx * dx + dy * dy) * 0.8;
+        return `M${sx},${sy}A${dr},${dr} 0 0,1 ${tx},${ty}`;
+      }
+      if (linkCurve === "orthogonal") {
+        const mx = (sx + tx) / 2;
+        return `M${sx},${sy}L${mx},${sy}L${mx},${ty}L${tx},${ty}`;
+      }
+      return `M${sx},${sy}L${tx},${ty}`;
+    };
+
     // Tick
     simulation.on("tick", () => {
-      linkGroup
-        .attr("x1", (d) => (d.source as unknown as DiagramNode).x ?? 0)
-        .attr("y1", (d) => (d.source as unknown as DiagramNode).y ?? 0)
-        .attr("x2", (d) => (d.target as unknown as DiagramNode).x ?? 0)
-        .attr("y2", (d) => (d.target as unknown as DiagramNode).y ?? 0);
+      linkGroup.attr("d", linkPath);
 
       nodeGroup.attr(
         "transform",

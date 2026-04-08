@@ -16,7 +16,19 @@ export interface ApplyLayoutParams {
   height: number;
 }
 
+export interface RenderOverlayParams {
+  svg: d3.Selection<SVGSVGElement, unknown, null, undefined>;
+  g: d3.Selection<SVGGElement, unknown, null, undefined>;
+  defs: d3.Selection<SVGDefsElement, unknown, null, undefined>;
+  nodes: DiagramNode[];
+  width: number;
+  height: number;
+}
+
 export interface DiagramLayout {
   name: LayoutMode;
   apply: (params: ApplyLayoutParams) => void;
+  renderOverlay?: (params: RenderOverlayParams) => void;
+  linkCurve?: "straight" | "arc" | "orthogonal";
+  linkOpacity?: number;
 }

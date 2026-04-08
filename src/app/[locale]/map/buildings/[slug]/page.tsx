@@ -76,15 +76,22 @@ export default async function BuildingDetailPage({ params }: Props) {
       <Divider className="mb-8" />
 
       {building.images[0]?.src ? (
-        <div className="mb-8 overflow-hidden border border-border">
-          <OptimizedImage
-            src={building.images[0].src}
-            alt={building.images[0].alt}
-            fill
-            aspectRatio="16/9"
-            sizes="(max-width: 672px) 100vw, 672px"
-            priority
-          />
+        <div className="mb-8">
+          <div className="overflow-hidden border border-border">
+            <OptimizedImage
+              src={building.images[0].src}
+              alt={building.images[0].alt}
+              fill
+              aspectRatio="16/9"
+              sizes="(max-width: 672px) 100vw, 672px"
+              priority
+            />
+          </div>
+          {building.images[0].credit ? (
+            <p className="mt-1 font-mono text-micro text-muted-foreground/50">
+              © {building.images[0].credit}
+            </p>
+          ) : null}
         </div>
       ) : null}
 

@@ -86,7 +86,7 @@ export function SaveCollectionDialog({
                 />
               }
             >
-              Cancel
+              {t("cancel")}
             </DialogClose>
             <button
               type="button"

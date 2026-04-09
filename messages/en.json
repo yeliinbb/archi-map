@@ -130,7 +130,8 @@
     "deleteConfirm": "Delete this collection?",
     "empty": "No saved collections",
     "emptyDescription": "Save your building selections to revisit them later.",
-    "buildingCount": "{count, plural, one {# building} other {# buildings}}"
+    "buildingCount": "{count, plural, one {# building} other {# buildings}}",
+    "cancel": "Cancel"
   },
   "diagram": {
     "title": "Diagram",

@@ -130,7 +130,8 @@
     "deleteConfirm": "이 컬렉션을 삭제하시겠습니까?",
     "empty": "저장된 컬렉션 없음",
     "emptyDescription": "건축물 선택을 저장하면 나중에 다시 볼 수 있습니다.",
-    "buildingCount": "{count}개 건축물"
+    "buildingCount": "{count}개 건축물",
+    "cancel": "취소"
   },
   "diagram": {
     "title": "다이어그램",

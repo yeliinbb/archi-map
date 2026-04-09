@@ -24,7 +24,7 @@ export default function MapPage() {
   }
 
   return (
-    <div className="relative h-[calc(100vh-3.5rem)]">
+    <div className="relative h-[calc(100dvh-3.5rem)]">
       <MapView buildings={buildings} architects={architects} />
       <Suspense>
         <MapFilters cities={cities} tags={allTags} />

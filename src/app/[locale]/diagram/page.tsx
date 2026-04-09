@@ -25,7 +25,7 @@ export default async function DiagramPage({ searchParams }: Props) {
 
   if (!ids) {
     return (
-      <div className="h-[calc(100vh-3.5rem)]">
+      <div className="h-[calc(100dvh-3.5rem)]">
         <DiagramEmpty />
       </div>
     );
@@ -36,7 +36,7 @@ export default async function DiagramPage({ searchParams }: Props) {
 
   if (buildings.length === 0) {
     return (
-      <div className="h-[calc(100vh-3.5rem)]">
+      <div className="h-[calc(100dvh-3.5rem)]">
         <DiagramEmpty />
       </div>
     );
@@ -55,7 +55,7 @@ export default async function DiagramPage({ searchParams }: Props) {
     .filter((c): c is City => c !== undefined);
 
   return (
-    <div className="h-[calc(100vh-3.5rem)]">
+    <div className="h-[calc(100dvh-3.5rem)]">
       <DiagramView
         buildings={buildings}
         architects={architects}

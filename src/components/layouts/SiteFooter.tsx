@@ -1,10 +1,20 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 export function SiteFooter() {
   const t = useTranslations();
+  const pathname = usePathname();
+  const locale = useLocale();
+
+  const stripped = pathname.startsWith(`/${locale}`)
+    ? pathname.slice(`/${locale}`.length) || "/"
+    : pathname;
+  const isFullscreenPage = stripped === "/map" || stripped.startsWith("/diagram");
+
+  if (isFullscreenPage) return null;
 
   return (
     <footer className="border-t border-border/40">

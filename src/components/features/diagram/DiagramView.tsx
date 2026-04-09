@@ -48,7 +48,7 @@ export function DiagramView({
 
   const graph = useMemo(
     () => buildDiagramGraph(buildings, architects, cities),
-    [buildings, architects, cities]
+    [buildings, architects, cities],
   );
 
   useEffect(() => {
@@ -71,8 +71,9 @@ export function DiagramView({
 
   return (
     <div className="flex h-full flex-col">
+      {/* Toolbar */}
       <div className="flex flex-col gap-2 border-b border-border px-4 py-2 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center gap-4">
+        <div className="flex shrink-0 items-center gap-4">
           <p className="font-mono text-micro tracking-sublabel text-muted-foreground uppercase">
             {t("title")}
           </p>
@@ -84,12 +85,12 @@ export function DiagramView({
             })}
           </span>
         </div>
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-2 overflow-x-auto sm:gap-3">
           <LayoutControls current={layout} onChange={setLayout} />
           <button
             type="button"
             onClick={() => setShowLabels(!showLabels)}
-            className={`border px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
+            className={`shrink-0 border px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
               showLabels
                 ? "border-foreground bg-foreground text-background"
                 : "border-border bg-background text-muted-foreground hover:bg-accent hover:text-foreground"
@@ -97,11 +98,20 @@ export function DiagramView({
           >
             {t("labels")}
           </button>
+          {/* AI Caption — mobile only (in toolbar) */}
+          <button
+            type="button"
+            onClick={handleGenerateCaption}
+            disabled={captionLoading}
+            className="flex shrink-0 items-center gap-1 border border-border px-2 py-1.5 font-mono text-micro tracking-wider text-muted-foreground transition-colors hover:bg-accent hover:text-foreground disabled:opacity-50 md:hidden"
+          >
+            <Sparkles className="h-3 w-3" />
+          </button>
           <ExportButton targetRef={containerRef} />
           <button
             type="button"
             onClick={handleShare}
-            className="flex items-center gap-2 border border-border px-2 py-1.5 font-mono text-micro tracking-wider text-muted-foreground transition-colors hover:bg-accent hover:text-foreground sm:px-3"
+            className="flex shrink-0 items-center gap-2 border border-border px-2 py-1.5 font-mono text-micro tracking-wider text-muted-foreground transition-colors hover:bg-accent hover:text-foreground sm:px-3"
           >
             <Link2 className="h-3 w-3" />
             <span className="hidden sm:inline">
@@ -110,6 +120,17 @@ export function DiagramView({
           </button>
         </div>
       </div>
+
+      {/* Caption banner (mobile — below toolbar) */}
+      {caption ? (
+        <div className="border-b border-border bg-background p-3 md:hidden">
+          <p className="font-mono text-xs leading-relaxed text-muted-foreground">
+            {caption}
+          </p>
+        </div>
+      ) : null}
+
+      {/* Diagram */}
       <div ref={containerRef} className="relative flex-1">
         {dimensions.width > 0 && dimensions.height > 0 ? (
           <NetworkDiagram
@@ -121,8 +142,8 @@ export function DiagramView({
           />
         ) : null}
 
-        {/* AI Caption overlay */}
-        <div className="absolute bottom-4 left-4 right-4 z-10 flex items-end gap-3">
+        {/* AI Caption overlay — desktop only */}
+        <div className="absolute bottom-4 left-4 right-4 z-10 hidden items-end gap-3 md:flex">
           <button
             type="button"
             onClick={handleGenerateCaption}

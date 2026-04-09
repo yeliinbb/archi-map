@@ -8,6 +8,7 @@ import { Link } from "@/i18n/navigation";
 import { useSelectionStore } from "@/lib/stores/selection-store";
 import { getArchitectColor } from "@/lib/architect-colors";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/Sheet";
+import { SaveCollectionDialog } from "@/components/features/collection";
 import type { Building } from "@/types";
 
 interface SelectionSidebarProps {
@@ -42,6 +43,7 @@ export function SelectionSidebar({ buildings }: SelectionSidebarProps) {
           </p>
         </div>
         <div className="flex items-center gap-3">
+          <SaveCollectionDialog buildingIds={selectedBuildingIds} variant="text" />
           <button
             type="button"
             onClick={clearSelection}

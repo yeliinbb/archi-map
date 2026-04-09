@@ -118,6 +118,20 @@
     "back": "← Events",
     "venue": "Venue"
   },
+  "collection": {
+    "title": "Collections",
+    "save": "Save",
+    "saveCollection": "Save Collection",
+    "namePlaceholder": "Collection name",
+    "nameRequired": "Enter a collection name",
+    "saved": "Saved!",
+    "load": "Load",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this collection?",
+    "empty": "No saved collections",
+    "emptyDescription": "Save your building selections to revisit them later.",
+    "buildingCount": "{count, plural, one {# building} other {# buildings}}"
+  },
   "diagram": {
     "title": "Diagram",
     "stats": "{buildings} buildings · {architects} architects · {cities} cities",

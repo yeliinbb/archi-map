@@ -118,6 +118,20 @@
     "back": "← 이벤트",
     "venue": "장소"
   },
+  "collection": {
+    "title": "컬렉션",
+    "save": "저장",
+    "saveCollection": "컬렉션 저장",
+    "namePlaceholder": "컬렉션 이름",
+    "nameRequired": "컬렉션 이름을 입력하세요",
+    "saved": "저장됨!",
+    "load": "불러오기",
+    "delete": "삭제",
+    "deleteConfirm": "이 컬렉션을 삭제하시겠습니까?",
+    "empty": "저장된 컬렉션 없음",
+    "emptyDescription": "건축물 선택을 저장하면 나중에 다시 볼 수 있습니다.",
+    "buildingCount": "{count}개 건축물"
+  },
   "diagram": {
     "title": "다이어그램",
     "stats": "건축물 {buildings}개 · 건축가 {architects}명 · 도시 {cities}개",

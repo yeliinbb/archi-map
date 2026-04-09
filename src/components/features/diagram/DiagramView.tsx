@@ -2,13 +2,14 @@
 
 import { useRef, useState, useEffect, useMemo, useCallback } from "react";
 import { useTranslations, useLocale } from "next-intl";
-import { Link2, Sparkles, Tag, Download, Check } from "lucide-react";
+import { Link2, Sparkles, Tag, Check } from "lucide-react";
 import { NetworkDiagram } from "./NetworkDiagram";
 import { LayoutControls } from "./LayoutControls";
 import type { LayoutMode } from "./layouts";
 import { ExportButton } from "./ExportButton";
 import { buildDiagramGraph } from "@/lib/diagram/transform";
 import { generateCurationCaption } from "@/app/actions/generate-caption";
+import { SaveCollectionDialog } from "@/components/features/collection";
 import type { Building, Architect, City } from "@/types";
 
 interface DiagramViewProps {
@@ -118,6 +119,7 @@ export function DiagramView({
             >
               <Sparkles className="h-3.5 w-3.5" />
             </button>
+            <SaveCollectionDialog buildingIds={buildings.map((b) => b.id)} />
             <ExportButton targetRef={containerRef} />
             <button
               type="button"

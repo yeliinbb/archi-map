@@ -2,12 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { CollectionPanel } from "@/components/features/collection";
 
 export function DiagramEmpty() {
   const t = useTranslations("diagram.empty");
 
   return (
-    <div className="flex h-full flex-col items-center justify-center">
+    <div className="flex h-full flex-col items-center justify-center px-6">
       <p className="mb-2 font-mono text-xs tracking-label text-muted-foreground uppercase">
         {t("title")}
       </p>
@@ -30,6 +31,11 @@ export function DiagramEmpty() {
         >
           {t("browseBuildings")}
         </Link>
+      </div>
+
+      {/* Saved collections */}
+      <div className="mt-12 w-full max-w-sm">
+        <CollectionPanel />
       </div>
     </div>
   );

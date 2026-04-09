@@ -91,9 +91,11 @@ export function DiagramView({
             })}
           </span>
         </div>
-        {/* Controls row */}
-        <div className="flex items-center justify-between gap-2">
-          <LayoutControls current={layout} onChange={setLayout} />
+        {/* Controls: stack on mobile, inline on sm+ */}
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div className="overflow-x-auto">
+            <LayoutControls current={layout} onChange={setLayout} />
+          </div>
           <div className="flex items-center gap-1">
             <button
               type="button"

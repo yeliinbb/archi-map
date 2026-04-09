@@ -22,7 +22,7 @@ export function LayoutControls({ current, onChange }: LayoutControlsProps) {
             key={mode.name}
             type="button"
             onClick={() => onChange(mode.name)}
-            className={`px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
+            className={`whitespace-nowrap px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
               current === mode.name
                 ? "bg-foreground text-background"
                 : "bg-background text-muted-foreground hover:bg-accent hover:text-foreground"
@@ -38,7 +38,7 @@ export function LayoutControls({ current, onChange }: LayoutControlsProps) {
             key={mode.name}
             type="button"
             onClick={() => onChange(mode.name)}
-            className={`px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
+            className={`whitespace-nowrap px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
               current === mode.name
                 ? "bg-foreground text-background"
                 : "bg-background text-muted-foreground hover:bg-accent hover:text-foreground"

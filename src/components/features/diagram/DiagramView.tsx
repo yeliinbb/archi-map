@@ -77,7 +77,7 @@ export function DiagramView({
 
   return (
     <div className="flex h-full flex-col">
-      {/* Toolbar row 1: title + layout modes */}
+      {/* Toolbar */}
       <div className="border-b border-border px-3 py-2">
         <div className="mb-2 flex items-center justify-between">
           <p className="font-mono text-micro tracking-sublabel text-muted-foreground uppercase">
@@ -91,11 +91,8 @@ export function DiagramView({
             })}
           </span>
         </div>
-        {/* Controls: stack on mobile, inline on sm+ */}
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <div className="overflow-x-auto">
-            <LayoutControls current={layout} onChange={setLayout} />
-          </div>
+        <div className="flex items-center justify-between gap-2">
+          <LayoutControls current={layout} onChange={setLayout} />
           <div className="flex items-center gap-1">
             <button
               type="button"

@@ -148,7 +148,7 @@ export function SelectionSidebar({ buildings }: SelectionSidebarProps) {
           >
             {t("title")} {count}/10
           </SheetTrigger>
-          <SheetContent side="bottom" className="max-h-[70vh]">
+          <SheetContent side="bottom" className="max-h-[70vh]" showCloseButton={false}>
             {listContent}
           </SheetContent>
         </Sheet>

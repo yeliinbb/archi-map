@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect, useMemo, useCallback } from "react";
 import { useTranslations, useLocale } from "next-intl";
-import { Link2, Sparkles } from "lucide-react";
+import { Link2, Sparkles, Tag, Download, Check } from "lucide-react";
 import { NetworkDiagram } from "./NetworkDiagram";
 import { LayoutControls } from "./LayoutControls";
 import type { LayoutMode } from "./layouts";
@@ -33,9 +33,15 @@ export function DiagramView({
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   const handleShare = useCallback(async () => {
-    await navigator.clipboard.writeText(window.location.href);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback for non-HTTPS or denied permission
+      const url = window.location.href;
+      prompt("Copy this URL:", url);
+    }
   }, []);
 
   const handleGenerateCaption = useCallback(async () => {
@@ -71,9 +77,9 @@ export function DiagramView({
 
   return (
     <div className="flex h-full flex-col">
-      {/* Toolbar */}
-      <div className="flex flex-col gap-2 border-b border-border px-4 py-2 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex shrink-0 items-center gap-4">
+      {/* Toolbar row 1: title + layout modes */}
+      <div className="border-b border-border px-3 py-2">
+        <div className="mb-2 flex items-center justify-between">
           <p className="font-mono text-micro tracking-sublabel text-muted-foreground uppercase">
             {t("title")}
           </p>
@@ -85,43 +91,55 @@ export function DiagramView({
             })}
           </span>
         </div>
-        <div className="flex items-center gap-2 overflow-x-auto sm:gap-3">
+        {/* Controls row */}
+        <div className="flex items-center justify-between gap-2">
           <LayoutControls current={layout} onChange={setLayout} />
-          <button
-            type="button"
-            onClick={() => setShowLabels(!showLabels)}
-            className={`shrink-0 border px-2 py-1.5 font-mono text-micro tracking-wider transition-colors sm:px-3 ${
-              showLabels
-                ? "border-foreground bg-foreground text-background"
-                : "border-border bg-background text-muted-foreground hover:bg-accent hover:text-foreground"
-            }`}
-          >
-            {t("labels")}
-          </button>
-          {/* AI Caption — mobile only (in toolbar) */}
-          <button
-            type="button"
-            onClick={handleGenerateCaption}
-            disabled={captionLoading}
-            className="flex shrink-0 items-center gap-1 border border-border px-2 py-1.5 font-mono text-micro tracking-wider text-muted-foreground transition-colors hover:bg-accent hover:text-foreground disabled:opacity-50 md:hidden"
-          >
-            <Sparkles className="h-3 w-3" />
-          </button>
-          <ExportButton targetRef={containerRef} />
-          <button
-            type="button"
-            onClick={handleShare}
-            className="flex shrink-0 items-center gap-2 border border-border px-2 py-1.5 font-mono text-micro tracking-wider text-muted-foreground transition-colors hover:bg-accent hover:text-foreground sm:px-3"
-          >
-            <Link2 className="h-3 w-3" />
-            <span className="hidden sm:inline">
-              {copied ? t("copied") : t("share")}
-            </span>
-          </button>
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => setShowLabels(!showLabels)}
+              className={`border p-1.5 transition-colors sm:px-3 ${
+                showLabels
+                  ? "border-foreground bg-foreground text-background"
+                  : "border-border text-muted-foreground hover:bg-accent hover:text-foreground"
+              }`}
+              title={t("labels")}
+            >
+              <Tag className="h-3.5 w-3.5 sm:hidden" />
+              <span className="hidden font-mono text-micro tracking-wider sm:inline">
+                {t("labels")}
+              </span>
+            </button>
+            <button
+              type="button"
+              onClick={handleGenerateCaption}
+              disabled={captionLoading}
+              className="border border-border p-1.5 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground disabled:opacity-50 md:hidden sm:px-3"
+              title={t("captionGenerate")}
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+            </button>
+            <ExportButton targetRef={containerRef} />
+            <button
+              type="button"
+              onClick={handleShare}
+              className="border border-border p-1.5 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground sm:px-3"
+              title={copied ? t("copied") : t("share")}
+            >
+              {copied ? (
+                <Check className="h-3.5 w-3.5 text-foreground" />
+              ) : (
+                <Link2 className="h-3.5 w-3.5 sm:hidden" />
+              )}
+              <span className="hidden font-mono text-micro tracking-wider sm:inline">
+                {copied ? t("copied") : t("share")}
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Caption banner (mobile — below toolbar) */}
+      {/* Caption banner (mobile) */}
       {caption ? (
         <div className="border-b border-border bg-background p-3 md:hidden">
           <p className="font-mono text-xs leading-relaxed text-muted-foreground">

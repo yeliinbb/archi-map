@@ -148,6 +148,16 @@ export function DiagramView({
         </div>
       ) : null}
 
+      {/* Toast notification */}
+      {copied ? (
+        <div className="pointer-events-none fixed inset-x-0 top-20 z-50 flex justify-center">
+          <div className="flex items-center gap-2 border border-border bg-foreground px-4 py-2 font-mono text-micro tracking-wider text-background shadow-sm">
+            <Check className="h-3 w-3" />
+            {t("copied")}
+          </div>
+        </div>
+      ) : null}
+
       {/* Diagram */}
       <div ref={containerRef} className="relative flex-1">
         {dimensions.width > 0 && dimensions.height > 0 ? (

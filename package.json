@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate": "npx tsx scripts/validate-data.ts"
+    "validate": "npx tsx scripts/validate-data.ts",
+    "export-csv": "npx tsx scripts/json-to-csv.ts",
+    "fetch-sheets": "npx tsx scripts/fetch-from-sheets.ts",
+    "sync-sheets": "npx tsx scripts/fetch-from-sheets.ts && npx tsx scripts/csv-to-json.ts && npx tsx scripts/validate-data.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

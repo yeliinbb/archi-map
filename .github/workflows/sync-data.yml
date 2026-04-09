@@ -35,16 +35,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Download CSV from Google Sheets
+      - name: Fetch from Google Sheets
         env:
           GOOGLE_SHEETS_ID: ${{ secrets.GOOGLE_SHEETS_ID }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: |
-          # TODO: Google Sheets API를 사용하여 CSV 다운로드
-          # 각 탭을 개별 CSV 파일로 내보내기
-          # 출력: ./data-csv/buildings.csv, architects.csv, ...
-          echo "⚠️ Google Sheets API 연동 미구현 — 템플릿"
-          exit 1
+        run: npx tsx scripts/fetch-from-sheets.ts ${{ github.event.inputs.entity }}
 
       - name: Convert CSV to JSON
         run: npx tsx scripts/csv-to-json.ts --input ./data-csv/ --output ./src/lib/data/
